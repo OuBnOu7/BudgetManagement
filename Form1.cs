@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using BudgetManagement.Panels;
+
 
 namespace BudgetManagement
 {
@@ -22,7 +24,10 @@ namespace BudgetManagement
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
+            leftBorderBtn.Size = new Size(197, 7);
+            leftBorderBtn.Location = new Point(0, 100);
+            leftBorderBtn.Dock = DockStyle.None;
+            leftBorderBtn.BringToFront();
             panelMenu.Controls.Add(leftBorderBtn);
             //Form
 
@@ -85,8 +90,8 @@ namespace BudgetManagement
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;
+            desktopPanel.Controls.Add(childForm);
+            desktopPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
             lblTitleChildForm.Text = childForm.Text;
@@ -99,19 +104,6 @@ namespace BudgetManagement
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             lblTitleChildForm.Text = "home";
         }
-        //Events
-        //Reset
-        //private void btnHome_Click(object sender, EventArgs e)
-        //{
-        //    if (currentChildForm != null)
-        //    {
-        //        currentChildForm.Close();
-        //    }
-        //    Reset();
-        //}
-        //Menu Button_Clicks
-
-
 
         //Drag Form
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
@@ -151,25 +143,33 @@ namespace BudgetManagement
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            //OpenChildForm(new FormDashboard());
+            OpenChildForm(new Dashboard());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            //OpenChildForm(new FormOrders());
+            OpenChildForm(new Wallet());
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            //OpenChildForm(new FormProducts());
+            OpenChildForm(new Income());
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            //OpenChildForm(new FormCustomers());
+            OpenChildForm(new Expense());
         }
+
+
+        private void logoBtn_Click(object sender, EventArgs e)
+        {
+            reset();
+            leftBorderBtn.Visible = false;
+        }
+
     }
 }
