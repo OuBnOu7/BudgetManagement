@@ -87,6 +87,7 @@ namespace BudgetManagement
             }
             currentChildForm = childForm;
             //End
+            childForm.Size = desktopPanel.Size;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
