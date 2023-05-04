@@ -15,23 +15,10 @@ namespace BudgetManagement.Panels
     {
         SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Expense()
+
         {
             InitializeComponent();
-        }
-
-
-        private void expAdd_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addExpense_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void expDate_ValueChanged(object sender, EventArgs e)
-        {
+            getAll();
 
         }
 
@@ -43,30 +30,111 @@ namespace BudgetManagement.Panels
             this.expenseTableAdapter.Fill(this.database1DataSet1.expense);
 
         }
-
-        private void totLogement_Paint(object sender, PaintEventArgs e)
+        private void expAdd_Click(object sender, EventArgs e)
         {
+            if(expAmount.Text == "" || expName.Text == "" || expType.Text == "" || expDate.Text == "" || expDes.Text == "")
+            {
+                MessageBox.Show("Veuillez Remplir Les Champs");
+            }
+            else
+            {
 
+                    connection.Open();
+                    string sql = "insert into expense(Name,Amount,Category,Date,Description,[User]) values (@val1, @val2, @val3, @val4, @val5, @val6)";
+                    SqlCommand cmd = new SqlCommand(sql, connection);
+                    cmd.Parameters.AddWithValue("@val1", expName.Text);
+                    cmd.Parameters.AddWithValue("@val2", float.Parse(expAmount.Text));
+                    cmd.Parameters.AddWithValue("@val3", expType.Text);
+                    cmd.Parameters.AddWithValue("@val4", DateTime.Parse(expDate.Text));
+                    cmd.Parameters.AddWithValue("@val5", expDes.Text);
+                    cmd.Parameters.AddWithValue("@val6", "Omar");
+                int rowsAffected = cmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    getAll();
+                    MessageBox.Show("Ajout Avec Succes !");
+                }
+                else
+                {
+                    MessageBox.Show("Erreur ! Ressayer Plus Tard .");
+                }
+
+            }
         }
 
-        private void kryptonLabel4_Paint(object sender, PaintEventArgs e)
+        private void getDetails(string type,System.Windows.Forms.Label Label, System.Windows.Forms.Label LabelPer)
         {
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
 
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT SUM(Amount) FROM expense WHERE Category = '"+ type+"'";
+            cmd.ExecuteNonQuery();
+            DataTable dta = new DataTable();
+            SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection); ;
+            dataadp.Fill(dta);
+            Label.Text = dta.Rows[0][0].ToString();
+            if(dta.Rows[0][0].ToString() == "")
+            {
+                Label.Text = "0";
+            }
+
+
+            SqlCommand cmd2 = connection.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "SELECT (SUM(Amount)/(SELECT SUM(Amount) FROM expense)) * 100 AS Percentage FROM expense WHERE Category = '"+ type +"'";
+            object result = cmd2.ExecuteScalar();
+            if (result != null)
+            {
+                LabelPer.Text = result.ToString();
+            }
+            else
+            {
+                LabelPer.Text = "0";
+            }
+
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
         }
 
-        private void kryptonLabel3_Paint(object sender, PaintEventArgs e)
+        private void display_data()
         {
 
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            SqlCommand cmd3 = connection.CreateCommand();
+            cmd3.CommandType = CommandType.Text;
+            cmd3.CommandText = "select Name,Amount,Category,Date,Description from [expense]";
+
+            cmd3.ExecuteNonQuery();
+            DataTable dta = new DataTable();
+            SqlDataAdapter dataadp = new SqlDataAdapter(cmd3.CommandText, connection); ;
+            dataadp.Fill(dta);
+            dataGridView1.DataSource = dta;
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
         }
 
-        private void kryptonLabel2_Paint(object sender, PaintEventArgs e)
+        private void getAll()
         {
-
-        }
-
-        private void logementPanel_Paint(object sender, PaintEventArgs e)
-        {
-
+            display_data();    
+            getDetails("Logement", totLogement, pouLogement);
+            getDetails("Nourriture", totNourriture, pouNourriture);
+            getDetails("Transport", totTransport, pouTransport);
+            getDetails("Abonement", totAbonement, pouAbonement);
+            getDetails("Loisirs", totLoisirs, pouLoisirs);
         }
 
     }

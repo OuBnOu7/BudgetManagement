@@ -30,296 +30,208 @@
         {
             this.components = new System.ComponentModel.Container();
             this.expName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.addExpense = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.expType = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.Type = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.logementPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.pouLogement = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.totLogement = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Logement = new FontAwesome.Sharp.IconButton();
             this.nourrituresPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.label18 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.label19 = new System.Windows.Forms.Label();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.pouNourriture = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.totNourriture = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.pouNourriture = new System.Windows.Forms.Label();
+            this.totNourriture = new System.Windows.Forms.Label();
             this.transportPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel7 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pouTransport = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.label11 = new System.Windows.Forms.Label();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.totTransport = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.totAbonement = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel10 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel11 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.pouTransport = new System.Windows.Forms.Label();
+            this.totTransport = new System.Windows.Forms.Label();
+            this.panelwsf = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.label14 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pouAbonement = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.label15 = new System.Windows.Forms.Label();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.kryptonLabel13 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.pouAbonement = new System.Windows.Forms.Label();
+            this.totAbonement = new System.Windows.Forms.Label();
             this.loisirsPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonLabel14 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel15 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.label22 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pouLoisirs = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.label23 = new System.Windows.Forms.Label();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.totLoisirs = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.pouLoisirs = new System.Windows.Forms.Label();
+            this.totLoisirs = new System.Windows.Forms.Label();
             this.expDate = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.expDes = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.expDesc = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.expAmount = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.database1DataSet1 = new BudgetManagement.Database1DataSet1();
             this.expenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.expenseTableAdapter = new BudgetManagement.Database1DataSet1TableAdapters.expenseTableAdapter();
-            this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expenseBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet2 = new BudgetManagement.Database1DataSet2();
             this.expenseTableAdapter1 = new BudgetManagement.Database1DataSet2TableAdapters.expenseTableAdapter();
             this.expAdd = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            ((System.ComponentModel.ISupportInitialize)(this.expType)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logementPanel)).BeginInit();
-            this.logementPanel.SuspendLayout();
+            this.expType = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.logementPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pouLogement = new System.Windows.Forms.Label();
+            this.totLogement = new System.Windows.Forms.Label();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nourrituresPanel)).BeginInit();
             this.nourrituresPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.transportPanel)).BeginInit();
             this.transportPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.totAbonement)).BeginInit();
-            this.totAbonement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelwsf)).BeginInit();
+            this.panelwsf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loisirsPanel)).BeginInit();
             this.loisirsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logementPanel)).BeginInit();
+            this.logementPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
+            this.kryptonPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // expName
             // 
-            this.expName.Location = new System.Drawing.Point(211, 44);
+            this.expName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.expName.Location = new System.Drawing.Point(197, 58);
             this.expName.Name = "expName";
-            this.expName.Size = new System.Drawing.Size(174, 27);
+            this.expName.Size = new System.Drawing.Size(214, 27);
             this.expName.TabIndex = 0;
-            this.expName.TextChanged += new System.EventHandler(this.expAdd_TextChanged);
-            // 
-            // addExpense
-            // 
-            this.addExpense.Location = new System.Drawing.Point(22, 47);
-            this.addExpense.Name = "addExpense";
-            this.addExpense.Size = new System.Drawing.Size(109, 24);
-            this.addExpense.TabIndex = 1;
-            this.addExpense.Values.Text = "Nom Depense";
-            this.addExpense.Paint += new System.Windows.Forms.PaintEventHandler(this.addExpense_Paint);
-            // 
-            // expType
-            // 
-            this.expType.DropDownWidth = 174;
-            this.expType.Location = new System.Drawing.Point(211, 77);
-            this.expType.Name = "expType";
-            this.expType.Size = new System.Drawing.Size(174, 25);
-            this.expType.TabIndex = 2;
-            // 
-            // Type
-            // 
-            this.Type.Location = new System.Drawing.Point(22, 77);
-            this.Type.Name = "Type";
-            this.Type.Size = new System.Drawing.Size(131, 24);
-            this.Type.TabIndex = 3;
-            this.Type.Values.Text = "Type De Depense";
-            // 
-            // logementPanel
-            // 
-            this.logementPanel.Controls.Add(this.kryptonLabel4);
-            this.logementPanel.Controls.Add(this.kryptonLabel3);
-            this.logementPanel.Controls.Add(this.pouLogement);
-            this.logementPanel.Controls.Add(this.totLogement);
-            this.logementPanel.Controls.Add(this.label1);
-            this.logementPanel.Controls.Add(this.Logement);
-            this.logementPanel.Location = new System.Drawing.Point(12, 160);
-            this.logementPanel.Name = "logementPanel";
-            this.logementPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderForm;
-            this.logementPanel.Size = new System.Drawing.Size(169, 127);
-            this.logementPanel.TabIndex = 6;
-            this.logementPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.logementPanel_Paint);
-            // 
-            // kryptonLabel4
-            // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(121, 81);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(24, 24);
-            this.kryptonLabel4.TabIndex = 5;
-            this.kryptonLabel4.Values.Text = "%";
-            this.kryptonLabel4.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonLabel4_Paint);
-            // 
-            // kryptonLabel3
-            // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(19, 81);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(46, 24);
-            this.kryptonLabel3.TabIndex = 4;
-            this.kryptonLabel3.Values.Text = "MAD";
-            this.kryptonLabel3.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonLabel3_Paint);
-            // 
-            // pouLogement
-            // 
-            this.pouLogement.Location = new System.Drawing.Point(121, 51);
-            this.pouLogement.Name = "pouLogement";
-            this.pouLogement.Size = new System.Drawing.Size(20, 24);
-            this.pouLogement.TabIndex = 3;
-            this.pouLogement.Values.Text = "0";
-            this.pouLogement.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonLabel2_Paint);
-            // 
-            // totLogement
-            // 
-            this.totLogement.Location = new System.Drawing.Point(28, 51);
-            this.totLogement.Name = "totLogement";
-            this.totLogement.Size = new System.Drawing.Size(20, 24);
-            this.totLogement.TabIndex = 2;
-            this.totLogement.Values.Text = "0";
-            this.totLogement.Paint += new System.Windows.Forms.PaintEventHandler(this.totLogement_Paint);
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(57, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 41);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Logement";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Logement
-            // 
-            this.Logement.BackColor = System.Drawing.Color.Transparent;
-            this.Logement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Logement.ForeColor = System.Drawing.Color.Transparent;
-            this.Logement.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.Logement.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Logement.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Logement.Location = new System.Drawing.Point(3, 3);
-            this.Logement.Name = "Logement";
-            this.Logement.Size = new System.Drawing.Size(45, 41);
-            this.Logement.TabIndex = 0;
-            this.Logement.UseVisualStyleBackColor = false;
             // 
             // nourrituresPanel
             // 
-            this.nourrituresPanel.Controls.Add(this.kryptonLabel2);
+            this.nourrituresPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nourrituresPanel.Controls.Add(this.label18);
             this.nourrituresPanel.Controls.Add(this.label2);
-            this.nourrituresPanel.Controls.Add(this.kryptonLabel5);
+            this.nourrituresPanel.Controls.Add(this.label19);
             this.nourrituresPanel.Controls.Add(this.iconButton1);
             this.nourrituresPanel.Controls.Add(this.pouNourriture);
             this.nourrituresPanel.Controls.Add(this.totNourriture);
-            this.nourrituresPanel.Location = new System.Drawing.Point(231, 160);
+            this.nourrituresPanel.Location = new System.Drawing.Point(63, 463);
             this.nourrituresPanel.Name = "nourrituresPanel";
-            this.nourrituresPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderCalendar;
-            this.nourrituresPanel.Size = new System.Drawing.Size(169, 127);
+            this.nourrituresPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.nourrituresPanel.Size = new System.Drawing.Size(431, 261);
             this.nourrituresPanel.TabIndex = 7;
             // 
-            // kryptonLabel2
+            // label18
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(121, 81);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(24, 24);
-            this.kryptonLabel2.TabIndex = 9;
-            this.kryptonLabel2.Values.Text = "%";
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(213, 181);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(210, 41);
+            this.label18.TabIndex = 26;
+            this.label18.Text = "%";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(54, 3);
+            this.label2.Location = new System.Drawing.Point(113, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 41);
+            this.label2.Size = new System.Drawing.Size(208, 41);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nourriture";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // kryptonLabel5
+            // label19
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(19, 81);
-            this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(46, 24);
-            this.kryptonLabel5.TabIndex = 8;
-            this.kryptonLabel5.Values.Text = "MAD";
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(-5, 181);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(210, 41);
+            this.label19.TabIndex = 25;
+            this.label19.Text = "MAD";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // iconButton1
             // 
+            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconButton1.BackColor = System.Drawing.Color.Transparent;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.ForeColor = System.Drawing.Color.Transparent;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.BowlRice;
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(3, 3);
+            this.iconButton1.Location = new System.Drawing.Point(40, 18);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(45, 41);
+            this.iconButton1.Size = new System.Drawing.Size(88, 63);
             this.iconButton1.TabIndex = 1;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // pouNourriture
             // 
-            this.pouNourriture.Location = new System.Drawing.Point(121, 51);
+            this.pouNourriture.BackColor = System.Drawing.Color.Transparent;
+            this.pouNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pouNourriture.Location = new System.Drawing.Point(213, 99);
             this.pouNourriture.Name = "pouNourriture";
-            this.pouNourriture.Size = new System.Drawing.Size(20, 24);
-            this.pouNourriture.TabIndex = 7;
-            this.pouNourriture.Values.Text = "0";
+            this.pouNourriture.Size = new System.Drawing.Size(210, 41);
+            this.pouNourriture.TabIndex = 24;
+            this.pouNourriture.Text = "0";
+            this.pouNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // totNourriture
             // 
-            this.totNourriture.Location = new System.Drawing.Point(28, 51);
+            this.totNourriture.BackColor = System.Drawing.Color.Transparent;
+            this.totNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totNourriture.Location = new System.Drawing.Point(-2, 99);
             this.totNourriture.Name = "totNourriture";
-            this.totNourriture.Size = new System.Drawing.Size(20, 24);
-            this.totNourriture.TabIndex = 6;
-            this.totNourriture.Values.Text = "0";
+            this.totNourriture.Size = new System.Drawing.Size(210, 41);
+            this.totNourriture.TabIndex = 23;
+            this.totNourriture.Text = "0";
+            this.totNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // transportPanel
             // 
-            this.transportPanel.Controls.Add(this.kryptonLabel6);
-            this.transportPanel.Controls.Add(this.kryptonLabel7);
+            this.transportPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.transportPanel.Controls.Add(this.label10);
             this.transportPanel.Controls.Add(this.label3);
-            this.transportPanel.Controls.Add(this.pouTransport);
+            this.transportPanel.Controls.Add(this.label11);
             this.transportPanel.Controls.Add(this.iconButton3);
+            this.transportPanel.Controls.Add(this.pouTransport);
             this.transportPanel.Controls.Add(this.totTransport);
-            this.transportPanel.Location = new System.Drawing.Point(449, 160);
+            this.transportPanel.Location = new System.Drawing.Point(558, 186);
             this.transportPanel.Name = "transportPanel";
-            this.transportPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderCalendar;
-            this.transportPanel.Size = new System.Drawing.Size(169, 127);
+            this.transportPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.transportPanel.Size = new System.Drawing.Size(431, 261);
             this.transportPanel.TabIndex = 8;
             // 
-            // kryptonLabel6
+            // label10
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(130, 81);
-            this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(24, 24);
-            this.kryptonLabel6.TabIndex = 13;
-            this.kryptonLabel6.Values.Text = "%";
-            // 
-            // kryptonLabel7
-            // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(28, 81);
-            this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(46, 24);
-            this.kryptonLabel7.TabIndex = 12;
-            this.kryptonLabel7.Values.Text = "MAD";
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(218, 179);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(210, 41);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "%";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -327,20 +239,23 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(54, 3);
+            this.label3.Location = new System.Drawing.Point(113, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 41);
+            this.label3.Size = new System.Drawing.Size(208, 41);
             this.label3.TabIndex = 4;
             this.label3.Text = "Transport";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pouTransport
+            // label11
             // 
-            this.pouTransport.Location = new System.Drawing.Point(130, 51);
-            this.pouTransport.Name = "pouTransport";
-            this.pouTransport.Size = new System.Drawing.Size(20, 24);
-            this.pouTransport.TabIndex = 11;
-            this.pouTransport.Values.Text = "0";
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(0, 179);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(210, 41);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "MAD";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // iconButton3
             // 
@@ -350,49 +265,59 @@
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Car;
             this.iconButton3.IconColor = System.Drawing.Color.Yellow;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(3, 3);
+            this.iconButton3.Location = new System.Drawing.Point(40, 18);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(45, 41);
+            this.iconButton3.Size = new System.Drawing.Size(88, 63);
             this.iconButton3.TabIndex = 3;
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
+            // pouTransport
+            // 
+            this.pouTransport.BackColor = System.Drawing.Color.Transparent;
+            this.pouTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pouTransport.Location = new System.Drawing.Point(218, 97);
+            this.pouTransport.Name = "pouTransport";
+            this.pouTransport.Size = new System.Drawing.Size(210, 41);
+            this.pouTransport.TabIndex = 16;
+            this.pouTransport.Text = "0";
+            this.pouTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // totTransport
             // 
-            this.totTransport.Location = new System.Drawing.Point(37, 51);
+            this.totTransport.BackColor = System.Drawing.Color.Transparent;
+            this.totTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totTransport.Location = new System.Drawing.Point(3, 97);
             this.totTransport.Name = "totTransport";
-            this.totTransport.Size = new System.Drawing.Size(20, 24);
-            this.totTransport.TabIndex = 10;
-            this.totTransport.Values.Text = "0";
+            this.totTransport.Size = new System.Drawing.Size(210, 41);
+            this.totTransport.TabIndex = 15;
+            this.totTransport.Text = "0";
+            this.totTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // totAbonement
+            // panelwsf
             // 
-            this.totAbonement.Controls.Add(this.kryptonLabel10);
-            this.totAbonement.Controls.Add(this.kryptonLabel11);
-            this.totAbonement.Controls.Add(this.label4);
-            this.totAbonement.Controls.Add(this.pouAbonement);
-            this.totAbonement.Controls.Add(this.iconButton2);
-            this.totAbonement.Controls.Add(this.kryptonLabel13);
-            this.totAbonement.Location = new System.Drawing.Point(658, 160);
-            this.totAbonement.Name = "totAbonement";
-            this.totAbonement.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderCalendar;
-            this.totAbonement.Size = new System.Drawing.Size(169, 127);
-            this.totAbonement.TabIndex = 9;
+            this.panelwsf.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelwsf.Controls.Add(this.label14);
+            this.panelwsf.Controls.Add(this.label4);
+            this.panelwsf.Controls.Add(this.label15);
+            this.panelwsf.Controls.Add(this.iconButton2);
+            this.panelwsf.Controls.Add(this.pouAbonement);
+            this.panelwsf.Controls.Add(this.totAbonement);
+            this.panelwsf.Location = new System.Drawing.Point(1044, 186);
+            this.panelwsf.Name = "panelwsf";
+            this.panelwsf.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.panelwsf.Size = new System.Drawing.Size(431, 261);
+            this.panelwsf.TabIndex = 9;
             // 
-            // kryptonLabel10
+            // label14
             // 
-            this.kryptonLabel10.Location = new System.Drawing.Point(125, 81);
-            this.kryptonLabel10.Name = "kryptonLabel10";
-            this.kryptonLabel10.Size = new System.Drawing.Size(24, 24);
-            this.kryptonLabel10.TabIndex = 17;
-            this.kryptonLabel10.Values.Text = "%";
-            // 
-            // kryptonLabel11
-            // 
-            this.kryptonLabel11.Location = new System.Drawing.Point(23, 81);
-            this.kryptonLabel11.Name = "kryptonLabel11";
-            this.kryptonLabel11.Size = new System.Drawing.Size(46, 24);
-            this.kryptonLabel11.TabIndex = 16;
-            this.kryptonLabel11.Values.Text = "MAD";
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(221, 179);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(210, 41);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "%";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -400,20 +325,23 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(54, 3);
+            this.label4.Location = new System.Drawing.Point(113, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 41);
+            this.label4.Size = new System.Drawing.Size(208, 41);
             this.label4.TabIndex = 5;
             this.label4.Text = "Abonement";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pouAbonement
+            // label15
             // 
-            this.pouAbonement.Location = new System.Drawing.Point(125, 51);
-            this.pouAbonement.Name = "pouAbonement";
-            this.pouAbonement.Size = new System.Drawing.Size(20, 24);
-            this.pouAbonement.TabIndex = 15;
-            this.pouAbonement.Values.Text = "0";
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(3, 179);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(210, 41);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "MAD";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // iconButton2
             // 
@@ -423,49 +351,59 @@
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CreditCardAlt;
             this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(3, 3);
+            this.iconButton2.Location = new System.Drawing.Point(40, 18);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(45, 41);
+            this.iconButton2.Size = new System.Drawing.Size(88, 63);
             this.iconButton2.TabIndex = 2;
             this.iconButton2.UseVisualStyleBackColor = false;
             // 
-            // kryptonLabel13
+            // pouAbonement
             // 
-            this.kryptonLabel13.Location = new System.Drawing.Point(32, 51);
-            this.kryptonLabel13.Name = "kryptonLabel13";
-            this.kryptonLabel13.Size = new System.Drawing.Size(20, 24);
-            this.kryptonLabel13.TabIndex = 14;
-            this.kryptonLabel13.Values.Text = "0";
+            this.pouAbonement.BackColor = System.Drawing.Color.Transparent;
+            this.pouAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pouAbonement.Location = new System.Drawing.Point(221, 97);
+            this.pouAbonement.Name = "pouAbonement";
+            this.pouAbonement.Size = new System.Drawing.Size(210, 41);
+            this.pouAbonement.TabIndex = 20;
+            this.pouAbonement.Text = "0";
+            this.pouAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // totAbonement
+            // 
+            this.totAbonement.BackColor = System.Drawing.Color.Transparent;
+            this.totAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totAbonement.Location = new System.Drawing.Point(6, 97);
+            this.totAbonement.Name = "totAbonement";
+            this.totAbonement.Size = new System.Drawing.Size(210, 41);
+            this.totAbonement.TabIndex = 19;
+            this.totAbonement.Text = "0";
+            this.totAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // loisirsPanel
             // 
-            this.loisirsPanel.Controls.Add(this.kryptonLabel14);
-            this.loisirsPanel.Controls.Add(this.kryptonLabel15);
+            this.loisirsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.loisirsPanel.Controls.Add(this.label22);
             this.loisirsPanel.Controls.Add(this.label5);
-            this.loisirsPanel.Controls.Add(this.pouLoisirs);
+            this.loisirsPanel.Controls.Add(this.label23);
             this.loisirsPanel.Controls.Add(this.iconButton4);
+            this.loisirsPanel.Controls.Add(this.pouLoisirs);
             this.loisirsPanel.Controls.Add(this.totLoisirs);
-            this.loisirsPanel.Location = new System.Drawing.Point(871, 160);
+            this.loisirsPanel.Location = new System.Drawing.Point(558, 463);
             this.loisirsPanel.Name = "loisirsPanel";
-            this.loisirsPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderCalendar;
-            this.loisirsPanel.Size = new System.Drawing.Size(169, 127);
+            this.loisirsPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.loisirsPanel.Size = new System.Drawing.Size(431, 261);
             this.loisirsPanel.TabIndex = 10;
             // 
-            // kryptonLabel14
+            // label22
             // 
-            this.kryptonLabel14.Location = new System.Drawing.Point(130, 81);
-            this.kryptonLabel14.Name = "kryptonLabel14";
-            this.kryptonLabel14.Size = new System.Drawing.Size(24, 24);
-            this.kryptonLabel14.TabIndex = 21;
-            this.kryptonLabel14.Values.Text = "%";
-            // 
-            // kryptonLabel15
-            // 
-            this.kryptonLabel15.Location = new System.Drawing.Point(28, 81);
-            this.kryptonLabel15.Name = "kryptonLabel15";
-            this.kryptonLabel15.Size = new System.Drawing.Size(46, 24);
-            this.kryptonLabel15.TabIndex = 20;
-            this.kryptonLabel15.Values.Text = "MAD";
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(218, 181);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(210, 41);
+            this.label22.TabIndex = 30;
+            this.label22.Text = "%";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -473,20 +411,23 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(54, 3);
+            this.label5.Location = new System.Drawing.Point(113, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 41);
+            this.label5.Size = new System.Drawing.Size(208, 41);
             this.label5.TabIndex = 6;
             this.label5.Text = "Loisirs";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pouLoisirs
+            // label23
             // 
-            this.pouLoisirs.Location = new System.Drawing.Point(130, 51);
-            this.pouLoisirs.Name = "pouLoisirs";
-            this.pouLoisirs.Size = new System.Drawing.Size(20, 24);
-            this.pouLoisirs.TabIndex = 19;
-            this.pouLoisirs.Values.Text = "0";
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(0, 181);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(210, 41);
+            this.label23.TabIndex = 29;
+            this.label23.Text = "MAD";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // iconButton4
             // 
@@ -496,74 +437,59 @@
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Gamepad;
             this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(3, 3);
+            this.iconButton4.Location = new System.Drawing.Point(40, 18);
             this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(45, 41);
+            this.iconButton4.Size = new System.Drawing.Size(88, 63);
             this.iconButton4.TabIndex = 3;
             this.iconButton4.UseVisualStyleBackColor = false;
             // 
+            // pouLoisirs
+            // 
+            this.pouLoisirs.BackColor = System.Drawing.Color.Transparent;
+            this.pouLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pouLoisirs.Location = new System.Drawing.Point(218, 99);
+            this.pouLoisirs.Name = "pouLoisirs";
+            this.pouLoisirs.Size = new System.Drawing.Size(210, 41);
+            this.pouLoisirs.TabIndex = 28;
+            this.pouLoisirs.Text = "0";
+            this.pouLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // totLoisirs
             // 
-            this.totLoisirs.Location = new System.Drawing.Point(37, 51);
+            this.totLoisirs.BackColor = System.Drawing.Color.Transparent;
+            this.totLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totLoisirs.Location = new System.Drawing.Point(3, 99);
             this.totLoisirs.Name = "totLoisirs";
-            this.totLoisirs.Size = new System.Drawing.Size(20, 24);
-            this.totLoisirs.TabIndex = 18;
-            this.totLoisirs.Values.Text = "0";
+            this.totLoisirs.Size = new System.Drawing.Size(210, 41);
+            this.totLoisirs.TabIndex = 27;
+            this.totLoisirs.Text = "0";
+            this.totLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // expDate
             // 
+            this.expDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.expDate.CalendarTodayDate = new System.DateTime(2023, 5, 2, 0, 0, 0, 0);
-            this.expDate.Location = new System.Drawing.Point(211, 108);
+            this.expDate.Location = new System.Drawing.Point(197, 142);
             this.expDate.Name = "expDate";
-            this.expDate.Size = new System.Drawing.Size(174, 25);
+            this.expDate.ShowUpDown = true;
+            this.expDate.Size = new System.Drawing.Size(214, 25);
             this.expDate.TabIndex = 11;
-            this.expDate.ValueChanged += new System.EventHandler(this.expDate_ValueChanged);
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(22, 109);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(114, 24);
-            this.kryptonLabel1.TabIndex = 12;
-            this.kryptonLabel1.Values.Text = "Date Depenses";
-            // 
-            // kryptonPanel1
-            // 
-            this.kryptonPanel1.Location = new System.Drawing.Point(658, 12);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderForm;
-            this.kryptonPanel1.Size = new System.Drawing.Size(382, 121);
-            this.kryptonPanel1.TabIndex = 7;
             // 
             // expDes
             // 
-            this.expDes.Location = new System.Drawing.Point(403, 44);
+            this.expDes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.expDes.Location = new System.Drawing.Point(462, 45);
             this.expDes.Name = "expDes";
-            this.expDes.Size = new System.Drawing.Size(249, 50);
+            this.expDes.Size = new System.Drawing.Size(278, 79);
             this.expDes.TabIndex = 13;
             this.expDes.Text = "";
             // 
-            // expDesc
-            // 
-            this.expDesc.Location = new System.Drawing.Point(403, 11);
-            this.expDesc.Name = "expDesc";
-            this.expDesc.Size = new System.Drawing.Size(89, 24);
-            this.expDesc.TabIndex = 14;
-            this.expDesc.Values.Text = "Description";
-            // 
-            // kryptonLabel8
-            // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(22, 14);
-            this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(134, 24);
-            this.kryptonLabel8.TabIndex = 16;
-            this.kryptonLabel8.Values.Text = "Montant Depense";
-            // 
             // expAmount
             // 
-            this.expAmount.Location = new System.Drawing.Point(211, 11);
+            this.expAmount.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.expAmount.Location = new System.Drawing.Point(197, 15);
             this.expAmount.Name = "expAmount";
-            this.expAmount.Size = new System.Drawing.Size(174, 27);
+            this.expAmount.Size = new System.Drawing.Size(214, 27);
             this.expAmount.TabIndex = 15;
             // 
             // database1DataSet1
@@ -579,64 +505,6 @@
             // expenseTableAdapter
             // 
             this.expenseTableAdapter.ClearBeforeFill = true;
-            // 
-            // kryptonDataGridView1
-            // 
-            this.kryptonDataGridView1.AutoGenerateColumns = false;
-            this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nameDataGridViewTextBoxColumn,
-            this.amountDataGridViewTextBoxColumn,
-            this.categoryDataGridViewTextBoxColumn,
-            this.dateDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn});
-            this.kryptonDataGridView1.DataSource = this.expenseBindingSource1;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(188, 325);
-            this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.RowHeadersWidth = 51;
-            this.kryptonDataGridView1.RowTemplate.Height = 24;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(676, 273);
-            this.kryptonDataGridView1.TabIndex = 17;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // amountDataGridViewTextBoxColumn
-            // 
-            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.amountDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
-            this.amountDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // categoryDataGridViewTextBoxColumn
-            // 
-            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
-            this.categoryDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            this.categoryDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            this.dateDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.Width = 125;
             // 
             // expenseBindingSource1
             // 
@@ -654,60 +522,365 @@
             // 
             // expAdd
             // 
-            this.expAdd.Location = new System.Drawing.Point(403, 100);
+            this.expAdd.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.expAdd.Location = new System.Drawing.Point(462, 130);
             this.expAdd.Name = "expAdd";
-            this.expAdd.Size = new System.Drawing.Size(149, 33);
+            this.expAdd.Size = new System.Drawing.Size(278, 45);
             this.expAdd.TabIndex = 18;
             this.expAdd.Values.Text = "Ajouter Depenses";
+            this.expAdd.Click += new System.EventHandler(this.expAdd_Click);
+            // 
+            // expType
+            // 
+            this.expType.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.expType.FormattingEnabled = true;
+            this.expType.Items.AddRange(new object[] {
+            "Logement",
+            "Nourriture",
+            "Transport",
+            "Abonement",
+            "Loisirs"});
+            this.expType.Location = new System.Drawing.Point(197, 100);
+            this.expType.Name = "expType";
+            this.expType.Size = new System.Drawing.Size(214, 24);
+            this.expType.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(113, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 41);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Logement";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // logementPanel
+            // 
+            this.logementPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.logementPanel.Controls.Add(this.label9);
+            this.logementPanel.Controls.Add(this.label8);
+            this.logementPanel.Controls.Add(this.pouLogement);
+            this.logementPanel.Controls.Add(this.totLogement);
+            this.logementPanel.Controls.Add(this.iconButton5);
+            this.logementPanel.Controls.Add(this.label1);
+            this.logementPanel.Location = new System.Drawing.Point(63, 186);
+            this.logementPanel.Name = "logementPanel";
+            this.logementPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.logementPanel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.logementPanel.Size = new System.Drawing.Size(431, 261);
+            this.logementPanel.TabIndex = 6;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(218, 179);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(210, 41);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "%";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(0, 179);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(210, 41);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "MAD";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pouLogement
+            // 
+            this.pouLogement.BackColor = System.Drawing.Color.Transparent;
+            this.pouLogement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pouLogement.Location = new System.Drawing.Point(218, 97);
+            this.pouLogement.Name = "pouLogement";
+            this.pouLogement.Size = new System.Drawing.Size(210, 41);
+            this.pouLogement.TabIndex = 12;
+            this.pouLogement.Text = "0";
+            this.pouLogement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // totLogement
+            // 
+            this.totLogement.BackColor = System.Drawing.Color.Transparent;
+            this.totLogement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totLogement.Location = new System.Drawing.Point(3, 97);
+            this.totLogement.Name = "totLogement";
+            this.totLogement.Size = new System.Drawing.Size(210, 41);
+            this.totLogement.TabIndex = 11;
+            this.totLogement.Text = "0";
+            this.totLogement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton5.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconButton5.IconColor = System.Drawing.Color.Red;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.Location = new System.Drawing.Point(40, 18);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(88, 63);
+            this.iconButton5.TabIndex = 10;
+            this.iconButton5.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(781, 7);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(694, 168);
+            this.dataGridView1.TabIndex = 20;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(63, 15);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 27);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Montant";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(63, 58);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 27);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Nom";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.Control;
+            this.label12.Location = new System.Drawing.Point(63, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(128, 27);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "Type";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.Control;
+            this.label13.Location = new System.Drawing.Point(63, 140);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(128, 27);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Date";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.Control;
+            this.label16.Location = new System.Drawing.Point(458, 15);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(192, 27);
+            this.label16.TabIndex = 24;
+            this.label16.Text = "Description";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // kryptonPanel1
+            // 
+            this.kryptonPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonPanel1.Controls.Add(this.label28);
+            this.kryptonPanel1.Controls.Add(this.label27);
+            this.kryptonPanel1.Controls.Add(this.label26);
+            this.kryptonPanel1.Controls.Add(this.label17);
+            this.kryptonPanel1.Controls.Add(this.label20);
+            this.kryptonPanel1.Controls.Add(this.label21);
+            this.kryptonPanel1.Controls.Add(this.iconButton6);
+            this.kryptonPanel1.Controls.Add(this.label24);
+            this.kryptonPanel1.Controls.Add(this.label25);
+            this.kryptonPanel1.Location = new System.Drawing.Point(1044, 463);
+            this.kryptonPanel1.Name = "kryptonPanel1";
+            this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.kryptonPanel1.Size = new System.Drawing.Size(431, 261);
+            this.kryptonPanel1.TabIndex = 23;
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(113, 28);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(208, 41);
+            this.label20.TabIndex = 5;
+            this.label20.Text = "Bilan";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(3, 121);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(210, 25);
+            this.label21.TabIndex = 21;
+            this.label21.Text = "Logement";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iconButton6
+            // 
+            this.iconButton6.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.ScaleUnbalanced;
+            this.iconButton6.IconColor = System.Drawing.Color.Black;
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton6.Location = new System.Drawing.Point(40, 18);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Size = new System.Drawing.Size(88, 63);
+            this.iconButton6.TabIndex = 2;
+            this.iconButton6.UseVisualStyleBackColor = false;
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Lime;
+            this.label24.Location = new System.Drawing.Point(218, 78);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(210, 41);
+            this.label24.TabIndex = 20;
+            this.label24.Text = "Good";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(6, 78);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(210, 41);
+            this.label25.TabIndex = 19;
+            this.label25.Text = "Situation";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(3, 146);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(210, 25);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "Logement";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(3, 171);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(210, 25);
+            this.label26.TabIndex = 23;
+            this.label26.Text = "Logement";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(4, 196);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(210, 25);
+            this.label27.TabIndex = 24;
+            this.label27.Text = "Logement";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(4, 221);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(210, 25);
+            this.label28.TabIndex = 25;
+            this.label28.Text = "Logement";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Expense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 610);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.ClientSize = new System.Drawing.Size(1675, 736);
             this.ControlBox = false;
-            this.Controls.Add(this.expAdd);
-            this.Controls.Add(this.kryptonDataGridView1);
-            this.Controls.Add(this.kryptonLabel8);
-            this.Controls.Add(this.expAmount);
-            this.Controls.Add(this.expDesc);
-            this.Controls.Add(this.expDes);
             this.Controls.Add(this.kryptonPanel1);
-            this.Controls.Add(this.kryptonLabel1);
-            this.Controls.Add(this.expDate);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.loisirsPanel);
-            this.Controls.Add(this.totAbonement);
+            this.Controls.Add(this.panelwsf);
+            this.Controls.Add(this.expType);
+            this.Controls.Add(this.expAdd);
+            this.Controls.Add(this.expAmount);
+            this.Controls.Add(this.expDes);
+            this.Controls.Add(this.expDate);
             this.Controls.Add(this.transportPanel);
             this.Controls.Add(this.nourrituresPanel);
             this.Controls.Add(this.logementPanel);
-            this.Controls.Add(this.Type);
-            this.Controls.Add(this.expType);
-            this.Controls.Add(this.addExpense);
             this.Controls.Add(this.expName);
             this.Name = "Expense";
             this.Load += new System.EventHandler(this.Expense_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.expType)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logementPanel)).EndInit();
-            this.logementPanel.ResumeLayout(false);
-            this.logementPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nourrituresPanel)).EndInit();
             this.nourrituresPanel.ResumeLayout(false);
-            this.nourrituresPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.transportPanel)).EndInit();
             this.transportPanel.ResumeLayout(false);
-            this.transportPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.totAbonement)).EndInit();
-            this.totAbonement.ResumeLayout(false);
-            this.totAbonement.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelwsf)).EndInit();
+            this.panelwsf.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.loisirsPanel)).EndInit();
             this.loisirsPanel.ResumeLayout(false);
-            this.loisirsPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logementPanel)).EndInit();
+            this.logementPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
+            this.kryptonPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -716,63 +889,67 @@
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox expName;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel addExpense;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox expType;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel Type;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel logementPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel nourrituresPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel transportPanel;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel totAbonement;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelwsf;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel loisirsPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker expDate;
-        private FontAwesome.Sharp.IconButton Logement;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton4;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel pouLogement;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel totLogement;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox expDes;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel expDesc;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel pouNourriture;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel totNourriture;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel6;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel7;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel pouTransport;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel totTransport;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel10;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel11;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel pouAbonement;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel13;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel14;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel15;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel pouLoisirs;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel totLoisirs;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel8;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox expAmount;
         private Database1DataSet1 database1DataSet1;
         private System.Windows.Forms.BindingSource expenseBindingSource;
         private Database1DataSet1TableAdapters.expenseTableAdapter expenseTableAdapter;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
         private Database1DataSet2 database1DataSet2;
         private System.Windows.Forms.BindingSource expenseBindingSource1;
         private Database1DataSet2TableAdapters.expenseTableAdapter expenseTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private ComponentFactory.Krypton.Toolkit.KryptonButton expAdd;
+        private System.Windows.Forms.ComboBox expType;
+        private System.Windows.Forms.Label label1;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel logementPanel;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private System.Windows.Forms.Label totLogement;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label pouLogement;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label pouNourriture;
+        private System.Windows.Forms.Label totNourriture;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label pouTransport;
+        private System.Windows.Forms.Label totTransport;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label pouAbonement;
+        private System.Windows.Forms.Label totAbonement;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label pouLoisirs;
+        private System.Windows.Forms.Label totLoisirs;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label16;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private FontAwesome.Sharp.IconButton iconButton6;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
     }
 }

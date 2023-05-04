@@ -40,8 +40,8 @@
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.shadowPanel = new System.Windows.Forms.Panel();
             this.desktopPanel = new System.Windows.Forms.Panel();
+            this.shadowPanel = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -61,7 +61,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 660);
+            this.panelMenu.Size = new System.Drawing.Size(200, 830);
             this.panelMenu.TabIndex = 0;
             // 
             // panelLogo
@@ -203,7 +203,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(200, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(854, 100);
+            this.panelTitleBar.Size = new System.Drawing.Size(1585, 100);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -240,8 +240,18 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 100);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(854, 560);
+            this.panelDesktop.Size = new System.Drawing.Size(1585, 730);
             this.panelDesktop.TabIndex = 3;
+            // 
+            // desktopPanel
+            // 
+            this.desktopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.desktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.desktopPanel.Location = new System.Drawing.Point(0, 9);
+            this.desktopPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.desktopPanel.Name = "desktopPanel";
+            this.desktopPanel.Size = new System.Drawing.Size(1585, 721);
+            this.desktopPanel.TabIndex = 1;
             // 
             // shadowPanel
             // 
@@ -249,23 +259,14 @@
             this.shadowPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.shadowPanel.Location = new System.Drawing.Point(0, 0);
             this.shadowPanel.Name = "shadowPanel";
-            this.shadowPanel.Size = new System.Drawing.Size(854, 9);
+            this.shadowPanel.Size = new System.Drawing.Size(1585, 9);
             this.shadowPanel.TabIndex = 0;
-            // 
-            // desktopPanel
-            // 
-            this.desktopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.desktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.desktopPanel.Location = new System.Drawing.Point(0, 9);
-            this.desktopPanel.Name = "desktopPanel";
-            this.desktopPanel.Size = new System.Drawing.Size(854, 551);
-            this.desktopPanel.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1054, 660);
+            this.ClientSize = new System.Drawing.Size(1785, 830);
             this.ControlBox = false;
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
