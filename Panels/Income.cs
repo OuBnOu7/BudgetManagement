@@ -18,7 +18,7 @@ namespace BudgetManagement.Panels
         {
             
             InitializeComponent();
-            display_data();
+            getAll();
         }
 
         private void display_data()
@@ -31,7 +31,8 @@ namespace BudgetManagement.Panels
 
             SqlCommand cmd3 = connection.CreateCommand();
             cmd3.CommandType = CommandType.Text;
-            cmd3.CommandText = "select Name,Amount,Category,Date,Description from [income]";
+            cmd3.CommandText = "select Name,Amount,Category,Date,Description from [income] where [User] = '"+Login.name+"'";
+            ///cmd3.Parameters.AddWithValue("@username", Login.name);
 
             cmd3.ExecuteNonQuery();
             DataTable dta = new DataTable();
@@ -62,7 +63,7 @@ namespace BudgetManagement.Panels
                 cmd.Parameters.AddWithValue("@val3", incType.Text);
                 cmd.Parameters.AddWithValue("@val4", DateTime.Parse(incDate.Text));
                 cmd.Parameters.AddWithValue("@val5", incDes.Text);
-                cmd.Parameters.AddWithValue("@val6", "Omar");
+                cmd.Parameters.AddWithValue("@val6", Login.name);
                 int rowsAffected = cmd.ExecuteNonQuery();
                 if (rowsAffected > 0)
                 {
@@ -75,6 +76,127 @@ namespace BudgetManagement.Panels
                 }
 
             }
+        }
+
+        private void getIncomeWeekly()
+        {
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT SUM(Amount) FROM income  WHERE [User] = '" + Login.name + "'AND Date >= DATEADD(DAY, 1 - DATEPART(WEEKDAY, GETDATE()), CAST(GETDATE() AS DATE)) AND Date<DATEADD(DAY, 8 - DATEPART(WEEKDAY, GETDATE()), CAST(GETDATE() AS DATE))";
+            ;
+            cmd.ExecuteNonQuery();
+            DataTable dta = new DataTable();
+            SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection); ;
+            dataadp.Fill(dta);
+            incheb.Text = dta.Rows[0][0].ToString();
+            if (dta.Rows[0][0].ToString() == "")
+            {
+                incheb.Text = "0";
+            }
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        private void getIncomeMonthly()
+        {
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT SUM(Amount) FROM income WHERE [User] = '" + Login.name + "'AND YEAR(Date) = YEAR(GETDATE()) AND MONTH(Date) = MONTH(GETDATE())";
+;
+            cmd.ExecuteNonQuery();
+            DataTable dta = new DataTable();
+            SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection); ;
+            dataadp.Fill(dta);
+            incMon.Text = dta.Rows[0][0].ToString();
+            incMon2.Text = dta.Rows[0][0].ToString();
+
+            if (dta.Rows[0][0].ToString() == "")
+            {
+                incMon.Text = "0";
+                incMon2.Text = "0";
+            }
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+        private void getIncomeAnnually()
+        {
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT SUM(Amount) FROM income WHERE [User] = '" + Login.name + "'AND YEAR(Date) = YEAR(GETDATE())";
+            ;
+            cmd.ExecuteNonQuery();
+            DataTable dta = new DataTable();
+            SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection); ;
+            dataadp.Fill(dta);
+            incAn.Text = dta.Rows[0][0].ToString();
+            if (dta.Rows[0][0].ToString() == "")
+            {
+                incAn.Text = "0";
+            }
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        private void getTranche()
+        {
+            float x = float.Parse(incMon2.Text);
+            switch (x)
+            {
+                case float n when n < 2501:
+                    incTax.Text = "0%";
+                    break;
+                case float n when n >= 2501 && n<4166 :
+                    incTax.Text = "10%";
+                    break;
+                case float n when n >= 4166 && n < 5000:
+                    incTax.Text = "20%";
+                    break;
+                case float n when n >= 5000 && n < 6666:
+                    incTax.Text = "30%";
+                    break;
+                case float n when n >= 6666 && n < 15000:
+                    incTax.Text = "34%";
+                    break;
+                case float n when n >= 15000:
+                    incTax.Text = "38%";
+                    break;
+                default:
+                    incTax.Text = "";
+                    break;
+
+            }
+        }
+
+        private void getAll()
+        {
+            display_data();
+            getIncomeWeekly();  
+            getIncomeMonthly();
+            getIncomeAnnually();
+            getTranche();
+            Form1.MonthlySalary = int.Parse(incMon.Text);
+
         }
     }
 }

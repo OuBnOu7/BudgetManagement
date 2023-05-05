@@ -16,6 +16,7 @@ namespace BudgetManagement
 {
     public partial class Form1 : Form
     {
+        public static float MonthlySalary = 0;
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
@@ -29,9 +30,10 @@ namespace BudgetManagement
             leftBorderBtn.Dock = DockStyle.None;
             leftBorderBtn.BringToFront();
             panelMenu.Controls.Add(leftBorderBtn);
-            //Form
+        //Form
 
-        }
+    }
+
         //Structs
         private struct RGBColors
         {

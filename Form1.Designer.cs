@@ -177,6 +177,7 @@
             // 
             // logoutBtn
             // 
+            this.logoutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.logoutBtn.FlatAppearance.BorderSize = 0;
             this.logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutBtn.ForeColor = System.Drawing.Color.White;
@@ -184,8 +185,8 @@
             this.logoutBtn.IconColor = System.Drawing.Color.White;
             this.logoutBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.logoutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logoutBtn.Location = new System.Drawing.Point(3, 587);
-            this.logoutBtn.Margin = new System.Windows.Forms.Padding(3, 200, 3, 3);
+            this.logoutBtn.Location = new System.Drawing.Point(3, 767);
+            this.logoutBtn.Margin = new System.Windows.Forms.Padding(3, 380, 3, 3);
             this.logoutBtn.Name = "logoutBtn";
             this.logoutBtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.logoutBtn.Size = new System.Drawing.Size(197, 50);

@@ -47,7 +47,7 @@ namespace BudgetManagement.Panels
                     cmd.Parameters.AddWithValue("@val3", expType.Text);
                     cmd.Parameters.AddWithValue("@val4", DateTime.Parse(expDate.Text));
                     cmd.Parameters.AddWithValue("@val5", expDes.Text);
-                    cmd.Parameters.AddWithValue("@val6", "Omar");
+                    cmd.Parameters.AddWithValue("@val6", Login.name);
                 int rowsAffected = cmd.ExecuteNonQuery();
                 if (rowsAffected > 0)
                 {
@@ -71,7 +71,7 @@ namespace BudgetManagement.Panels
 
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT SUM(Amount) FROM expense WHERE Category = '"+ type+"'";
+            cmd.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = '" + Login.name + "' AND Category = '" + type+"'";
             cmd.ExecuteNonQuery();
             DataTable dta = new DataTable();
             SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection); ;
@@ -85,9 +85,9 @@ namespace BudgetManagement.Panels
 
             SqlCommand cmd2 = connection.CreateCommand();
             cmd2.CommandType = CommandType.Text;
-            cmd2.CommandText = "SELECT (SUM(Amount)/(SELECT SUM(Amount) FROM expense)) * 100 AS Percentage FROM expense WHERE Category = '"+ type +"'";
+            cmd2.CommandText = "SELECT (SUM(Amount)/(SELECT SUM(Amount) FROM expense)) * 100 AS Percentage FROM expense WHERE [User] = '" + Login.name + "'AND Category = '" + type +"'";
             object result = cmd2.ExecuteScalar();
-            if (result != null)
+            if (result != DBNull.Value)
             {
                 double percentage = (double)result;
                 LabelPer.Text = Math.Round(percentage, 2).ToString();
@@ -114,7 +114,7 @@ namespace BudgetManagement.Panels
 
             SqlCommand cmd3 = connection.CreateCommand();
             cmd3.CommandType = CommandType.Text;
-            cmd3.CommandText = "select Name,Amount,Category,Date,Description from [expense]";
+            cmd3.CommandText = "select Name,Amount,Category,Date,Description from [expense] WHERE [User] = '" + Login.name + "'";
 
             cmd3.ExecuteNonQuery();
             DataTable dta = new DataTable();
@@ -128,6 +128,35 @@ namespace BudgetManagement.Panels
             }
         }
 
+        private void getState()
+        {
+            if (int.Parse(totLogement.Text)> 0.5 * Form1.MonthlySalary)
+            {
+                bilLogement.Text = ">50%";
+                bilLogement.ForeColor = Color.Red;
+            }
+            if (int.Parse(totTransport.Text) > 0.1 * Form1.MonthlySalary)
+            {
+                bilTransport.Text = ">10%";
+                bilTransport.ForeColor = Color.Red;
+            }
+            if (int.Parse(totAbonement.Text) > 0.1 * Form1.MonthlySalary)
+            {
+                bilAbonement.Text = ">10%";
+                bilAbonement.ForeColor = Color.Red;
+            }
+            if (int.Parse(totNourriture.Text) > 0.15 * Form1.MonthlySalary)
+            {
+                bilNourriture.Text = ">15%";
+                bilNourriture.ForeColor = Color.Red;
+            }
+            if (int.Parse(totLoisirs.Text) > 0.5 * Form1.MonthlySalary)
+            {
+                bilLoisirs.Text = ">5%";
+                bilLoisirs.ForeColor = Color.Red;
+            }
+        }
+
         private void getAll()
         {
             display_data();    
@@ -136,6 +165,7 @@ namespace BudgetManagement.Panels
             getDetails("Transport", totTransport, pouTransport);
             getDetails("Abonement", totAbonement, pouAbonement);
             getDetails("Loisirs", totLoisirs, pouLoisirs);
+            getState();
         }
 
     }

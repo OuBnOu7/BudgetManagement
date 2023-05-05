@@ -84,11 +84,11 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.bilLogement = new System.Windows.Forms.Label();
+            this.bilNourriture = new System.Windows.Forms.Label();
+            this.bilTransport = new System.Windows.Forms.Label();
+            this.bilAbonement = new System.Windows.Forms.Label();
+            this.bilLoisirs = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.totAbonement = new System.Windows.Forms.Label();
             this.pouAbonement = new System.Windows.Forms.Label();
@@ -737,74 +737,74 @@
             this.label28.Text = "Loisirs";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label29
+            // bilLogement
             // 
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.Lime;
-            this.label29.Location = new System.Drawing.Point(250, 121);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(144, 25);
-            this.label29.TabIndex = 26;
-            this.label29.Text = "<50%";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bilLogement.BackColor = System.Drawing.Color.Transparent;
+            this.bilLogement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bilLogement.ForeColor = System.Drawing.Color.Lime;
+            this.bilLogement.Location = new System.Drawing.Point(250, 121);
+            this.bilLogement.Name = "bilLogement";
+            this.bilLogement.Size = new System.Drawing.Size(144, 25);
+            this.bilLogement.TabIndex = 26;
+            this.bilLogement.Text = "<50%";
+            this.bilLogement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label30
+            // bilNourriture
             // 
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.Lime;
-            this.label30.Location = new System.Drawing.Point(250, 197);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(144, 25);
-            this.label30.TabIndex = 27;
-            this.label30.Text = "<15%";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bilNourriture.BackColor = System.Drawing.Color.Transparent;
+            this.bilNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bilNourriture.ForeColor = System.Drawing.Color.Lime;
+            this.bilNourriture.Location = new System.Drawing.Point(250, 197);
+            this.bilNourriture.Name = "bilNourriture";
+            this.bilNourriture.Size = new System.Drawing.Size(144, 25);
+            this.bilNourriture.TabIndex = 27;
+            this.bilNourriture.Text = "<15%";
+            this.bilNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label31
+            // bilTransport
             // 
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.Lime;
-            this.label31.Location = new System.Drawing.Point(250, 146);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(144, 25);
-            this.label31.TabIndex = 27;
-            this.label31.Text = "<10%";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bilTransport.BackColor = System.Drawing.Color.Transparent;
+            this.bilTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bilTransport.ForeColor = System.Drawing.Color.Lime;
+            this.bilTransport.Location = new System.Drawing.Point(250, 146);
+            this.bilTransport.Name = "bilTransport";
+            this.bilTransport.Size = new System.Drawing.Size(144, 25);
+            this.bilTransport.TabIndex = 27;
+            this.bilTransport.Text = "<10%";
+            this.bilTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label32
+            // bilAbonement
             // 
-            this.label32.BackColor = System.Drawing.Color.Transparent;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.Lime;
-            this.label32.Location = new System.Drawing.Point(250, 171);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(144, 25);
-            this.label32.TabIndex = 28;
-            this.label32.Text = "<10%";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bilAbonement.BackColor = System.Drawing.Color.Transparent;
+            this.bilAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bilAbonement.ForeColor = System.Drawing.Color.Lime;
+            this.bilAbonement.Location = new System.Drawing.Point(250, 171);
+            this.bilAbonement.Name = "bilAbonement";
+            this.bilAbonement.Size = new System.Drawing.Size(144, 25);
+            this.bilAbonement.TabIndex = 28;
+            this.bilAbonement.Text = "<10%";
+            this.bilAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label33
+            // bilLoisirs
             // 
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.Lime;
-            this.label33.Location = new System.Drawing.Point(250, 221);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(144, 25);
-            this.label33.TabIndex = 29;
-            this.label33.Text = "<5%";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bilLoisirs.BackColor = System.Drawing.Color.Transparent;
+            this.bilLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bilLoisirs.ForeColor = System.Drawing.Color.Lime;
+            this.bilLoisirs.Location = new System.Drawing.Point(250, 221);
+            this.bilLoisirs.Name = "bilLoisirs";
+            this.bilLoisirs.Size = new System.Drawing.Size(144, 25);
+            this.bilLoisirs.TabIndex = 29;
+            this.bilLoisirs.Text = "<5%";
+            this.bilLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // kryptonPanel1
             // 
             this.kryptonPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.kryptonPanel1.Controls.Add(this.label33);
-            this.kryptonPanel1.Controls.Add(this.label32);
-            this.kryptonPanel1.Controls.Add(this.label31);
-            this.kryptonPanel1.Controls.Add(this.label30);
-            this.kryptonPanel1.Controls.Add(this.label29);
+            this.kryptonPanel1.Controls.Add(this.bilLoisirs);
+            this.kryptonPanel1.Controls.Add(this.bilAbonement);
+            this.kryptonPanel1.Controls.Add(this.bilTransport);
+            this.kryptonPanel1.Controls.Add(this.bilNourriture);
+            this.kryptonPanel1.Controls.Add(this.bilLogement);
             this.kryptonPanel1.Controls.Add(this.label28);
             this.kryptonPanel1.Controls.Add(this.label27);
             this.kryptonPanel1.Controls.Add(this.label26);
@@ -1013,11 +1013,11 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label bilLogement;
+        private System.Windows.Forms.Label bilNourriture;
+        private System.Windows.Forms.Label bilTransport;
+        private System.Windows.Forms.Label bilAbonement;
+        private System.Windows.Forms.Label bilLoisirs;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.Label totAbonement;
         private System.Windows.Forms.Label pouAbonement;
