@@ -30,34 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.expName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.nourrituresPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.pouNourriture = new System.Windows.Forms.Label();
-            this.totNourriture = new System.Windows.Forms.Label();
-            this.transportPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.pouTransport = new System.Windows.Forms.Label();
-            this.totTransport = new System.Windows.Forms.Label();
-            this.panelwsf = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.pouAbonement = new System.Windows.Forms.Label();
-            this.totAbonement = new System.Windows.Forms.Label();
-            this.loisirsPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.pouLoisirs = new System.Windows.Forms.Label();
-            this.totLoisirs = new System.Windows.Forms.Label();
             this.expDate = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.expDes = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.expAmount = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -82,24 +54,49 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.label24 = new System.Windows.Forms.Label();
+            this.totTransport = new System.Windows.Forms.Label();
+            this.pouTransport = new System.Windows.Forms.Label();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.transportPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.totLoisirs = new System.Windows.Forms.Label();
+            this.pouLoisirs = new System.Windows.Forms.Label();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.loisirsPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.totNourriture = new System.Windows.Forms.Label();
+            this.pouNourriture = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.nourrituresPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nourrituresPanel)).BeginInit();
-            this.nourrituresPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.transportPanel)).BeginInit();
-            this.transportPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelwsf)).BeginInit();
-            this.panelwsf.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.loisirsPanel)).BeginInit();
-            this.loisirsPanel.SuspendLayout();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.totAbonement = new System.Windows.Forms.Label();
+            this.pouAbonement = new System.Windows.Forms.Label();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panelwsf = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource1)).BeginInit();
@@ -107,8 +104,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.logementPanel)).BeginInit();
             this.logementPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transportPanel)).BeginInit();
+            this.transportPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.loisirsPanel)).BeginInit();
+            this.loisirsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nourrituresPanel)).BeginInit();
+            this.nourrituresPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelwsf)).BeginInit();
+            this.panelwsf.SuspendLayout();
             this.SuspendLayout();
             // 
             // expName
@@ -118,352 +123,6 @@
             this.expName.Name = "expName";
             this.expName.Size = new System.Drawing.Size(214, 27);
             this.expName.TabIndex = 0;
-            // 
-            // nourrituresPanel
-            // 
-            this.nourrituresPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nourrituresPanel.Controls.Add(this.label18);
-            this.nourrituresPanel.Controls.Add(this.label2);
-            this.nourrituresPanel.Controls.Add(this.label19);
-            this.nourrituresPanel.Controls.Add(this.iconButton1);
-            this.nourrituresPanel.Controls.Add(this.pouNourriture);
-            this.nourrituresPanel.Controls.Add(this.totNourriture);
-            this.nourrituresPanel.Location = new System.Drawing.Point(63, 463);
-            this.nourrituresPanel.Name = "nourrituresPanel";
-            this.nourrituresPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.nourrituresPanel.Size = new System.Drawing.Size(431, 261);
-            this.nourrituresPanel.TabIndex = 7;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(213, 181);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(210, 41);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "%";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(113, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 41);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nourriture";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(-5, 181);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(210, 41);
-            this.label19.TabIndex = 25;
-            this.label19.Text = "MAD";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.BowlRice;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(40, 18);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(88, 63);
-            this.iconButton1.TabIndex = 1;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // pouNourriture
-            // 
-            this.pouNourriture.BackColor = System.Drawing.Color.Transparent;
-            this.pouNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pouNourriture.Location = new System.Drawing.Point(213, 99);
-            this.pouNourriture.Name = "pouNourriture";
-            this.pouNourriture.Size = new System.Drawing.Size(210, 41);
-            this.pouNourriture.TabIndex = 24;
-            this.pouNourriture.Text = "0";
-            this.pouNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // totNourriture
-            // 
-            this.totNourriture.BackColor = System.Drawing.Color.Transparent;
-            this.totNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totNourriture.Location = new System.Drawing.Point(-2, 99);
-            this.totNourriture.Name = "totNourriture";
-            this.totNourriture.Size = new System.Drawing.Size(210, 41);
-            this.totNourriture.TabIndex = 23;
-            this.totNourriture.Text = "0";
-            this.totNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // transportPanel
-            // 
-            this.transportPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.transportPanel.Controls.Add(this.label10);
-            this.transportPanel.Controls.Add(this.label3);
-            this.transportPanel.Controls.Add(this.label11);
-            this.transportPanel.Controls.Add(this.iconButton3);
-            this.transportPanel.Controls.Add(this.pouTransport);
-            this.transportPanel.Controls.Add(this.totTransport);
-            this.transportPanel.Location = new System.Drawing.Point(558, 186);
-            this.transportPanel.Name = "transportPanel";
-            this.transportPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.transportPanel.Size = new System.Drawing.Size(431, 261);
-            this.transportPanel.TabIndex = 8;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(218, 179);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(210, 41);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "%";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(113, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(208, 41);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Transport";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(0, 179);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(210, 41);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "MAD";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.Transparent;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Car;
-            this.iconButton3.IconColor = System.Drawing.Color.Yellow;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(40, 18);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(88, 63);
-            this.iconButton3.TabIndex = 3;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            // 
-            // pouTransport
-            // 
-            this.pouTransport.BackColor = System.Drawing.Color.Transparent;
-            this.pouTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pouTransport.Location = new System.Drawing.Point(218, 97);
-            this.pouTransport.Name = "pouTransport";
-            this.pouTransport.Size = new System.Drawing.Size(210, 41);
-            this.pouTransport.TabIndex = 16;
-            this.pouTransport.Text = "0";
-            this.pouTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // totTransport
-            // 
-            this.totTransport.BackColor = System.Drawing.Color.Transparent;
-            this.totTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totTransport.Location = new System.Drawing.Point(3, 97);
-            this.totTransport.Name = "totTransport";
-            this.totTransport.Size = new System.Drawing.Size(210, 41);
-            this.totTransport.TabIndex = 15;
-            this.totTransport.Text = "0";
-            this.totTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelwsf
-            // 
-            this.panelwsf.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panelwsf.Controls.Add(this.label14);
-            this.panelwsf.Controls.Add(this.label4);
-            this.panelwsf.Controls.Add(this.label15);
-            this.panelwsf.Controls.Add(this.iconButton2);
-            this.panelwsf.Controls.Add(this.pouAbonement);
-            this.panelwsf.Controls.Add(this.totAbonement);
-            this.panelwsf.Location = new System.Drawing.Point(1044, 186);
-            this.panelwsf.Name = "panelwsf";
-            this.panelwsf.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.panelwsf.Size = new System.Drawing.Size(431, 261);
-            this.panelwsf.TabIndex = 9;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(221, 179);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(210, 41);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "%";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(113, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(208, 41);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Abonement";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(3, 179);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(210, 41);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "MAD";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CreditCardAlt;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(40, 18);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(88, 63);
-            this.iconButton2.TabIndex = 2;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // pouAbonement
-            // 
-            this.pouAbonement.BackColor = System.Drawing.Color.Transparent;
-            this.pouAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pouAbonement.Location = new System.Drawing.Point(221, 97);
-            this.pouAbonement.Name = "pouAbonement";
-            this.pouAbonement.Size = new System.Drawing.Size(210, 41);
-            this.pouAbonement.TabIndex = 20;
-            this.pouAbonement.Text = "0";
-            this.pouAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // totAbonement
-            // 
-            this.totAbonement.BackColor = System.Drawing.Color.Transparent;
-            this.totAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totAbonement.Location = new System.Drawing.Point(6, 97);
-            this.totAbonement.Name = "totAbonement";
-            this.totAbonement.Size = new System.Drawing.Size(210, 41);
-            this.totAbonement.TabIndex = 19;
-            this.totAbonement.Text = "0";
-            this.totAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // loisirsPanel
-            // 
-            this.loisirsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.loisirsPanel.Controls.Add(this.label22);
-            this.loisirsPanel.Controls.Add(this.label5);
-            this.loisirsPanel.Controls.Add(this.label23);
-            this.loisirsPanel.Controls.Add(this.iconButton4);
-            this.loisirsPanel.Controls.Add(this.pouLoisirs);
-            this.loisirsPanel.Controls.Add(this.totLoisirs);
-            this.loisirsPanel.Location = new System.Drawing.Point(558, 463);
-            this.loisirsPanel.Name = "loisirsPanel";
-            this.loisirsPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.loisirsPanel.Size = new System.Drawing.Size(431, 261);
-            this.loisirsPanel.TabIndex = 10;
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(218, 181);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(210, 41);
-            this.label22.TabIndex = 30;
-            this.label22.Text = "%";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(113, 28);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(208, 41);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Loisirs";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label23
-            // 
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(0, 181);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(210, 41);
-            this.label23.TabIndex = 29;
-            this.label23.Text = "MAD";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.Transparent;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Gamepad;
-            this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(40, 18);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(88, 63);
-            this.iconButton4.TabIndex = 3;
-            this.iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // pouLoisirs
-            // 
-            this.pouLoisirs.BackColor = System.Drawing.Color.Transparent;
-            this.pouLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pouLoisirs.Location = new System.Drawing.Point(218, 99);
-            this.pouLoisirs.Name = "pouLoisirs";
-            this.pouLoisirs.Size = new System.Drawing.Size(210, 41);
-            this.pouLoisirs.TabIndex = 28;
-            this.pouLoisirs.Text = "0";
-            this.pouLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // totLoisirs
-            // 
-            this.totLoisirs.BackColor = System.Drawing.Color.Transparent;
-            this.totLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totLoisirs.Location = new System.Drawing.Point(3, 99);
-            this.totLoisirs.Name = "totLoisirs";
-            this.totLoisirs.Size = new System.Drawing.Size(210, 41);
-            this.totLoisirs.TabIndex = 27;
-            this.totLoisirs.Text = "0";
-            this.totLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // expDate
             // 
@@ -713,47 +372,288 @@
             this.label16.Text = "Description";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // kryptonPanel1
+            // totTransport
             // 
-            this.kryptonPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.kryptonPanel1.Controls.Add(this.label28);
-            this.kryptonPanel1.Controls.Add(this.label27);
-            this.kryptonPanel1.Controls.Add(this.label26);
-            this.kryptonPanel1.Controls.Add(this.label17);
-            this.kryptonPanel1.Controls.Add(this.label20);
-            this.kryptonPanel1.Controls.Add(this.label21);
-            this.kryptonPanel1.Controls.Add(this.iconButton6);
-            this.kryptonPanel1.Controls.Add(this.label24);
-            this.kryptonPanel1.Controls.Add(this.label25);
-            this.kryptonPanel1.Location = new System.Drawing.Point(1044, 463);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.kryptonPanel1.Size = new System.Drawing.Size(431, 261);
-            this.kryptonPanel1.TabIndex = 23;
+            this.totTransport.BackColor = System.Drawing.Color.Transparent;
+            this.totTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totTransport.Location = new System.Drawing.Point(3, 97);
+            this.totTransport.Name = "totTransport";
+            this.totTransport.Size = new System.Drawing.Size(210, 41);
+            this.totTransport.TabIndex = 15;
+            this.totTransport.Text = "0";
+            this.totTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label20
+            // pouTransport
             // 
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(113, 28);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(208, 41);
-            this.label20.TabIndex = 5;
-            this.label20.Text = "Bilan";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pouTransport.BackColor = System.Drawing.Color.Transparent;
+            this.pouTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pouTransport.Location = new System.Drawing.Point(218, 97);
+            this.pouTransport.Name = "pouTransport";
+            this.pouTransport.Size = new System.Drawing.Size(210, 41);
+            this.pouTransport.TabIndex = 16;
+            this.pouTransport.Text = "0";
+            this.pouTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label21
+            // iconButton3
             // 
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(3, 121);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(210, 25);
-            this.label21.TabIndex = 21;
-            this.label21.Text = "Logement";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.iconButton3.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Car;
+            this.iconButton3.IconColor = System.Drawing.Color.Yellow;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.Location = new System.Drawing.Point(40, 18);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(88, 63);
+            this.iconButton3.TabIndex = 3;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(0, 179);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(210, 41);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "MAD";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(113, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(208, 41);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Transport";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(218, 179);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(210, 41);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "%";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // transportPanel
+            // 
+            this.transportPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.transportPanel.Controls.Add(this.label10);
+            this.transportPanel.Controls.Add(this.label3);
+            this.transportPanel.Controls.Add(this.label11);
+            this.transportPanel.Controls.Add(this.iconButton3);
+            this.transportPanel.Controls.Add(this.pouTransport);
+            this.transportPanel.Controls.Add(this.totTransport);
+            this.transportPanel.Location = new System.Drawing.Point(558, 186);
+            this.transportPanel.Name = "transportPanel";
+            this.transportPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.transportPanel.Size = new System.Drawing.Size(431, 261);
+            this.transportPanel.TabIndex = 8;
+            // 
+            // totLoisirs
+            // 
+            this.totLoisirs.BackColor = System.Drawing.Color.Transparent;
+            this.totLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totLoisirs.Location = new System.Drawing.Point(3, 99);
+            this.totLoisirs.Name = "totLoisirs";
+            this.totLoisirs.Size = new System.Drawing.Size(210, 41);
+            this.totLoisirs.TabIndex = 27;
+            this.totLoisirs.Text = "0";
+            this.totLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pouLoisirs
+            // 
+            this.pouLoisirs.BackColor = System.Drawing.Color.Transparent;
+            this.pouLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pouLoisirs.Location = new System.Drawing.Point(218, 99);
+            this.pouLoisirs.Name = "pouLoisirs";
+            this.pouLoisirs.Size = new System.Drawing.Size(210, 41);
+            this.pouLoisirs.TabIndex = 28;
+            this.pouLoisirs.Text = "0";
+            this.pouLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Gamepad;
+            this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.Location = new System.Drawing.Point(40, 18);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(88, 63);
+            this.iconButton4.TabIndex = 3;
+            this.iconButton4.UseVisualStyleBackColor = false;
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(0, 181);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(210, 41);
+            this.label23.TabIndex = 29;
+            this.label23.Text = "MAD";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(113, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(208, 41);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Loisirs";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(218, 181);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(210, 41);
+            this.label22.TabIndex = 30;
+            this.label22.Text = "%";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // loisirsPanel
+            // 
+            this.loisirsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.loisirsPanel.Controls.Add(this.label22);
+            this.loisirsPanel.Controls.Add(this.label5);
+            this.loisirsPanel.Controls.Add(this.label23);
+            this.loisirsPanel.Controls.Add(this.iconButton4);
+            this.loisirsPanel.Controls.Add(this.pouLoisirs);
+            this.loisirsPanel.Controls.Add(this.totLoisirs);
+            this.loisirsPanel.Location = new System.Drawing.Point(558, 463);
+            this.loisirsPanel.Name = "loisirsPanel";
+            this.loisirsPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.loisirsPanel.Size = new System.Drawing.Size(431, 261);
+            this.loisirsPanel.TabIndex = 10;
+            // 
+            // totNourriture
+            // 
+            this.totNourriture.BackColor = System.Drawing.Color.Transparent;
+            this.totNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totNourriture.Location = new System.Drawing.Point(-2, 99);
+            this.totNourriture.Name = "totNourriture";
+            this.totNourriture.Size = new System.Drawing.Size(210, 41);
+            this.totNourriture.TabIndex = 23;
+            this.totNourriture.Text = "0";
+            this.totNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pouNourriture
+            // 
+            this.pouNourriture.BackColor = System.Drawing.Color.Transparent;
+            this.pouNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pouNourriture.Location = new System.Drawing.Point(213, 99);
+            this.pouNourriture.Name = "pouNourriture";
+            this.pouNourriture.Size = new System.Drawing.Size(210, 41);
+            this.pouNourriture.TabIndex = 24;
+            this.pouNourriture.Text = "0";
+            this.pouNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.BowlRice;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(40, 18);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(88, 63);
+            this.iconButton1.TabIndex = 1;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(-5, 181);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(210, 41);
+            this.label19.TabIndex = 25;
+            this.label19.Text = "MAD";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(113, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(208, 41);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Nourriture";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(213, 181);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(210, 41);
+            this.label18.TabIndex = 26;
+            this.label18.Text = "%";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // nourrituresPanel
+            // 
+            this.nourrituresPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nourrituresPanel.Controls.Add(this.label18);
+            this.nourrituresPanel.Controls.Add(this.label2);
+            this.nourrituresPanel.Controls.Add(this.label19);
+            this.nourrituresPanel.Controls.Add(this.iconButton1);
+            this.nourrituresPanel.Controls.Add(this.pouNourriture);
+            this.nourrituresPanel.Controls.Add(this.totNourriture);
+            this.nourrituresPanel.Location = new System.Drawing.Point(63, 463);
+            this.nourrituresPanel.Name = "nourrituresPanel";
+            this.nourrituresPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.nourrituresPanel.Size = new System.Drawing.Size(431, 261);
+            this.nourrituresPanel.TabIndex = 7;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(6, 78);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(210, 41);
+            this.label25.TabIndex = 19;
+            this.label25.Text = "Situation";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Lime;
+            this.label24.Location = new System.Drawing.Point(218, 78);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(210, 41);
+            this.label24.TabIndex = 20;
+            this.label24.Text = "Good";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // iconButton6
             // 
@@ -769,28 +669,29 @@
             this.iconButton6.TabIndex = 2;
             this.iconButton6.UseVisualStyleBackColor = false;
             // 
-            // label24
+            // label21
             // 
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Lime;
-            this.label24.Location = new System.Drawing.Point(218, 78);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(210, 41);
-            this.label24.TabIndex = 20;
-            this.label24.Text = "Good";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(3, 121);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(210, 25);
+            this.label21.TabIndex = 21;
+            this.label21.Text = "Logement";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label25
+            // label20
             // 
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(6, 78);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(210, 41);
-            this.label25.TabIndex = 19;
-            this.label25.Text = "Situation";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(113, 28);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(208, 41);
+            this.label20.TabIndex = 5;
+            this.label20.Text = "Bilan";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
             // 
@@ -800,7 +701,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(210, 25);
             this.label17.TabIndex = 22;
-            this.label17.Text = "Logement";
+            this.label17.Text = "Transport";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label26
@@ -811,7 +712,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(210, 25);
             this.label26.TabIndex = 23;
-            this.label26.Text = "Logement";
+            this.label26.Text = "Abonement";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label27
@@ -822,7 +723,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(210, 25);
             this.label27.TabIndex = 24;
-            this.label27.Text = "Logement";
+            this.label27.Text = "Nourriture";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label28
@@ -833,8 +734,177 @@
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(210, 25);
             this.label28.TabIndex = 25;
-            this.label28.Text = "Logement";
+            this.label28.Text = "Loisirs";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.Lime;
+            this.label29.Location = new System.Drawing.Point(250, 121);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(144, 25);
+            this.label29.TabIndex = 26;
+            this.label29.Text = "<50%";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.Lime;
+            this.label30.Location = new System.Drawing.Point(250, 197);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(144, 25);
+            this.label30.TabIndex = 27;
+            this.label30.Text = "<15%";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label31
+            // 
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Lime;
+            this.label31.Location = new System.Drawing.Point(250, 146);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(144, 25);
+            this.label31.TabIndex = 27;
+            this.label31.Text = "<10%";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.Lime;
+            this.label32.Location = new System.Drawing.Point(250, 171);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(144, 25);
+            this.label32.TabIndex = 28;
+            this.label32.Text = "<10%";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.Lime;
+            this.label33.Location = new System.Drawing.Point(250, 221);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(144, 25);
+            this.label33.TabIndex = 29;
+            this.label33.Text = "<5%";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // kryptonPanel1
+            // 
+            this.kryptonPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonPanel1.Controls.Add(this.label33);
+            this.kryptonPanel1.Controls.Add(this.label32);
+            this.kryptonPanel1.Controls.Add(this.label31);
+            this.kryptonPanel1.Controls.Add(this.label30);
+            this.kryptonPanel1.Controls.Add(this.label29);
+            this.kryptonPanel1.Controls.Add(this.label28);
+            this.kryptonPanel1.Controls.Add(this.label27);
+            this.kryptonPanel1.Controls.Add(this.label26);
+            this.kryptonPanel1.Controls.Add(this.label17);
+            this.kryptonPanel1.Controls.Add(this.label20);
+            this.kryptonPanel1.Controls.Add(this.label21);
+            this.kryptonPanel1.Controls.Add(this.iconButton6);
+            this.kryptonPanel1.Controls.Add(this.label24);
+            this.kryptonPanel1.Controls.Add(this.label25);
+            this.kryptonPanel1.Location = new System.Drawing.Point(1044, 463);
+            this.kryptonPanel1.Name = "kryptonPanel1";
+            this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.kryptonPanel1.Size = new System.Drawing.Size(431, 261);
+            this.kryptonPanel1.TabIndex = 23;
+            // 
+            // totAbonement
+            // 
+            this.totAbonement.BackColor = System.Drawing.Color.Transparent;
+            this.totAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totAbonement.Location = new System.Drawing.Point(6, 97);
+            this.totAbonement.Name = "totAbonement";
+            this.totAbonement.Size = new System.Drawing.Size(210, 41);
+            this.totAbonement.TabIndex = 19;
+            this.totAbonement.Text = "0";
+            this.totAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pouAbonement
+            // 
+            this.pouAbonement.BackColor = System.Drawing.Color.Transparent;
+            this.pouAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pouAbonement.Location = new System.Drawing.Point(221, 97);
+            this.pouAbonement.Name = "pouAbonement";
+            this.pouAbonement.Size = new System.Drawing.Size(210, 41);
+            this.pouAbonement.TabIndex = 20;
+            this.pouAbonement.Text = "0";
+            this.pouAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CreditCardAlt;
+            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(40, 18);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(88, 63);
+            this.iconButton2.TabIndex = 2;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(3, 179);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(210, 41);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "MAD";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(113, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(208, 41);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Abonement";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(221, 179);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(210, 41);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "%";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelwsf
+            // 
+            this.panelwsf.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelwsf.Controls.Add(this.label14);
+            this.panelwsf.Controls.Add(this.label4);
+            this.panelwsf.Controls.Add(this.label15);
+            this.panelwsf.Controls.Add(this.iconButton2);
+            this.panelwsf.Controls.Add(this.pouAbonement);
+            this.panelwsf.Controls.Add(this.totAbonement);
+            this.panelwsf.Location = new System.Drawing.Point(1044, 186);
+            this.panelwsf.Name = "panelwsf";
+            this.panelwsf.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
+            this.panelwsf.Size = new System.Drawing.Size(431, 261);
+            this.panelwsf.TabIndex = 9;
             // 
             // Expense
             // 
@@ -864,14 +934,6 @@
             this.Controls.Add(this.expName);
             this.Name = "Expense";
             this.Load += new System.EventHandler(this.Expense_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.nourrituresPanel)).EndInit();
-            this.nourrituresPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.transportPanel)).EndInit();
-            this.transportPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelwsf)).EndInit();
-            this.panelwsf.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.loisirsPanel)).EndInit();
-            this.loisirsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource1)).EndInit();
@@ -879,8 +941,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.logementPanel)).EndInit();
             this.logementPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transportPanel)).EndInit();
+            this.transportPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.loisirsPanel)).EndInit();
+            this.loisirsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nourrituresPanel)).EndInit();
+            this.nourrituresPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelwsf)).EndInit();
+            this.panelwsf.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -889,19 +959,7 @@
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox expName;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel nourrituresPanel;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel transportPanel;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelwsf;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel loisirsPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker expDate;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox expDes;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox expAmount;
         private Database1DataSet1 database1DataSet1;
@@ -919,37 +977,54 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label pouLogement;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label pouNourriture;
-        private System.Windows.Forms.Label totNourriture;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label pouTransport;
-        private System.Windows.Forms.Label totTransport;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label pouAbonement;
-        private System.Windows.Forms.Label totAbonement;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label pouLoisirs;
-        private System.Windows.Forms.Label totLoisirs;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label16;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label totTransport;
+        private System.Windows.Forms.Label pouTransport;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label10;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel transportPanel;
+        private System.Windows.Forms.Label totLoisirs;
+        private System.Windows.Forms.Label pouLoisirs;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label22;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel loisirsPanel;
+        private System.Windows.Forms.Label totNourriture;
+        private System.Windows.Forms.Label pouNourriture;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label18;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel nourrituresPanel;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private FontAwesome.Sharp.IconButton iconButton6;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private System.Windows.Forms.Label totAbonement;
+        private System.Windows.Forms.Label pouAbonement;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label14;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel panelwsf;
     }
 }

@@ -89,7 +89,8 @@ namespace BudgetManagement.Panels
             object result = cmd2.ExecuteScalar();
             if (result != null)
             {
-                LabelPer.Text = result.ToString();
+                double percentage = (double)result;
+                LabelPer.Text = Math.Round(percentage, 2).ToString();
             }
             else
             {
