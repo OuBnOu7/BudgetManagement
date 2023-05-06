@@ -40,11 +40,30 @@ namespace BudgetManagement.Panels
             else
             {
 
+                if (connection.State == ConnectionState.Closed)
+                {
                     connection.Open();
-                    string sql = "insert into expense(Name,Amount,Category,Date,Description,[User]) values (@val1, @val2, @val3, @val4, @val5, @val6)";
+                }
+                string sql = "insert into expense(Name,Amount,Category,Date,Description,[User]) values (@val1, @val2, @val3, @val4, @val5, @val6)";
                     SqlCommand cmd = new SqlCommand(sql, connection);
-                    cmd.Parameters.AddWithValue("@val1", expName.Text);
-                    cmd.Parameters.AddWithValue("@val2", float.Parse(expAmount.Text));
+
+                float amount;
+                try
+                {
+                    amount = float.Parse(expAmount.Text);
+                    // Conversion successful, use the result
+
+                }
+                catch (FormatException)
+                {
+                    // Conversion failed
+                    MessageBox.Show("Erreur , veuillez saisir un montant exacte !");
+                    return;
+
+                }
+
+                cmd.Parameters.AddWithValue("@val1", expName.Text);
+                    cmd.Parameters.AddWithValue("@val2", amount);
                     cmd.Parameters.AddWithValue("@val3", expType.Text);
                     cmd.Parameters.AddWithValue("@val4", DateTime.Parse(expDate.Text));
                     cmd.Parameters.AddWithValue("@val5", expDes.Text);
@@ -59,7 +78,10 @@ namespace BudgetManagement.Panels
                 {
                     MessageBox.Show("Erreur ! Ressayer Plus Tard .");
                 }
-
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
             }
         }
 
