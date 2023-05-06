@@ -167,6 +167,8 @@ namespace BudgetManagement.Panels
             getDetails("Abonement", totAbonement, pouAbonement);
             getDetails("Loisirs", totLoisirs, pouLoisirs);
             getState();
+            Login.getMonthlyExpense();
+            Login.getBalance();
         }
 
         private void download_Click(object sender, EventArgs e)

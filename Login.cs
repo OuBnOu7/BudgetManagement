@@ -17,11 +17,14 @@ namespace BudgetManagement
 {
     public partial class Login : Form
     {
+        public static int id;
         public static string name;
         public static string phone;
         public static string mail;
         public static DateTime birthday;
         public static float MonthlySalary = 0;
+        public static float MonthlyExpense = 0;
+        public static float solde = 0;
 
         SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Login()
@@ -49,7 +52,7 @@ namespace BudgetManagement
             {
                 MessageBox.Show("Veuillez Remplir Les Champs");
             }
-            else if (username.Text.Length < 6 || mdp.Text.Length < 6)
+            else if (username.Text.Length < 4 || mdp.Text.Length < 4)
             {
                 MessageBox.Show("Login et Le MDP doivent avoir au mois 6 Caracters !");
             }
@@ -77,6 +80,7 @@ namespace BudgetManagement
                 {
                     
                     MessageBox.Show("Login successful!");
+                    id = int.Parse(reader["Id"].ToString());
                     name = reader["Name"].ToString();
                     phone = reader["Phone"].ToString();
                     mail = reader["Adresse"].ToString();
@@ -86,6 +90,10 @@ namespace BudgetManagement
                     form1.Show();
                     reader.Close(); // I closed reader because it will be open again in the next method call
                     MonthlyIncome();
+                    reader.Close(); // I closed reader because it will be open again in the next method call
+                    getMonthlyExpense();
+                    reader.Close(); // I closed reader because it will be open again in the next method call
+                    getBalance();
 
 
 
@@ -114,8 +122,9 @@ namespace BudgetManagement
             register.Show();
         }
 
-        private void MonthlyIncome()
+        static public void getMonthlyExpense()
         {
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
@@ -128,11 +137,109 @@ namespace BudgetManagement
             {
                 if (reader.Read())
                 {
-                    Login.MonthlySalary = float.Parse(reader[0].ToString());
+                            if (!reader.IsDBNull(0))
+        {
+            Login.MonthlySalary = float.Parse(reader[0].ToString());
+        }
+        else
+        {
+            Login.MonthlySalary = 0;
+        }
                 }
 
                 reader.Close();
             }
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        static public void MonthlyIncome()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            SqlCommand cmd2 = connection.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = '" + Login.name + "'AND YEAR(Date) = YEAR(GETDATE()) AND MONTH(Date) = MONTH(GETDATE())";
+            using (SqlDataReader reader = cmd2.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    if (!reader.IsDBNull(0))
+                    {
+                        Login.MonthlyExpense = float.Parse(reader[0].ToString());
+                    }
+                    else
+                    {
+                        Login.MonthlyExpense = 0;
+                    }
+                }
+
+                reader.Close();
+            }
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        static public void getBalance()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            float totalIncome = 0;
+            float totalExpense = 0;
+
+
+            // Retrieve the total income
+            string incomeQuery = "SELECT SUM(Amount) FROM income WHERE [User] = @userId";
+            SqlCommand incomeCommand = new SqlCommand(incomeQuery, connection);
+            incomeCommand.Parameters.AddWithValue("@userId", Login.name);
+            object incomeResult = incomeCommand.ExecuteScalar();
+
+            if (incomeResult != DBNull.Value)
+            {
+                 totalIncome = Convert.ToSingle(incomeResult);
+            }
+            
+
+            // Retrieve the total expense
+            string expenseQuery = "SELECT SUM(Amount) FROM expense WHERE [User] = @userId";
+            SqlCommand expenseCommand = new SqlCommand(expenseQuery, connection);
+            expenseCommand.Parameters.AddWithValue("@userId", Login.name);
+            object expenseResult = expenseCommand.ExecuteScalar();
+
+            if (expenseResult != DBNull.Value)
+            {
+                 totalExpense = Convert.ToSingle(expenseResult);
+            }
+            
+
+            // Calculate the balance
+
+            Login.solde = totalIncome - totalExpense ;
+
+            // Update Balance in DB
+
+            string updateCreditCardQuery = "UPDATE [creditcard] SET [balance] = @newBalance WHERE [user] = @userId";
+            SqlCommand updateCreditCardCommand = new SqlCommand(updateCreditCardQuery, connection);
+
+            // Set the parameter values
+            updateCreditCardCommand.Parameters.AddWithValue("@newBalance", Login.solde);
+            updateCreditCardCommand.Parameters.AddWithValue("@userId", Login.id);
+
+            int rowsUpdated = updateCreditCardCommand.ExecuteNonQuery();
 
             if (connection.State == ConnectionState.Open)
             {

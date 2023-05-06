@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.logementPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.interetPlus = new System.Windows.Forms.Label();
-            this.gel = new System.Windows.Forms.Label();
+            this.dep = new System.Windows.Forms.Label();
+            this.rev = new System.Windows.Forms.Label();
             this.solde = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -67,8 +67,8 @@
             // logementPanel
             // 
             this.logementPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.logementPanel.Controls.Add(this.interetPlus);
-            this.logementPanel.Controls.Add(this.gel);
+            this.logementPanel.Controls.Add(this.dep);
+            this.logementPanel.Controls.Add(this.rev);
             this.logementPanel.Controls.Add(this.solde);
             this.logementPanel.Controls.Add(this.label3);
             this.logementPanel.Controls.Add(this.label2);
@@ -82,27 +82,27 @@
             this.logementPanel.Size = new System.Drawing.Size(511, 255);
             this.logementPanel.TabIndex = 27;
             // 
-            // interetPlus
+            // dep
             // 
-            this.interetPlus.BackColor = System.Drawing.Color.Transparent;
-            this.interetPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.interetPlus.Location = new System.Drawing.Point(329, 200);
-            this.interetPlus.Name = "interetPlus";
-            this.interetPlus.Size = new System.Drawing.Size(175, 41);
-            this.interetPlus.TabIndex = 20;
-            this.interetPlus.Text = "11000";
-            this.interetPlus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dep.BackColor = System.Drawing.Color.Transparent;
+            this.dep.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dep.Location = new System.Drawing.Point(329, 200);
+            this.dep.Name = "dep";
+            this.dep.Size = new System.Drawing.Size(175, 41);
+            this.dep.TabIndex = 20;
+            this.dep.Text = "11000";
+            this.dep.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // gel
+            // rev
             // 
-            this.gel.BackColor = System.Drawing.Color.Transparent;
-            this.gel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gel.Location = new System.Drawing.Point(329, 146);
-            this.gel.Name = "gel";
-            this.gel.Size = new System.Drawing.Size(179, 41);
-            this.gel.TabIndex = 19;
-            this.gel.Text = "11000";
-            this.gel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rev.BackColor = System.Drawing.Color.Transparent;
+            this.rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rev.Location = new System.Drawing.Point(329, 146);
+            this.rev.Name = "rev";
+            this.rev.Size = new System.Drawing.Size(179, 41);
+            this.rev.TabIndex = 19;
+            this.rev.Text = "11000";
+            this.rev.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // solde
             // 
@@ -123,7 +123,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(224, 41);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Interet Annuel ";
+            this.label3.Text = "Depense Mensuel";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -134,7 +134,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(228, 41);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Montant Gelé";
+            this.label2.Text = "Revenu Mensuel";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // totLogement
@@ -423,8 +423,8 @@
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonPanel logementPanel;
-        private System.Windows.Forms.Label interetPlus;
-        private System.Windows.Forms.Label gel;
+        private System.Windows.Forms.Label dep;
+        private System.Windows.Forms.Label rev;
         private System.Windows.Forms.Label solde;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

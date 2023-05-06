@@ -40,13 +40,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.date = new System.Windows.Forms.DateTimePicker();
+            this.creditcard = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // username
             // 
             this.username.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.username.Location = new System.Drawing.Point(175, 254);
+            this.username.Location = new System.Drawing.Point(175, 274);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(240, 22);
             this.username.TabIndex = 54;
@@ -68,7 +70,7 @@
             // 
             this.mdp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mdp.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.mdp.Location = new System.Drawing.Point(175, 330);
+            this.mdp.Location = new System.Drawing.Point(175, 329);
             this.mdp.Name = "mdp";
             this.mdp.Size = new System.Drawing.Size(240, 22);
             this.mdp.TabIndex = 52;
@@ -79,7 +81,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(127, 290);
+            this.label1.Location = new System.Drawing.Point(127, 299);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(347, 27);
             this.label1.TabIndex = 49;
@@ -92,7 +94,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.Control;
-            this.label12.Location = new System.Drawing.Point(127, 211);
+            this.label12.Location = new System.Drawing.Point(127, 244);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(347, 27);
             this.label12.TabIndex = 48;
@@ -114,7 +116,7 @@
             // 
             this.phone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.phone.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.phone.Location = new System.Drawing.Point(175, 414);
+            this.phone.Location = new System.Drawing.Point(175, 384);
             this.phone.Name = "phone";
             this.phone.Size = new System.Drawing.Size(240, 22);
             this.phone.TabIndex = 57;
@@ -125,7 +127,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(127, 374);
+            this.label2.Location = new System.Drawing.Point(127, 354);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(347, 27);
             this.label2.TabIndex = 56;
@@ -136,7 +138,7 @@
             // 
             this.adresse.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.adresse.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.adresse.Location = new System.Drawing.Point(175, 497);
+            this.adresse.Location = new System.Drawing.Point(175, 439);
             this.adresse.Name = "adresse";
             this.adresse.Size = new System.Drawing.Size(240, 22);
             this.adresse.TabIndex = 59;
@@ -147,7 +149,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(127, 457);
+            this.label3.Location = new System.Drawing.Point(127, 409);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(347, 27);
             this.label3.TabIndex = 58;
@@ -160,7 +162,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(127, 541);
+            this.label4.Location = new System.Drawing.Point(127, 464);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(347, 27);
             this.label4.TabIndex = 60;
@@ -169,10 +171,32 @@
             // 
             // date
             // 
-            this.date.Location = new System.Drawing.Point(175, 582);
+            this.date.Location = new System.Drawing.Point(175, 494);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(240, 22);
             this.date.TabIndex = 61;
+            // 
+            // creditcard
+            // 
+            this.creditcard.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.creditcard.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.creditcard.Location = new System.Drawing.Point(175, 549);
+            this.creditcard.Name = "creditcard";
+            this.creditcard.Size = new System.Drawing.Size(240, 22);
+            this.creditcard.TabIndex = 63;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(127, 519);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(347, 27);
+            this.label5.TabIndex = 62;
+            this.label5.Text = "Carte Bancaire";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Register
             // 
@@ -181,6 +205,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(591, 712);
             this.ControlBox = false;
+            this.Controls.Add(this.creditcard);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.date);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.adresse);
@@ -218,5 +244,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker date;
+        private System.Windows.Forms.TextBox creditcard;
+        private System.Windows.Forms.Label label5;
     }
 }

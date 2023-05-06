@@ -17,15 +17,16 @@ namespace BudgetManagement
         public Register()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void validate_Click(object sender, EventArgs e)
         {
-            if (username.Text == "" || mdp.Text == "" || phone.Text == "" || adresse.Text == "" || date.Text == "")
+            if (username.Text == "" || mdp.Text == "" || phone.Text == "" || adresse.Text == "" || date.Text == "" || creditcard.Text == "")
             {
-                MessageBox.Show("Veuillez Remplir Les Champs");
+                MessageBox.Show("Veuillez Remplir Tous Les Champs");
             }
-            else if (username.Text.Length < 6 || mdp.Text.Length < 6)
+            else if (username.Text.Length < 4 || mdp.Text.Length < 4)
             {
                 MessageBox.Show("Login et Le MDP doivent avoir au mois 6 Caracters !");
             }
@@ -47,13 +48,49 @@ namespace BudgetManagement
 
                 int rowsInserted = command.ExecuteNonQuery();
 
+
                 if (rowsInserted > 0)
                 {
-                    MessageBox.Show("Nouveau Utilisateur Creé avec succes!");
+                    //Select the id inserted in the user table
+                    SqlCommand getIdCommand = new SqlCommand("SELECT MAX(Id) FROM [user]", connection);
+                    object result = getIdCommand.ExecuteScalar();
+                    int userId = Convert.ToInt32(result);
+
+                    string insertCreditCardQuery = "INSERT INTO [creditcard] ([number], [exp], [balance], [hasDebt], [debt], [moisR], [interet], [user]) VALUES (@number, @exp, @balance, @hasDebt, @debt, @monthsRemaining, @interestRate, @userId)";
+                    SqlCommand creditCardCommand = new SqlCommand(insertCreditCardQuery, connection);
+
+                    creditCardCommand.Parameters.AddWithValue("@number", creditcard.Text);
+                    creditCardCommand.Parameters.AddWithValue("@exp", "10/27");
+                    creditCardCommand.Parameters.AddWithValue("@balance", float.Parse("0"));
+
+                    //Simulate an original credit card with debt or not
+
+                    Random random = new Random();
+                    Boolean hasDebt = random.Next(2) == 0;
+                    float debtAmount = hasDebt ? random.Next(10000, 100001) : 0;
+                    int monthsRemaining = hasDebt ? random.Next(12, 49) : 0;
+                    float interestRate = hasDebt ? (float)random.NextDouble() * (0.4f - 0.05f) + 0.05f : 0;
+
+                    creditCardCommand.Parameters.AddWithValue("@hasDebt", hasDebt);
+                    creditCardCommand.Parameters.AddWithValue("@debt", debtAmount);
+                    creditCardCommand.Parameters.AddWithValue("@monthsRemaining", monthsRemaining);
+                    creditCardCommand.Parameters.AddWithValue("@interestRate", interestRate);
+                    creditCardCommand.Parameters.AddWithValue("@userId", userId);
+
+                    int rowsInsertedCreditCard = creditCardCommand.ExecuteNonQuery();
+
+                    if (rowsInsertedCreditCard > 0)
+                    {
+                        MessageBox.Show("Nouveau Utilisateur Créé avec succès!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erreur lors de la création de la carte de crédit.");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Erreur Lors de la creation changer le username.");
+                    MessageBox.Show("Erreur Lors de la creation ! changer le username.");
                 }
 
                 if (connection.State == ConnectionState.Open)

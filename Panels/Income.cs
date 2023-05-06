@@ -70,7 +70,7 @@ namespace BudgetManagement.Panels
                 int rowsAffected = cmd.ExecuteNonQuery();
                 if (rowsAffected > 0)
                 {
-                    display_data();
+                    getAll();
                     MessageBox.Show("Ajout Avec Succes !");
                 }
                 else
@@ -198,7 +198,8 @@ namespace BudgetManagement.Panels
             getIncomeMonthly();
             getIncomeAnnually();
             getTranche();
-            Login.MonthlySalary = int.Parse(incMon.Text);
+            Login.MonthlyIncome();
+            Login.getBalance();
 
         }
 
