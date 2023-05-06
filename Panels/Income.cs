@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
+
+
 
 namespace BudgetManagement.Panels
 {
@@ -195,8 +198,52 @@ namespace BudgetManagement.Panels
             getIncomeMonthly();
             getIncomeAnnually();
             getTranche();
-            Form1.MonthlySalary = int.Parse(incMon.Text);
+            Login.MonthlySalary = int.Parse(incMon.Text);
 
         }
+
+        private void download_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "CSV Files (*.csv)|*.csv";
+            saveFileDialog.Title = "Save Downloaded Data";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    using (StreamWriter streamWriter = new StreamWriter(saveFileDialog.FileName))
+                    {
+                        // Write the headers
+                        for (int i = 0; i < incomeDataGrid.Columns.Count; i++)
+                        {
+                            streamWriter.Write(incomeDataGrid.Columns[i].HeaderText);
+                            if (i < incomeDataGrid.Columns.Count - 1)
+                                streamWriter.Write(",");
+                        }
+                        streamWriter.WriteLine();
+
+                        // Write the data
+                        for (int row = 0; row < incomeDataGrid.Rows.Count - 1; row++)
+                        {
+                            for (int col = 0; col < incomeDataGrid.Columns.Count; col++)
+                            {
+                                streamWriter.Write(incomeDataGrid.Rows[row].Cells[col].Value);
+                                if (col < incomeDataGrid.Columns.Count - 1)
+                                    streamWriter.Write(",");
+                            }
+                            streamWriter.WriteLine();
+                        }
+                    }
+
+                    MessageBox.Show("Data downloaded successfully!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error downloading data: " + ex.Message);
+                }
+            }
+        }
     }
-}
+    }
+

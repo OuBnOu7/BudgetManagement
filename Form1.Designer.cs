@@ -30,7 +30,6 @@
         {
             this.panelMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.logoBtn = new FontAwesome.Sharp.IconButton();
             this.dashBtn = new FontAwesome.Sharp.IconButton();
             this.walletBtn = new FontAwesome.Sharp.IconButton();
             this.incomeBtn = new FontAwesome.Sharp.IconButton();
@@ -42,11 +41,13 @@
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.desktopPanel = new System.Windows.Forms.Panel();
             this.shadowPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -66,33 +67,11 @@
             // 
             // panelLogo
             // 
-            this.panelLogo.Controls.Add(this.logoBtn);
+            this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Location = new System.Drawing.Point(3, 3);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(200, 140);
             this.panelLogo.TabIndex = 0;
-            // 
-            // logoBtn
-            // 
-            this.logoBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.logoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoBtn.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.logoBtn.IconChar = FontAwesome.Sharp.IconChar.Osi;
-            this.logoBtn.IconColor = System.Drawing.Color.Black;
-            this.logoBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.logoBtn.IconSize = 100;
-            this.logoBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.logoBtn.Location = new System.Drawing.Point(0, 0);
-            this.logoBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.logoBtn.Name = "logoBtn";
-            this.logoBtn.Size = new System.Drawing.Size(200, 152);
-            this.logoBtn.TabIndex = 0;
-            this.logoBtn.Text = "BenRik";
-            this.logoBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.logoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.logoBtn.UseVisualStyleBackColor = true;
-            this.logoBtn.Click += new System.EventHandler(this.logoBtn_Click);
             // 
             // dashBtn
             // 
@@ -263,6 +242,17 @@
             this.shadowPanel.Size = new System.Drawing.Size(1585, 9);
             this.shadowPanel.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::BudgetManagement.Properties.Resources.Logo_UseCWwaT6_transformed;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -282,6 +272,7 @@
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,9 +290,9 @@
         private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton logoutBtn;
         private System.Windows.Forms.Panel panelLogo;
-        private FontAwesome.Sharp.IconButton logoBtn;
         private System.Windows.Forms.Panel desktopPanel;
         private System.Windows.Forms.Panel shadowPanel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

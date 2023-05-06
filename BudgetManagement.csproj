@@ -138,6 +138,11 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\Visa_Logo.png" />
+    <None Include="Resources\CreditCard.png" />
+    <EmbeddedResource Include="Panels\Wallet.resx">
+      <DependentUpon>Wallet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>

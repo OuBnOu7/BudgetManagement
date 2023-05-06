@@ -40,22 +40,23 @@
             this.incDes = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.incDate = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.logementPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.incAn = new System.Windows.Forms.Label();
+            this.incMon = new System.Windows.Forms.Label();
+            this.incheb = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.totLogement = new System.Windows.Forms.Label();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.incName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.incMon2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.incTax = new System.Windows.Forms.Label();
-            this.incheb = new System.Windows.Forms.Label();
-            this.incMon = new System.Windows.Forms.Label();
-            this.incAn = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.incMon2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.download = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.incomeDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logementPanel)).BeginInit();
             this.logementPanel.SuspendLayout();
@@ -177,7 +178,7 @@
             // incDes
             // 
             this.incDes.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.incDes.Location = new System.Drawing.Point(495, 42);
+            this.incDes.Location = new System.Drawing.Point(495, 53);
             this.incDes.Name = "incDes";
             this.incDes.Size = new System.Drawing.Size(323, 73);
             this.incDes.TabIndex = 32;
@@ -211,6 +212,39 @@
             this.logementPanel.Size = new System.Drawing.Size(793, 255);
             this.logementPanel.TabIndex = 26;
             // 
+            // incAn
+            // 
+            this.incAn.BackColor = System.Drawing.Color.Transparent;
+            this.incAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incAn.Location = new System.Drawing.Point(417, 200);
+            this.incAn.Name = "incAn";
+            this.incAn.Size = new System.Drawing.Size(361, 41);
+            this.incAn.TabIndex = 20;
+            this.incAn.Text = "11000";
+            this.incAn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // incMon
+            // 
+            this.incMon.BackColor = System.Drawing.Color.Transparent;
+            this.incMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incMon.Location = new System.Drawing.Point(417, 146);
+            this.incMon.Name = "incMon";
+            this.incMon.Size = new System.Drawing.Size(361, 41);
+            this.incMon.TabIndex = 19;
+            this.incMon.Text = "11000";
+            this.incMon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // incheb
+            // 
+            this.incheb.BackColor = System.Drawing.Color.Transparent;
+            this.incheb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incheb.Location = new System.Drawing.Point(417, 94);
+            this.incheb.Name = "incheb";
+            this.incheb.Size = new System.Drawing.Size(361, 41);
+            this.incheb.TabIndex = 18;
+            this.incheb.Text = "11000";
+            this.incheb.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
@@ -243,6 +277,21 @@
             this.totLogement.TabIndex = 11;
             this.totLogement.Text = "Revenu Hebdomadaire";
             this.totLogement.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton5.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.MoneyBill;
+            this.iconButton5.IconColor = System.Drawing.Color.Green;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.Location = new System.Drawing.Point(221, 15);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(88, 63);
+            this.iconButton5.TabIndex = 10;
+            this.iconButton5.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -282,41 +331,16 @@
             this.kryptonPanel1.Size = new System.Drawing.Size(793, 249);
             this.kryptonPanel1.TabIndex = 27;
             // 
-            // label9
+            // incTax
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(294, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(208, 41);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Tranches";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(361, 41);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Votre Revenu Mensuel Net Est De ";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // incMon2
-            // 
-            this.incMon2.BackColor = System.Drawing.Color.Transparent;
-            this.incMon2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incMon2.Location = new System.Drawing.Point(417, 81);
-            this.incMon2.Name = "incMon2";
-            this.incMon2.Size = new System.Drawing.Size(361, 41);
-            this.incMon2.TabIndex = 15;
-            this.incMon2.Text = "11000";
-            this.incMon2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.incTax.BackColor = System.Drawing.Color.Transparent;
+            this.incTax.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incTax.Location = new System.Drawing.Point(417, 157);
+            this.incTax.Name = "incTax";
+            this.incTax.Size = new System.Drawing.Size(361, 41);
+            this.incTax.TabIndex = 17;
+            this.incTax.Text = "34%";
+            this.incTax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label8
             // 
@@ -329,49 +353,27 @@
             this.label8.Text = "Vous Faites Partie De La Tranche Avec Un Taux D\'impot De ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // incTax
+            // incMon2
             // 
-            this.incTax.BackColor = System.Drawing.Color.Transparent;
-            this.incTax.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incTax.Location = new System.Drawing.Point(417, 157);
-            this.incTax.Name = "incTax";
-            this.incTax.Size = new System.Drawing.Size(361, 41);
-            this.incTax.TabIndex = 17;
-            this.incTax.Text = "34%";
-            this.incTax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.incMon2.BackColor = System.Drawing.Color.Transparent;
+            this.incMon2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incMon2.Location = new System.Drawing.Point(417, 81);
+            this.incMon2.Name = "incMon2";
+            this.incMon2.Size = new System.Drawing.Size(361, 41);
+            this.incMon2.TabIndex = 15;
+            this.incMon2.Text = "11000";
+            this.incMon2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // incheb
+            // label4
             // 
-            this.incheb.BackColor = System.Drawing.Color.Transparent;
-            this.incheb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incheb.Location = new System.Drawing.Point(417, 94);
-            this.incheb.Name = "incheb";
-            this.incheb.Size = new System.Drawing.Size(361, 41);
-            this.incheb.TabIndex = 18;
-            this.incheb.Text = "11000";
-            this.incheb.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // incMon
-            // 
-            this.incMon.BackColor = System.Drawing.Color.Transparent;
-            this.incMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incMon.Location = new System.Drawing.Point(417, 146);
-            this.incMon.Name = "incMon";
-            this.incMon.Size = new System.Drawing.Size(361, 41);
-            this.incMon.TabIndex = 19;
-            this.incMon.Text = "11000";
-            this.incMon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // incAn
-            // 
-            this.incAn.BackColor = System.Drawing.Color.Transparent;
-            this.incAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incAn.Location = new System.Drawing.Point(417, 200);
-            this.incAn.Name = "incAn";
-            this.incAn.Size = new System.Drawing.Size(361, 41);
-            this.incAn.TabIndex = 20;
-            this.incAn.Text = "11000";
-            this.incAn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(11, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(361, 41);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Votre Revenu Mensuel Net Est De ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // iconButton1
             // 
@@ -388,20 +390,33 @@
             this.iconButton1.TabIndex = 10;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
-            // iconButton5
+            // label9
             // 
-            this.iconButton5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton5.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.ForeColor = System.Drawing.Color.Transparent;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.MoneyBill;
-            this.iconButton5.IconColor = System.Drawing.Color.Green;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(221, 15);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(88, 63);
-            this.iconButton5.TabIndex = 10;
-            this.iconButton5.UseVisualStyleBackColor = false;
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(294, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(208, 41);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Tranches";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // download
+            // 
+            this.download.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.download.BackColor = System.Drawing.Color.Transparent;
+            this.download.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.download.IconColor = System.Drawing.Color.Black;
+            this.download.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.download.Location = new System.Drawing.Point(769, 5);
+            this.download.Name = "download";
+            this.download.Size = new System.Drawing.Size(49, 43);
+            this.download.TabIndex = 43;
+            this.download.UseVisualStyleBackColor = false;
+            this.download.Click += new System.EventHandler(this.download_Click);
             // 
             // Income
             // 
@@ -410,6 +425,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1675, 707);
             this.ControlBox = false;
+            this.Controls.Add(this.download);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label13);
@@ -467,5 +483,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label incMon2;
         private System.Windows.Forms.Label label4;
+        private FontAwesome.Sharp.IconButton download;
     }
 }

@@ -16,7 +16,6 @@ namespace BudgetManagement
 {
     public partial class Form1 : Form
     {
-        public static float MonthlySalary = 0;
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
@@ -24,6 +23,7 @@ namespace BudgetManagement
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(197, 7);
             leftBorderBtn.Location = new Point(0, 100);

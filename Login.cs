@@ -12,6 +12,7 @@ using System.Data.SqlClient;
 using FontAwesome.Sharp;
 
 
+
 namespace BudgetManagement
 {
     public partial class Login : Form
@@ -20,11 +21,15 @@ namespace BudgetManagement
         public static string phone;
         public static string mail;
         public static DateTime birthday;
+        public static float MonthlySalary = 0;
 
         SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Login()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.AcceptButton = validate;
+
         }
 
         //Drag Form
@@ -70,6 +75,7 @@ namespace BudgetManagement
 
                 if (reader.Read())
                 {
+                    
                     MessageBox.Show("Login successful!");
                     name = reader["Name"].ToString();
                     phone = reader["Phone"].ToString();
@@ -78,6 +84,8 @@ namespace BudgetManagement
                     Form1 form1 = new Form1();
                     this.Hide();
                     form1.Show();
+                    reader.Close(); // I closed reader because it will be open again in the next method call
+                    MonthlyIncome();
 
 
 
@@ -88,6 +96,7 @@ namespace BudgetManagement
                 }
 
 
+
                 if (connection.State == ConnectionState.Open)
                 {
                     connection.Close();
@@ -96,11 +105,41 @@ namespace BudgetManagement
 
         }
 
+
+
         private void register_Click(object sender, EventArgs e)
         {
             this.Hide();
             Register register = new Register();
             register.Show();
         }
+
+        private void MonthlyIncome()
+        {
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            SqlCommand cmd2 = connection.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "SELECT SUM(Amount) FROM income WHERE [User] = '" + Login.name + "'AND YEAR(Date) = YEAR(GETDATE()) AND MONTH(Date) = MONTH(GETDATE())";
+            using (SqlDataReader reader = cmd2.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    Login.MonthlySalary = float.Parse(reader[0].ToString());
+                }
+
+                reader.Close();
+            }
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
     }
+
 }

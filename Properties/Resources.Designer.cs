@@ -73,6 +73,16 @@ namespace BudgetManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CreditCard {
+            get {
+                object obj = ResourceManager.GetObject("CreditCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gdg {
             get {
                 object obj = ResourceManager.GetObject("gdg", resourceCulture);
@@ -116,6 +126,16 @@ namespace BudgetManagement.Properties {
         internal static System.Drawing.Bitmap Sans_titre__2_ {
             get {
                 object obj = ResourceManager.GetObject("Sans titre (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Visa_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Visa_Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

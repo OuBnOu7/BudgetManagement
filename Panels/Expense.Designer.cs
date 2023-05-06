@@ -97,6 +97,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panelwsf = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.download = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseBindingSource1)).BeginInit();
@@ -137,9 +138,9 @@
             // expDes
             // 
             this.expDes.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.expDes.Location = new System.Drawing.Point(462, 45);
+            this.expDes.Location = new System.Drawing.Point(430, 45);
             this.expDes.Name = "expDes";
-            this.expDes.Size = new System.Drawing.Size(278, 79);
+            this.expDes.Size = new System.Drawing.Size(278, 58);
             this.expDes.TabIndex = 13;
             this.expDes.Text = "";
             // 
@@ -182,9 +183,9 @@
             // expAdd
             // 
             this.expAdd.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.expAdd.Location = new System.Drawing.Point(462, 130);
+            this.expAdd.Location = new System.Drawing.Point(430, 124);
             this.expAdd.Name = "expAdd";
-            this.expAdd.Size = new System.Drawing.Size(278, 45);
+            this.expAdd.Size = new System.Drawing.Size(278, 43);
             this.expAdd.TabIndex = 18;
             this.expAdd.Values.Text = "Ajouter Depenses";
             this.expAdd.Click += new System.EventHandler(this.expAdd_Click);
@@ -365,7 +366,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(458, 15);
+            this.label16.Location = new System.Drawing.Point(426, 15);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(192, 27);
             this.label16.TabIndex = 24;
@@ -906,6 +907,20 @@
             this.panelwsf.Size = new System.Drawing.Size(431, 261);
             this.panelwsf.TabIndex = 9;
             // 
+            // download
+            // 
+            this.download.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.download.BackColor = System.Drawing.Color.Transparent;
+            this.download.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.download.IconColor = System.Drawing.Color.Black;
+            this.download.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.download.Location = new System.Drawing.Point(722, 124);
+            this.download.Name = "download";
+            this.download.Size = new System.Drawing.Size(49, 43);
+            this.download.TabIndex = 25;
+            this.download.UseVisualStyleBackColor = false;
+            this.download.Click += new System.EventHandler(this.download_Click);
+            // 
             // Expense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -914,6 +929,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1675, 736);
             this.ControlBox = false;
+            this.Controls.Add(this.download);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label13);
@@ -1026,5 +1042,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label14;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel panelwsf;
+        private FontAwesome.Sharp.IconButton download;
     }
 }

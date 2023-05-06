@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace BudgetManagement.Panels
 {
@@ -71,7 +72,7 @@ namespace BudgetManagement.Panels
 
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = '" + Login.name + "' AND Category = '" + type+"'";
+            cmd.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = '" + Login.name + "' AND Category = '" + type+ "' AND YEAR(Date) = YEAR(GETDATE()) AND MONTH(Date) = MONTH(GETDATE())";
             cmd.ExecuteNonQuery();
             DataTable dta = new DataTable();
             SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection); ;
@@ -85,7 +86,7 @@ namespace BudgetManagement.Panels
 
             SqlCommand cmd2 = connection.CreateCommand();
             cmd2.CommandType = CommandType.Text;
-            cmd2.CommandText = "SELECT (SUM(Amount)/(SELECT SUM(Amount) FROM expense)) * 100 AS Percentage FROM expense WHERE [User] = '" + Login.name + "'AND Category = '" + type +"'";
+            cmd2.CommandText = "SELECT (SUM(Amount)/(SELECT SUM(Amount) FROM expense)) * 100 AS Percentage FROM expense WHERE [User] = '" + Login.name + "'AND Category = '" + type + "' AND YEAR(Date) = YEAR(GETDATE()) AND MONTH(Date) = MONTH(GETDATE())";
             object result = cmd2.ExecuteScalar();
             if (result != DBNull.Value)
             {
@@ -130,27 +131,27 @@ namespace BudgetManagement.Panels
 
         private void getState()
         {
-            if (int.Parse(totLogement.Text)> 0.5 * Form1.MonthlySalary)
+            if (int.Parse(totLogement.Text)> 0.5 * Login.MonthlySalary)
             {
                 bilLogement.Text = ">50%";
                 bilLogement.ForeColor = Color.Red;
             }
-            if (int.Parse(totTransport.Text) > 0.1 * Form1.MonthlySalary)
+            if (int.Parse(totTransport.Text) > 0.1 * Login.MonthlySalary)
             {
                 bilTransport.Text = ">10%";
                 bilTransport.ForeColor = Color.Red;
             }
-            if (int.Parse(totAbonement.Text) > 0.1 * Form1.MonthlySalary)
+            if (int.Parse(totAbonement.Text) > 0.1 * Login.MonthlySalary)
             {
                 bilAbonement.Text = ">10%";
                 bilAbonement.ForeColor = Color.Red;
             }
-            if (int.Parse(totNourriture.Text) > 0.15 * Form1.MonthlySalary)
+            if (int.Parse(totNourriture.Text) > 0.15 * Login.MonthlySalary)
             {
                 bilNourriture.Text = ">15%";
                 bilNourriture.ForeColor = Color.Red;
             }
-            if (int.Parse(totLoisirs.Text) > 0.5 * Form1.MonthlySalary)
+            if (int.Parse(totLoisirs.Text) > 0.5 * Login.MonthlySalary)
             {
                 bilLoisirs.Text = ">5%";
                 bilLoisirs.ForeColor = Color.Red;
@@ -168,5 +169,47 @@ namespace BudgetManagement.Panels
             getState();
         }
 
+        private void download_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "CSV Files (*.csv)|*.csv";
+            saveFileDialog.Title = "Save Downloaded Data";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    using (StreamWriter streamWriter = new StreamWriter(saveFileDialog.FileName))
+                    {
+                        // Write the headers
+                        for (int i = 0; i < dataGridView1.Columns.Count; i++)
+                        {
+                            streamWriter.Write(dataGridView1.Columns[i].HeaderText);
+                            if (i < dataGridView1.Columns.Count - 1)
+                                streamWriter.Write(",");
+                        }
+                        streamWriter.WriteLine();
+
+                        // Write the data
+                        for (int row = 0; row < dataGridView1.Rows.Count - 1; row++)
+                        {
+                            for (int col = 0; col < dataGridView1.Columns.Count; col++)
+                            {
+                                streamWriter.Write(dataGridView1.Rows[row].Cells[col].Value);
+                                if (col < dataGridView1.Columns.Count - 1)
+                                    streamWriter.Write(",");
+                            }
+                            streamWriter.WriteLine();
+                        }
+                    }
+
+                    MessageBox.Show("Data downloaded successfully!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error downloading data: " + ex.Message);
+                }
+            }
+        }
     }
 }
