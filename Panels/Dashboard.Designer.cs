@@ -28,15 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.kryptonMonthCalendar1 = new ComponentFactory.Krypton.Toolkit.KryptonMonthCalendar();
             this.SuspendLayout();
-            // 
-            // kryptonMonthCalendar1
-            // 
-            this.kryptonMonthCalendar1.Location = new System.Drawing.Point(12, 12);
-            this.kryptonMonthCalendar1.Name = "kryptonMonthCalendar1";
-            this.kryptonMonthCalendar1.Size = new System.Drawing.Size(391, 220);
-            this.kryptonMonthCalendar1.TabIndex = 0;
             // 
             // Dashboard
             // 
@@ -44,7 +36,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1503, 736);
             this.ControlBox = false;
-            this.Controls.Add(this.kryptonMonthCalendar1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Dashboard";
@@ -55,7 +46,5 @@
         }
 
         #endregion
-
-        private ComponentFactory.Krypton.Toolkit.KryptonMonthCalendar kryptonMonthCalendar1;
     }
 }
