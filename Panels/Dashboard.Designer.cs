@@ -28,104 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Syncfusion.Windows.Forms.Chart.ChartSeries chartSeries1 = new Syncfusion.Windows.Forms.Chart.ChartSeries();
-            Syncfusion.Windows.Forms.Chart.ChartCustomShapeInfo chartCustomShapeInfo1 = new Syncfusion.Windows.Forms.Chart.ChartCustomShapeInfo();
-            Syncfusion.Windows.Forms.Chart.ChartLineInfo chartLineInfo1 = new Syncfusion.Windows.Forms.Chart.ChartLineInfo();
-            Syncfusion.Windows.Forms.Chart.ChartSeries chartSeries2 = new Syncfusion.Windows.Forms.Chart.ChartSeries();
-            Syncfusion.Windows.Forms.Chart.ChartCustomShapeInfo chartCustomShapeInfo2 = new Syncfusion.Windows.Forms.Chart.ChartCustomShapeInfo();
-            this.pieChart = new Syncfusion.Windows.Forms.Chart.ChartControl();
-            this.chartControl2 = new Syncfusion.Windows.Forms.Chart.ChartControl();
+            this.bunifuRadialGauge1 = new Bunifu.UI.WinForms.BunifuRadialGauge();
             this.SuspendLayout();
             // 
-            // pieChart
+            // bunifuRadialGauge1
             // 
-            this.pieChart.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74))))));
-            this.pieChart.ChartArea.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Transparent);
-            this.pieChart.ChartArea.CursorLocation = new System.Drawing.Point(0, 0);
-            this.pieChart.ChartArea.CursorReDraw = false;
-            this.pieChart.DataSourceName = "[none]";
-            this.pieChart.IsWindowLess = false;
-            // 
-            // 
-            // 
-            this.pieChart.Legend.Location = new System.Drawing.Point(713, 81);
-            this.pieChart.Localize = null;
-            this.pieChart.Location = new System.Drawing.Point(12, 12);
-            this.pieChart.Name = "pieChart";
-            this.pieChart.PrimaryXAxis.LogLabelsDisplayMode = Syncfusion.Windows.Forms.Chart.LogLabelsDisplayMode.Default;
-            this.pieChart.PrimaryXAxis.Margin = true;
-            this.pieChart.PrimaryXAxis.TitleColor = System.Drawing.SystemColors.ControlText;
-            this.pieChart.PrimaryYAxis.LogLabelsDisplayMode = Syncfusion.Windows.Forms.Chart.LogLabelsDisplayMode.Default;
-            this.pieChart.PrimaryYAxis.Margin = true;
-            this.pieChart.PrimaryYAxis.TitleColor = System.Drawing.SystemColors.ControlText;
-            chartSeries1.FancyToolTip.ResizeInsideSymbol = true;
-            chartSeries1.Name = "Default0";
-            chartSeries1.Resolution = 0D;
-            chartSeries1.StackingGroup = "Default Group";
-            chartSeries1.Style.AltTagFormat = "";
-            chartSeries1.Style.DrawTextShape = false;
-            chartLineInfo1.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
-            chartLineInfo1.Color = System.Drawing.SystemColors.ControlText;
-            chartLineInfo1.DashPattern = null;
-            chartLineInfo1.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            chartLineInfo1.Width = 1F;
-            chartCustomShapeInfo1.Border = chartLineInfo1;
-            chartCustomShapeInfo1.Color = System.Drawing.SystemColors.HighlightText;
-            chartCustomShapeInfo1.Type = Syncfusion.Windows.Forms.Chart.ChartCustomShape.Square;
-            chartSeries1.Style.TextShape = chartCustomShapeInfo1;
-            chartSeries1.Text = "Default0";
-            chartSeries1.Type = Syncfusion.Windows.Forms.Chart.ChartSeriesType.Pie;
-            chartSeries2.FancyToolTip.ResizeInsideSymbol = true;
-            chartSeries2.Name = "Default1";
-            chartSeries2.Resolution = 0D;
-            chartSeries2.StackingGroup = "Default Group";
-            chartSeries2.Style.AltTagFormat = "";
-            chartSeries2.Style.DrawTextShape = false;
-            chartCustomShapeInfo2.Border = chartLineInfo1;
-            chartCustomShapeInfo2.Color = System.Drawing.SystemColors.HighlightText;
-            chartCustomShapeInfo2.Type = Syncfusion.Windows.Forms.Chart.ChartCustomShape.Square;
-            chartSeries2.Style.TextShape = chartCustomShapeInfo2;
-            chartSeries2.Text = "Default1";
-            chartSeries2.Type = Syncfusion.Windows.Forms.Chart.ChartSeriesType.Pie;
-            this.pieChart.Series.Add(chartSeries1);
-            this.pieChart.Series.Add(chartSeries2);
-            this.pieChart.Size = new System.Drawing.Size(795, 428);
-            this.pieChart.TabIndex = 0;
-            this.pieChart.Text = "chartControl1";
-            // 
-            // 
-            // 
-            this.pieChart.Title.Name = "Default";
-            this.pieChart.Titles.Add(this.pieChart.Title);
-            this.pieChart.VisualTheme = "";
-            // 
-            // chartControl2
-            // 
-            this.chartControl2.BackInterior = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74))))));
-            this.chartControl2.ChartArea.CursorLocation = new System.Drawing.Point(0, 0);
-            this.chartControl2.ChartArea.CursorReDraw = false;
-            this.chartControl2.DataSourceName = "[none]";
-            this.chartControl2.IsWindowLess = false;
-            // 
-            // 
-            // 
-            this.chartControl2.Legend.Location = new System.Drawing.Point(557, 81);
-            this.chartControl2.Localize = null;
-            this.chartControl2.Location = new System.Drawing.Point(813, 12);
-            this.chartControl2.Name = "chartControl2";
-            this.chartControl2.PrimaryXAxis.LogLabelsDisplayMode = Syncfusion.Windows.Forms.Chart.LogLabelsDisplayMode.Default;
-            this.chartControl2.PrimaryXAxis.Margin = true;
-            this.chartControl2.PrimaryYAxis.LogLabelsDisplayMode = Syncfusion.Windows.Forms.Chart.LogLabelsDisplayMode.Default;
-            this.chartControl2.PrimaryYAxis.Margin = true;
-            this.chartControl2.Size = new System.Drawing.Size(678, 428);
-            this.chartControl2.TabIndex = 1;
-            this.chartControl2.Text = "chartControl2";
-            // 
-            // 
-            // 
-            this.chartControl2.Title.Name = "Default";
-            this.chartControl2.Titles.Add(this.chartControl2.Title);
-            this.chartControl2.VisualTheme = "";
+            this.bunifuRadialGauge1.AutoGenerateProgressColorWhenHigh = true;
+            this.bunifuRadialGauge1.AutoGenerateProgressColorWhenLow = false;
+            this.bunifuRadialGauge1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuRadialGauge1.Font = new System.Drawing.Font("Century Gothic", 18F);
+            this.bunifuRadialGauge1.LighteningFactor = 70;
+            this.bunifuRadialGauge1.Location = new System.Drawing.Point(16, 16);
+            this.bunifuRadialGauge1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.bunifuRadialGauge1.Maximum = 100;
+            this.bunifuRadialGauge1.Minimum = 0;
+            this.bunifuRadialGauge1.Name = "bunifuRadialGauge1";
+            this.bunifuRadialGauge1.Prefix = "";
+            this.bunifuRadialGauge1.ProgressBackColor = System.Drawing.Color.LightBlue;
+            this.bunifuRadialGauge1.ProgressBgColor = System.Drawing.Color.LightBlue;
+            this.bunifuRadialGauge1.ProgressCap = Bunifu.UI.WinForms.BunifuRadialGauge.CapStyles.Flat;
+            this.bunifuRadialGauge1.ProgressColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuRadialGauge1.ProgressColor1 = System.Drawing.Color.DodgerBlue;
+            this.bunifuRadialGauge1.ProgressColor2 = System.Drawing.Color.Crimson;
+            this.bunifuRadialGauge1.ProgressColorHigh = System.Drawing.Color.Crimson;
+            this.bunifuRadialGauge1.ProgressColorLow = System.Drawing.Color.DodgerBlue;
+            this.bunifuRadialGauge1.ProgressHighValueMark = 70;
+            this.bunifuRadialGauge1.RangeEnd = 100;
+            this.bunifuRadialGauge1.RangeLabelsColor = System.Drawing.Color.Black;
+            this.bunifuRadialGauge1.RangeLabelsFont = new System.Drawing.Font("Segoe UI", 8F);
+            this.bunifuRadialGauge1.RangeStart = 0;
+            this.bunifuRadialGauge1.ShowRangeLabels = true;
+            this.bunifuRadialGauge1.ShowValueLabel = true;
+            this.bunifuRadialGauge1.Size = new System.Drawing.Size(361, 289);
+            this.bunifuRadialGauge1.Suffix = "%";
+            this.bunifuRadialGauge1.TabIndex = 0;
+            this.bunifuRadialGauge1.Thickness = 30;
+            this.bunifuRadialGauge1.Value = 40;
+            this.bunifuRadialGauge1.ValueByTransition = 40;
+            this.bunifuRadialGauge1.ValueLabelColor = System.Drawing.Color.Black;
+            this.bunifuRadialGauge1.WarningMark = 70;
             // 
             // Dashboard
             // 
@@ -134,8 +75,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1503, 736);
             this.ControlBox = false;
-            this.Controls.Add(this.chartControl2);
-            this.Controls.Add(this.pieChart);
+            this.Controls.Add(this.bunifuRadialGauge1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -148,7 +88,6 @@
 
         #endregion
 
-        private Syncfusion.Windows.Forms.Chart.ChartControl pieChart;
-        private Syncfusion.Windows.Forms.Chart.ChartControl chartControl2;
+        private Bunifu.UI.WinForms.BunifuRadialGauge bunifuRadialGauge1;
     }
 }

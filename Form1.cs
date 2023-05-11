@@ -225,14 +225,14 @@ namespace BudgetManagement
         {
 
         }
-        //private void getAll()
-        //{
-        //    Login.MonthlyIncome();
-        //    total_Expense.Text = Login.MonthlySalary.ToString();
-        //    Login.getMonthlyExpense();
-        //    total_Income.Text = Login.MonthlyExpense.ToString();
-        //    Login.getBalance();
-        //    Balance.Text = Login.solde.ToString();
-        //}
+        private void getAll()
+        {
+            Login.MonthlyIncome();
+            total_Expense.Text = Login.MonthlySalary.ToString();
+            Login.getMonthlyExpense();
+            total_Income.Text = Login.MonthlyExpense.ToString();
+            Login.getBalance();
+            Balance.Text = Login.solde.ToString();
+        }
     }
 }
