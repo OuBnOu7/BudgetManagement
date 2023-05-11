@@ -15,7 +15,7 @@ namespace BudgetManagement.Panels
 {
     public partial class Income : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Income()
         {
             
