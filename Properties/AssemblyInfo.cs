@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("BudgetManagement")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Omar Bnh")]
+[assembly: AssemblyCompany("HP")]
 [assembly: AssemblyProduct("BudgetManagement")]
-[assembly: AssemblyCopyright("Copyright © Omar Bnh 2023")]
+[assembly: AssemblyCopyright("Copyright © HP 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

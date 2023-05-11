@@ -340,6 +340,10 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\accounting.png" />
+    <None Include="Resources\justice.png" />
+    <None Include="Resources\expenses.png" />
+    <None Include="Resources\salary.png" />
     <None Include="Resources\Visa_Logo.png" />
     <None Include="Resources\CreditCard.png" />
     <EmbeddedResource Include="Panels\Alarm.resx">
