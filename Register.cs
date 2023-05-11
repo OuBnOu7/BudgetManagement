@@ -8,16 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace BudgetManagement
 {
     public partial class Register : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+
+
+        private readonly FontAwesome.Sharp.IconPictureBox iconBack = new FontAwesome.Sharp.IconPictureBox(); SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Register()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+
+
         }
 
         private void validate_Click(object sender, EventArgs e)
@@ -26,10 +31,20 @@ namespace BudgetManagement
             {
                 MessageBox.Show("Veuillez Remplir Tous Les Champs");
             }
+            else if (!Regex.IsMatch(phone.Text, @"^(\+[0-9]{1,3})?[0-9]{10}$"))
+            {
+                MessageBox.Show("Numéro de téléphone Invalide");
+            }
+
             else if (username.Text.Length < 4 || mdp.Text.Length < 4)
             {
                 MessageBox.Show("Login et Le MDP doivent avoir au mois 6 Caracters !");
             }
+            //else if (!Regex.IsMatch(creditcard.Text, @"^(4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"))
+            //{
+            //    MessageBox.Show("Entrez carte bancaire Valide ! ");
+            //}
+
             else
             {
                 if (connection.State == ConnectionState.Closed)
@@ -82,6 +97,10 @@ namespace BudgetManagement
                     if (rowsInsertedCreditCard > 0)
                     {
                         MessageBox.Show("Nouveau Utilisateur Créé avec succès!");
+                        Login login1 = new Login();
+                        this.Hide();
+                        login1.Show();
+
                     }
                     else
                     {
@@ -99,6 +118,23 @@ namespace BudgetManagement
                 }
             }
 
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Login login1 = new Login();
+            this.Hide();
+            login1.Show();
         }
     }
 }

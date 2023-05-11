@@ -9,14 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
-
-
+using System.Text.RegularExpressions;
 
 namespace BudgetManagement.Panels
 {
     public partial class Income : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Income()
         {
             
@@ -54,6 +53,10 @@ namespace BudgetManagement.Panels
             if (incAmount.Text == "" || incName.Text == "" || incType.Text == "" || incDate.Text == "" || incDes.Text == "")
             {
                 MessageBox.Show("Veuillez Remplir Les Champs");
+            }
+            else if (!Regex.IsMatch(incName.Text, @"^[0-9]+([,.][0-9]+)?$"))
+            {
+                MessageBox.Show("Le montant doit être un nombre valide.");
             }
             else
             {
