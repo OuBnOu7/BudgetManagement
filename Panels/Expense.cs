@@ -160,27 +160,27 @@ namespace BudgetManagement.Panels
 
         private void getState()
         {
-            if (int.Parse(totLogement.Text)> 0.5 * Login.MonthlySalary)
+            if (int.Parse(totLogement.Text)> 0.5 * Login.IncomeM)
             {
                 bilLogement.Text = ">50%";
                 bilLogement.ForeColor = Color.Red;
             }
-            if (int.Parse(totTransport.Text) > 0.1 * Login.MonthlySalary)
+            if (int.Parse(totTransport.Text) > 0.1 * Login.IncomeM)
             {
                 bilTransport.Text = ">10%";
                 bilTransport.ForeColor = Color.Red;
             }
-            if (int.Parse(totAbonement.Text) > 0.1 * Login.MonthlySalary)
+            if (int.Parse(totAbonement.Text) > 0.1 * Login.IncomeM)
             {
                 bilAbonement.Text = ">10%";
                 bilAbonement.ForeColor = Color.Red;
             }
-            if (int.Parse(totNourriture.Text) > 0.15 * Login.MonthlySalary)
+            if (int.Parse(totNourriture.Text) > 0.15 * Login.IncomeM)
             {
                 bilNourriture.Text = ">15%";
                 bilNourriture.ForeColor = Color.Red;
             }
-            if (int.Parse(totLoisirs.Text) > 0.5 * Login.MonthlySalary)
+            if (int.Parse(totLoisirs.Text) > 0.5 * Login.IncomeM)
             {
                 bilLoisirs.Text = ">5%";
                 bilLoisirs.ForeColor = Color.Red;
@@ -196,7 +196,7 @@ namespace BudgetManagement.Panels
             getDetails("Abonement", totAbonement, pouAbonement);
             getDetails("Loisirs", totLoisirs, pouLoisirs);
             getState();
-            Login.getMonthlyExpense();
+            Login.getExpenseM();
             Login.getBalance();
         }
 

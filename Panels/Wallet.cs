@@ -49,8 +49,8 @@ namespace BudgetManagement.Panels
                     bankId.Text = number;
                     bankExp.Text = exp;
                     solde.Text = balance.ToString();
-                    rev.Text = Login.MonthlySalary.ToString();
-                    dep.Text = Login.MonthlyExpense.ToString();
+                    rev.Text = Login.IncomeM.ToString();
+                    dep.Text = Login.ExpenseM.ToString();
 
 
                     bool wachDebt = Convert.ToBoolean(reader["hasDebt"]);

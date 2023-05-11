@@ -22,9 +22,14 @@ namespace BudgetManagement
         public static string phone;
         public static string mail;
         public static DateTime birthday;
-        public static float MonthlySalary = 0;
-        public static float MonthlyExpense = 0;
+        public static float IncomeM = 0;
+        public static float IncomeW = 0;
+        public static float IncomeA = 0;
+        public static float ExpenseM = 0;
+        public static float ExpenseW = 0;
+        public static float ExpenseA = 0;
         public static float solde = 0;
+        public static string bilan = "M";
 
         SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Login()
@@ -88,11 +93,6 @@ namespace BudgetManagement
                     Form1 form1 = new Form1();
                     this.Hide();
                     form1.Show();
-                    reader.Close(); // I closed reader because it will be open again in the next method call
-                    MonthlyIncome();
-                    reader.Close(); // I closed reader because it will be open again in the next method call
-                    getMonthlyExpense();
-                    reader.Close(); // I closed reader because it will be open again in the next method call
                     getBalance();
 
 
@@ -122,7 +122,85 @@ namespace BudgetManagement
             register.Show();
         }
 
-        static public void getMonthlyExpense()
+
+        //Get Income
+
+        static public void getIncomeA()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            SqlCommand cmd2 = connection.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "SELECT SUM(Amount) FROM income WHERE [User] = '" + Login.name + "'AND YEAR(Date) = YEAR(GETDATE())";
+            using (SqlDataReader reader = cmd2.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                            if (!reader.IsDBNull(0))
+        {
+            Login.IncomeA = float.Parse(reader[0].ToString());
+        }
+        else
+        {
+            Login.IncomeA = 0;
+        }
+                }
+
+                reader.Close();
+            }
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        static public void getIncomeW()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+
+            DateTime currentDate = DateTime.Now;
+            DateTime startOfWeek = currentDate.AddDays(-1 * (int)currentDate.DayOfWeek);
+            DateTime endOfWeek = startOfWeek.AddDays(6);
+            SqlCommand cmd2 = connection.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "SELECT SUM(Amount) FROM income WHERE [User] = @username AND Date >= @startDate AND Date <= @endDate";
+            cmd2.Parameters.AddWithValue("@username", Login.name);
+            cmd2.Parameters.AddWithValue("@startDate", startOfWeek.Date);
+            cmd2.Parameters.AddWithValue("@endDate", endOfWeek.Date);
+            using (SqlDataReader reader = cmd2.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    if (!reader.IsDBNull(0))
+                    {
+                        Login.IncomeW = float.Parse(reader[0].ToString());
+                    }
+                    else
+                    {
+                        Login.IncomeW = 0;
+                    }
+                }
+
+                reader.Close();
+            }
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        static public void getIncomeM()
         {
             SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
             if (connection.State == ConnectionState.Closed)
@@ -137,14 +215,14 @@ namespace BudgetManagement
             {
                 if (reader.Read())
                 {
-                            if (!reader.IsDBNull(0))
-        {
-            Login.MonthlySalary = float.Parse(reader[0].ToString());
-        }
-        else
-        {
-            Login.MonthlySalary = 0;
-        }
+                    if (!reader.IsDBNull(0))
+                    {
+                        Login.IncomeM = float.Parse(reader[0].ToString());
+                    }
+                    else
+                    {
+                        Login.IncomeM = 0;
+                    }
                 }
 
                 reader.Close();
@@ -156,7 +234,48 @@ namespace BudgetManagement
             }
         }
 
-        static public void MonthlyIncome()
+
+        //Get Expense
+        static public void getExpenseW()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            DateTime currentDate = DateTime.Now;
+            DateTime startOfWeek = currentDate.AddDays(-1 * (int)currentDate.DayOfWeek);
+            DateTime endOfWeek = startOfWeek.AddDays(6);
+            SqlCommand cmd2 = connection.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = @username AND Date >= @startDate AND Date <= @endDate";
+            cmd2.Parameters.AddWithValue("@username", Login.name);
+            cmd2.Parameters.AddWithValue("@startDate", startOfWeek.Date);
+            cmd2.Parameters.AddWithValue("@endDate", endOfWeek.Date);
+            using (SqlDataReader reader = cmd2.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    if (!reader.IsDBNull(0))
+                    {
+                        Login.ExpenseW = float.Parse(reader[0].ToString());
+                    }
+                    else
+                    {
+                        Login.ExpenseW = 0;
+                    }
+                }
+
+                reader.Close();
+            }
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+        static public void getExpenseM()
         {
             SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
             if (connection.State == ConnectionState.Closed)
@@ -173,11 +292,11 @@ namespace BudgetManagement
                 {
                     if (!reader.IsDBNull(0))
                     {
-                        Login.MonthlyExpense = float.Parse(reader[0].ToString());
+                        Login.ExpenseM = float.Parse(reader[0].ToString());
                     }
                     else
                     {
-                        Login.MonthlyExpense = 0;
+                        Login.ExpenseM = 0;
                     }
                 }
 
@@ -190,6 +309,41 @@ namespace BudgetManagement
             }
         }
 
+        static public void getExpenseA()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            SqlCommand cmd2 = connection.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = '" + Login.name + "'AND YEAR(Date) = YEAR(GETDATE()) AND MONTH(Date) = MONTH(GETDATE())";
+            using (SqlDataReader reader = cmd2.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    if (!reader.IsDBNull(0))
+                    {
+                        Login.ExpenseA = float.Parse(reader[0].ToString());
+                    }
+                    else
+                    {
+                        Login.ExpenseA = 0;
+                    }
+                }
+
+                reader.Close();
+            }
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        //Get Balance
         static public void getBalance()
         {
             SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");

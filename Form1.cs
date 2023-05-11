@@ -195,44 +195,21 @@ namespace BudgetManagement
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new Alarm());
         }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
         private void getAll()
         {
-            Login.MonthlyIncome();
-            total_Expense.Text = Login.MonthlySalary.ToString();
-            Login.getMonthlyExpense();
-            total_Income.Text = Login.MonthlyExpense.ToString();
+            Login.getIncomeM();
+            Income_Total.Text = Login.IncomeM.ToString();
+            Login.getExpenseM();
+            Expense_Total.Text = Login.ExpenseM.ToString();
             Login.getBalance();
-            Balance.Text = Login.solde.ToString();
+            Balance_Total.Text = Login.solde.ToString();
+        }
+
+        private void incType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (incType.Text == "Mensuel") {Login.bilan = "Mensuel"; Login.getExpenseM(); Login.getIncomeM(); Expense_Total.Text = Login.ExpenseM.ToString(); Income_Total.Text = Login.IncomeM.ToString(); }
+            else if (incType.Text == "Annuel") { Login.bilan = "Annuel"; Login.getExpenseA(); Login.getIncomeA(); Expense_Total.Text = Login.ExpenseA.ToString(); Income_Total.Text = Login.IncomeA.ToString(); }
+            else if (incType.Text == "Hebdomadaire") { Login.bilan = "Hebdomadaire"; Login.getExpenseW(); Login.getIncomeW(); Expense_Total.Text = Login.ExpenseW.ToString(); Income_Total.Text = Login.IncomeW.ToString(); }
         }
     }
 }
