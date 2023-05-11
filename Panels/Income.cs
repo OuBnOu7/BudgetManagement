@@ -221,7 +221,9 @@ namespace BudgetManagement.Panels
             getIncomeMonthly();
             getIncomeAnnually();
             getTranche();
+            Login.getIncomeW();
             Login.getIncomeM();
+            Login.getIncomeA();
             Login.getBalance();
 
         }

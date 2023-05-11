@@ -90,6 +90,9 @@ namespace BudgetManagement.Panels
             }
         }
 
+        //Get Monthly Weekly or Yearly Details
+
+        // Monthly
         private void getDetails(string type,System.Windows.Forms.Label Label, System.Windows.Forms.Label LabelPer)
         {
             if (connection.State == ConnectionState.Closed)
@@ -133,6 +136,53 @@ namespace BudgetManagement.Panels
                 connection.Close();
             }
         }
+
+        // Yearly
+        private void getDetailsA(string type, System.Windows.Forms.Label Label, System.Windows.Forms.Label LabelPer)
+        {
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = '" + Login.name + "' AND Category = '" + type + "' AND YEAR(Date) = YEAR(GETDATE())";
+            cmd.ExecuteNonQuery();
+            DataTable dta = new DataTable();
+            SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection); ;
+            dataadp.Fill(dta);
+            Label.Text = dta.Rows[0][0].ToString();
+            if (dta.Rows[0][0].ToString() == "")
+            {
+                Label.Text = "0";
+            }
+
+
+            SqlCommand cmd2 = connection.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "SELECT (SUM(Amount) / (SELECT SUM(Amount) FROM expense WHERE [User] = @userName)) * 100 AS Percentage FROM expense WHERE[User] = @userName AND Category = @category AND YEAR(Date) = YEAR(GETDATE())";
+            cmd2.Parameters.AddWithValue("@userName", Login.name);
+            cmd2.Parameters.AddWithValue("@category", type);
+            object result = cmd2.ExecuteScalar();
+            if (result != DBNull.Value)
+            {
+                double percentage = (double)result;
+                LabelPer.Text = Math.Round(percentage, 2).ToString();
+            }
+            else
+            {
+                LabelPer.Text = "0";
+            }
+
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        // Display data in the datagrid
 
         private void display_data()
         {
@@ -189,14 +239,32 @@ namespace BudgetManagement.Panels
 
         private void getAll()
         {
-            display_data();    
-            getDetails("Logement", totLogement, pouLogement);
-            getDetails("Nourriture", totNourriture, pouNourriture);
-            getDetails("Transport", totTransport, pouTransport);
-            getDetails("Abonement", totAbonement, pouAbonement);
-            getDetails("Loisirs", totLoisirs, pouLoisirs);
+            display_data();
+
+            if (Login.bilan == "Mensuel")
+            {
+                getDetails("Logement", totLogement, pouLogement);
+                getDetails("Nourriture", totNourriture, pouNourriture);
+                getDetails("Transport", totTransport, pouTransport);
+                getDetails("Abonement", totAbonement, pouAbonement);
+                getDetails("Loisirs", totLoisirs, pouLoisirs);
+            }
+
+            else if (Login.bilan == "Annuel") {
+                getDetailsA("Logement", totLogement, pouLogement);
+                getDetailsA("Nourriture", totNourriture, pouNourriture);
+                getDetailsA("Transport", totTransport, pouTransport);
+                getDetailsA("Abonement", totAbonement, pouAbonement);
+                getDetailsA("Loisirs", totLoisirs, pouLoisirs);
+            }
+            else if (Login.bilan == "Hebdomadaire") {
+            
+            }
+
             getState();
             Login.getExpenseM();
+            Login.getExpenseA();
+            Login.getExpenseW();
             Login.getBalance();
         }
 

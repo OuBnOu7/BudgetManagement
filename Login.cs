@@ -29,7 +29,7 @@ namespace BudgetManagement
         public static float ExpenseW = 0;
         public static float ExpenseA = 0;
         public static float solde = 0;
-        public static string bilan = "M";
+        public static string bilan = "Mensuel";
 
         SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Login()
@@ -319,7 +319,7 @@ namespace BudgetManagement
 
             SqlCommand cmd2 = connection.CreateCommand();
             cmd2.CommandType = CommandType.Text;
-            cmd2.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = '" + Login.name + "'AND YEAR(Date) = YEAR(GETDATE()) AND MONTH(Date) = MONTH(GETDATE())";
+            cmd2.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = '" + Login.name + "'AND YEAR(Date) = YEAR(GETDATE())";
             using (SqlDataReader reader = cmd2.ExecuteReader())
             {
                 if (reader.Read())

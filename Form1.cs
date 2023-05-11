@@ -23,6 +23,7 @@ namespace BudgetManagement
         public Form1()
         {
             InitializeComponent();
+            incType.SelectedIndex = 1;
             getAll();
             this.StartPosition = FormStartPosition.CenterScreen;
             leftBorderBtn = new Panel();
@@ -210,6 +211,9 @@ namespace BudgetManagement
             if (incType.Text == "Mensuel") {Login.bilan = "Mensuel"; Login.getExpenseM(); Login.getIncomeM(); Expense_Total.Text = Login.ExpenseM.ToString(); Income_Total.Text = Login.IncomeM.ToString(); }
             else if (incType.Text == "Annuel") { Login.bilan = "Annuel"; Login.getExpenseA(); Login.getIncomeA(); Expense_Total.Text = Login.ExpenseA.ToString(); Income_Total.Text = Login.IncomeA.ToString(); }
             else if (incType.Text == "Hebdomadaire") { Login.bilan = "Hebdomadaire"; Login.getExpenseW(); Login.getIncomeW(); Expense_Total.Text = Login.ExpenseW.ToString(); Income_Total.Text = Login.IncomeW.ToString(); }
+
+            dashBtn.PerformClick();
+
         }
     }
 }
