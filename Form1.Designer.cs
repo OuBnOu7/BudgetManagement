@@ -30,6 +30,30 @@
         {
             this.panelMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.desktopPanel = new System.Windows.Forms.Panel();
+            this.shadowPanel = new System.Windows.Forms.Panel();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.total_Income = new System.Windows.Forms.Label();
+            this.Income_Total = new System.Windows.Forms.Label();
+            this.total_Expense = new System.Windows.Forms.Label();
+            this.Expense_Total = new System.Windows.Forms.Label();
+            this.Balance = new System.Windows.Forms.Label();
+            this.Balance_Total = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dashBtn = new FontAwesome.Sharp.IconButton();
             this.walletBtn = new FontAwesome.Sharp.IconButton();
@@ -37,18 +61,22 @@
             this.expenseBtn = new FontAwesome.Sharp.IconButton();
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.logoutBtn = new FontAwesome.Sharp.IconButton();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.desktopPanel = new System.Windows.Forms.Panel();
-            this.shadowPanel = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panelTitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelDesktop.SuspendLayout();
+            this.panelTitleBar.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -75,6 +103,282 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(200, 140);
             this.panelLogo.TabIndex = 0;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.Controls.Add(this.desktopPanel);
+            this.panelDesktop.Controls.Add(this.shadowPanel);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(205, 88);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1165, 684);
+            this.panelDesktop.TabIndex = 3;
+            // 
+            // desktopPanel
+            // 
+            this.desktopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.desktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.desktopPanel.Location = new System.Drawing.Point(0, 10);
+            this.desktopPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.desktopPanel.Name = "desktopPanel";
+            this.desktopPanel.Size = new System.Drawing.Size(1165, 674);
+            this.desktopPanel.TabIndex = 1;
+            // 
+            // shadowPanel
+            // 
+            this.shadowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.shadowPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.shadowPanel.Location = new System.Drawing.Point(0, 0);
+            this.shadowPanel.Name = "shadowPanel";
+            this.shadowPanel.Size = new System.Drawing.Size(1165, 10);
+            this.shadowPanel.TabIndex = 0;
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(81)))));
+            this.panelTitleBar.Controls.Add(this.panel1);
+            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
+            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(205, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(1165, 88);
+            this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(72, 32);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(62, 25);
+            this.lblTitleChildForm.TabIndex = 1;
+            this.lblTitleChildForm.Text = "Home";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Location = new System.Drawing.Point(168, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(994, 85);
+            this.panel1.TabIndex = 2;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.panel5, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(988, 82);
+            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.total_Income);
+            this.panel2.Controls.Add(this.Income_Total);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(241, 76);
+            this.panel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.total_Expense);
+            this.panel3.Controls.Add(this.Expense_Total);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(250, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(241, 76);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Controls.Add(this.Balance);
+            this.panel4.Controls.Add(this.Balance_Total);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(497, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(241, 76);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(744, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(241, 76);
+            this.panel5.TabIndex = 3;
+            // 
+            // total_Income
+            // 
+            this.total_Income.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.total_Income.AutoSize = true;
+            this.total_Income.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_Income.ForeColor = System.Drawing.Color.Gainsboro;
+            this.total_Income.Location = new System.Drawing.Point(154, 9);
+            this.total_Income.Name = "total_Income";
+            this.total_Income.Size = new System.Drawing.Size(74, 25);
+            this.total_Income.TabIndex = 2;
+            this.total_Income.Text = "Income";
+            // 
+            // Income_Total
+            // 
+            this.Income_Total.AutoSize = true;
+            this.Income_Total.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Income_Total.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Income_Total.Location = new System.Drawing.Point(164, 34);
+            this.Income_Total.Name = "Income_Total";
+            this.Income_Total.Size = new System.Drawing.Size(64, 32);
+            this.Income_Total.TabIndex = 3;
+            this.Income_Total.Text = "0.00";
+            this.Income_Total.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // total_Expense
+            // 
+            this.total_Expense.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.total_Expense.AutoSize = true;
+            this.total_Expense.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_Expense.ForeColor = System.Drawing.Color.Gainsboro;
+            this.total_Expense.Location = new System.Drawing.Point(149, 9);
+            this.total_Expense.Name = "total_Expense";
+            this.total_Expense.Size = new System.Drawing.Size(81, 25);
+            this.total_Expense.TabIndex = 4;
+            this.total_Expense.Text = "Expense";
+            // 
+            // Expense_Total
+            // 
+            this.Expense_Total.AutoSize = true;
+            this.Expense_Total.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Expense_Total.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Expense_Total.Location = new System.Drawing.Point(159, 34);
+            this.Expense_Total.Name = "Expense_Total";
+            this.Expense_Total.Size = new System.Drawing.Size(64, 32);
+            this.Expense_Total.TabIndex = 5;
+            this.Expense_Total.Text = "0.00";
+            // 
+            // Balance
+            // 
+            this.Balance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Balance.AutoSize = true;
+            this.Balance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Balance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Balance.Location = new System.Drawing.Point(151, 9);
+            this.Balance.Name = "Balance";
+            this.Balance.Size = new System.Drawing.Size(78, 25);
+            this.Balance.TabIndex = 4;
+            this.Balance.Text = "Balance";
+            this.Balance.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // Balance_Total
+            // 
+            this.Balance_Total.AutoSize = true;
+            this.Balance_Total.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Balance_Total.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Balance_Total.Location = new System.Drawing.Point(161, 34);
+            this.Balance_Total.Name = "Balance_Total";
+            this.Balance_Total.Size = new System.Drawing.Size(64, 32);
+            this.Balance_Total.TabIndex = 5;
+            this.Balance_Total.Text = "0.00";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.Location = new System.Drawing.Point(147, 14);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 25);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Compte";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label8.Location = new System.Drawing.Point(174, 34);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(29, 32);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "1";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::BudgetManagement.Properties.Resources.accounting;
+            this.pictureBox5.Location = new System.Drawing.Point(24, 14);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(56, 45);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 6;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::BudgetManagement.Properties.Resources.justice;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 14);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(56, 45);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::BudgetManagement.Properties.Resources.expenses;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 14);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(56, 45);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BudgetManagement.Properties.Resources.salary;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(56, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(81)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.SlateBlue;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.SlateBlue;
+            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCurrentChildForm.IconSize = 43;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(23, 23);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(43, 45);
+            this.iconCurrentChildForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconCurrentChildForm.TabIndex = 0;
+            this.iconCurrentChildForm.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -209,76 +513,9 @@
             this.logoutBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.logoutBtn.UseVisualStyleBackColor = true;
             // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(81)))));
-            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
-            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(205, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1165, 88);
-            this.panelTitleBar.TabIndex = 1;
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // lblTitleChildForm
-            // 
-            this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(72, 32);
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(79, 32);
-            this.lblTitleChildForm.TabIndex = 1;
-            this.lblTitleChildForm.Text = "Home";
-            // 
-            // iconCurrentChildForm
-            // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(81)))));
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.SlateBlue;
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.SlateBlue;
-            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 43;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(23, 23);
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(43, 45);
-            this.iconCurrentChildForm.TabIndex = 0;
-            this.iconCurrentChildForm.TabStop = false;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.Controls.Add(this.desktopPanel);
-            this.panelDesktop.Controls.Add(this.shadowPanel);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(205, 88);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1165, 684);
-            this.panelDesktop.TabIndex = 3;
-            // 
-            // desktopPanel
-            // 
-            this.desktopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.desktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.desktopPanel.Location = new System.Drawing.Point(0, 10);
-            this.desktopPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.desktopPanel.Name = "desktopPanel";
-            this.desktopPanel.Size = new System.Drawing.Size(1165, 674);
-            this.desktopPanel.TabIndex = 1;
-            // 
-            // shadowPanel
-            // 
-            this.shadowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.shadowPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shadowPanel.Location = new System.Drawing.Point(0, 0);
-            this.shadowPanel.Name = "shadowPanel";
-            this.shadowPanel.Size = new System.Drawing.Size(1165, 10);
-            this.shadowPanel.TabIndex = 0;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 772);
             this.ControlBox = false;
@@ -291,11 +528,25 @@
             this.ShowInTaskbar = false;
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,9 +557,6 @@
         private FontAwesome.Sharp.IconButton dashBtn;
         private FontAwesome.Sharp.IconButton incomeBtn;
         private FontAwesome.Sharp.IconButton expenseBtn;
-        private System.Windows.Forms.Panel panelTitleBar;
-        private System.Windows.Forms.Label lblTitleChildForm;
-        private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton logoutBtn;
         private System.Windows.Forms.Panel panelLogo;
@@ -317,6 +565,27 @@
         private FontAwesome.Sharp.IconButton walletBtn;
         private FontAwesome.Sharp.IconButton iconButton9;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panelTitleBar;
+        private System.Windows.Forms.Label lblTitleChildForm;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label total_Income;
+        private System.Windows.Forms.Label Income_Total;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label Balance;
+        private System.Windows.Forms.Label Balance_Total;
+        private System.Windows.Forms.Label total_Expense;
+        private System.Windows.Forms.Label Expense_Total;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

@@ -23,6 +23,7 @@ namespace BudgetManagement
         public Form1()
         {
             InitializeComponent();
+            getAll();
             this.StartPosition = FormStartPosition.CenterScreen;
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(197, 7);
@@ -194,5 +195,44 @@ namespace BudgetManagement
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new Alarm());
         }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+        //private void getAll()
+        //{
+        //    Login.MonthlyIncome();
+        //    total_Expense.Text = Login.MonthlySalary.ToString();
+        //    Login.getMonthlyExpense();
+        //    total_Income.Text = Login.MonthlyExpense.ToString();
+        //    Login.getBalance();
+        //    Balance.Text = Login.solde.ToString();
+        //}
     }
 }
