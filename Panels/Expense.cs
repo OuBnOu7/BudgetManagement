@@ -21,8 +21,8 @@ namespace BudgetManagement.Panels
         {
             InitializeComponent();
             getAll();
-
         }
+
 
         private void Expense_Load(object sender, EventArgs e)
         {
@@ -92,8 +92,65 @@ namespace BudgetManagement.Panels
 
         //Get Monthly Weekly or Yearly Details
 
+        //Weekly
+
+        private void getDetailsW(string type, System.Windows.Forms.Label Label, System.Windows.Forms.Label LabelPer)
+        {
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+
+            //Petit Algo pour calculer des donnée dans la semaine actuelle
+            DateTime currentDate = DateTime.Now;
+            DateTime startOfWeek = currentDate.AddDays(-1 * (int)currentDate.DayOfWeek);
+            DateTime endOfWeek = startOfWeek.AddDays(6);
+
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT SUM(Amount) FROM expense WHERE [User] = @user AND Category = @category AND Date >= @startDate AND Date <= @endDate";
+            cmd.Parameters.AddWithValue("@user", Login.name);
+            cmd.Parameters.AddWithValue("@category", type);
+            cmd.Parameters.AddWithValue("@startDate", startOfWeek.Date);
+            cmd.Parameters.AddWithValue("@endDate", endOfWeek.Date);
+
+            DataTable dta = new DataTable();
+            SqlDataAdapter dataadp = new SqlDataAdapter(cmd);
+            dataadp.Fill(dta);
+            Label.Text = dta.Rows[0][0].ToString();
+            if (string.IsNullOrEmpty(Label.Text))
+            {
+                Label.Text = "0";
+            }
+
+
+            SqlCommand cmd2 = connection.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "SELECT (SUM(Amount) / (SELECT SUM(Amount) FROM expense WHERE [User] = @userName)) * 100 AS Percentage FROM expense WHERE[User] = @userName AND Category = @category AND Date >= @startDate AND Date <= @endDate";
+            cmd2.Parameters.AddWithValue("@userName", Login.name);
+            cmd2.Parameters.AddWithValue("@category", type);
+            cmd2.Parameters.AddWithValue("@startDate", startOfWeek.Date);
+            cmd2.Parameters.AddWithValue("@endDate", endOfWeek.Date);
+            object result = cmd2.ExecuteScalar();
+            if (result != DBNull.Value)
+            {
+                double percentage = (double)result;
+                LabelPer.Text = Math.Round(percentage, 2).ToString();
+            }
+            else
+            {
+                LabelPer.Text = "0";
+            }
+
+
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
         // Monthly
-        private void getDetails(string type,System.Windows.Forms.Label Label, System.Windows.Forms.Label LabelPer)
+        private void getDetailsM(string type,System.Windows.Forms.Label Label, System.Windows.Forms.Label LabelPer)
         {
             if (connection.State == ConnectionState.Closed)
             {
@@ -108,7 +165,7 @@ namespace BudgetManagement.Panels
             SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection); ;
             dataadp.Fill(dta);
             Label.Text = dta.Rows[0][0].ToString();
-            if(dta.Rows[0][0].ToString() == "")
+            if (dta.Rows[0][0].ToString() == "")
             {
                 Label.Text = "0";
             }
@@ -243,11 +300,11 @@ namespace BudgetManagement.Panels
 
             if (Login.bilan == "Mensuel")
             {
-                getDetails("Logement", totLogement, pouLogement);
-                getDetails("Nourriture", totNourriture, pouNourriture);
-                getDetails("Transport", totTransport, pouTransport);
-                getDetails("Abonement", totAbonement, pouAbonement);
-                getDetails("Loisirs", totLoisirs, pouLoisirs);
+                getDetailsM("Logement", totLogement, pouLogement);
+                getDetailsM("Nourriture", totNourriture, pouNourriture);
+                getDetailsM("Transport", totTransport, pouTransport);
+                getDetailsM("Abonement", totAbonement, pouAbonement);
+                getDetailsM("Loisirs", totLoisirs, pouLoisirs);
             }
 
             else if (Login.bilan == "Annuel") {
@@ -258,7 +315,11 @@ namespace BudgetManagement.Panels
                 getDetailsA("Loisirs", totLoisirs, pouLoisirs);
             }
             else if (Login.bilan == "Hebdomadaire") {
-            
+                getDetailsW("Logement", totLogement, pouLogement);
+                getDetailsW("Nourriture", totNourriture, pouNourriture);
+                getDetailsW("Transport", totTransport, pouTransport);
+                getDetailsW("Abonement", totAbonement, pouAbonement);
+                getDetailsW("Loisirs", totLoisirs, pouLoisirs);
             }
 
             getState();
