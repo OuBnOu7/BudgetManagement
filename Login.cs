@@ -26,12 +26,12 @@ namespace BudgetManagement
         public static float MonthlyExpense = 0;
         public static float solde = 0;
 
-        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Login()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.AcceptButton = validate;
+            this.AcceptButton = validate;   
 
         }
 
@@ -124,7 +124,7 @@ namespace BudgetManagement
 
         static public void getMonthlyExpense()
         {
-            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
@@ -158,7 +158,7 @@ namespace BudgetManagement
 
         static public void MonthlyIncome()
         {
-            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
@@ -192,7 +192,7 @@ namespace BudgetManagement
 
         static public void getBalance()
         {
-            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+            SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
@@ -247,6 +247,11 @@ namespace BudgetManagement
             }
         }
 
+        private void Login_Load(object sender, EventArgs e)
+        {
+            username.Focus();
+            username.SelectAll();   
+        }
     }
 
 }

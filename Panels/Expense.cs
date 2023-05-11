@@ -15,7 +15,7 @@ namespace BudgetManagement.Panels
 {
     public partial class Expense : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Expense()
 
         {
@@ -38,7 +38,7 @@ namespace BudgetManagement.Panels
             {
                 MessageBox.Show("Veuillez Remplir Les Champs");
             }
-            else if (!Regex.IsMatch(expName.Text, @"^[0-9]+([,.][0-9]+)?$"))
+            else if (!Regex.IsMatch(expAmount.Text, @"^[0-9]+([,.][0-9]+)?$"))
             {
                 MessageBox.Show("Le montant doit être un nombre valide.");
             }
@@ -113,7 +113,9 @@ namespace BudgetManagement.Panels
 
             SqlCommand cmd2 = connection.CreateCommand();
             cmd2.CommandType = CommandType.Text;
-            cmd2.CommandText = "SELECT (SUM(Amount)/(SELECT SUM(Amount) FROM expense)) * 100 AS Percentage FROM expense WHERE [User] = '" + Login.name + "'AND Category = '" + type + "' AND YEAR(Date) = YEAR(GETDATE()) AND MONTH(Date) = MONTH(GETDATE())";
+            cmd2.CommandText = "SELECT (SUM(Amount) / (SELECT SUM(Amount) FROM expense WHERE [User] = @userName)) * 100 AS Percentage FROM expense WHERE[User] = @userName AND Category = @category AND YEAR(Date) = YEAR(GETDATE()) AND MONTH(Date) = MONTH(GETDATE())";
+            cmd2.Parameters.AddWithValue("@userName", Login.name);
+            cmd2.Parameters.AddWithValue("@category", type);
             object result = cmd2.ExecuteScalar();
             if (result != DBNull.Value)
             {
@@ -240,5 +242,6 @@ namespace BudgetManagement.Panels
                 }
             }
         }
+
     }
 }

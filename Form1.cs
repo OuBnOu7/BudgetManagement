@@ -97,7 +97,7 @@ namespace BudgetManagement
             desktopPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            lblTitleChildForm.Text = childForm.Text;
+            lblTitleChildForm.Text = childForm.Name;
         }
         private void reset()
         {

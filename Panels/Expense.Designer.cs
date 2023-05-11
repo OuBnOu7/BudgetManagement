@@ -120,40 +120,40 @@
             // expName
             // 
             this.expName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.expName.Location = new System.Drawing.Point(148, 47);
-            this.expName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.expName.Location = new System.Drawing.Point(173, 59);
+            this.expName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.expName.Name = "expName";
-            this.expName.Size = new System.Drawing.Size(160, 23);
+            this.expName.Size = new System.Drawing.Size(213, 27);
             this.expName.TabIndex = 0;
             // 
             // expDate
             // 
             this.expDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.expDate.CalendarTodayDate = new System.DateTime(2023, 5, 2, 0, 0, 0, 0);
-            this.expDate.Location = new System.Drawing.Point(148, 115);
-            this.expDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.expDate.Location = new System.Drawing.Point(173, 143);
+            this.expDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.expDate.Name = "expDate";
             this.expDate.ShowUpDown = true;
-            this.expDate.Size = new System.Drawing.Size(160, 21);
+            this.expDate.Size = new System.Drawing.Size(213, 25);
             this.expDate.TabIndex = 11;
             // 
             // expDes
             // 
             this.expDes.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.expDes.Location = new System.Drawing.Point(322, 37);
-            this.expDes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.expDes.Location = new System.Drawing.Point(405, 47);
+            this.expDes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.expDes.Name = "expDes";
-            this.expDes.Size = new System.Drawing.Size(208, 47);
+            this.expDes.Size = new System.Drawing.Size(277, 58);
             this.expDes.TabIndex = 13;
             this.expDes.Text = "";
             // 
             // expAmount
             // 
             this.expAmount.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.expAmount.Location = new System.Drawing.Point(148, 12);
-            this.expAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.expAmount.Location = new System.Drawing.Point(173, 16);
+            this.expAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.expAmount.Name = "expAmount";
-            this.expAmount.Size = new System.Drawing.Size(160, 23);
+            this.expAmount.Size = new System.Drawing.Size(213, 27);
             this.expAmount.TabIndex = 15;
             // 
             // database1DataSet1
@@ -187,10 +187,10 @@
             // expAdd
             // 
             this.expAdd.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.expAdd.Location = new System.Drawing.Point(322, 101);
-            this.expAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.expAdd.Location = new System.Drawing.Point(405, 125);
+            this.expAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.expAdd.Name = "expAdd";
-            this.expAdd.Size = new System.Drawing.Size(208, 35);
+            this.expAdd.Size = new System.Drawing.Size(277, 43);
             this.expAdd.TabIndex = 18;
             this.expAdd.Values.Text = "Ajouter Depenses";
             this.expAdd.Click += new System.EventHandler(this.expAdd_Click);
@@ -207,10 +207,10 @@
             "Transport",
             "Abonement",
             "Loisirs"});
-            this.expType.Location = new System.Drawing.Point(148, 81);
-            this.expType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.expType.Location = new System.Drawing.Point(173, 101);
+            this.expType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.expType.Name = "expType";
-            this.expType.Size = new System.Drawing.Size(162, 21);
+            this.expType.Size = new System.Drawing.Size(215, 24);
             this.expType.TabIndex = 19;
             // 
             // label1
@@ -220,10 +220,9 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(85, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(113, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 33);
+            this.label1.Size = new System.Drawing.Size(208, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "Logement";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -237,22 +236,21 @@
             this.logementPanel.Controls.Add(this.totLogement);
             this.logementPanel.Controls.Add(this.iconButton5);
             this.logementPanel.Controls.Add(this.label1);
-            this.logementPanel.Location = new System.Drawing.Point(47, 151);
-            this.logementPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logementPanel.Location = new System.Drawing.Point(39, 187);
+            this.logementPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logementPanel.Name = "logementPanel";
             this.logementPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
             this.logementPanel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.logementPanel.Size = new System.Drawing.Size(323, 212);
+            this.logementPanel.Size = new System.Drawing.Size(431, 261);
             this.logementPanel.TabIndex = 6;
             // 
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(164, 145);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(219, 178);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(158, 33);
+            this.label9.Size = new System.Drawing.Size(211, 41);
             this.label9.TabIndex = 14;
             this.label9.Text = "%";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -261,10 +259,9 @@
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(0, 145);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(0, 178);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 33);
+            this.label8.Size = new System.Drawing.Size(211, 41);
             this.label8.TabIndex = 13;
             this.label8.Text = "MAD";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -273,10 +270,9 @@
             // 
             this.pouLogement.BackColor = System.Drawing.Color.Transparent;
             this.pouLogement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pouLogement.Location = new System.Drawing.Point(164, 79);
-            this.pouLogement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.pouLogement.Location = new System.Drawing.Point(219, 97);
             this.pouLogement.Name = "pouLogement";
-            this.pouLogement.Size = new System.Drawing.Size(158, 33);
+            this.pouLogement.Size = new System.Drawing.Size(211, 41);
             this.pouLogement.TabIndex = 12;
             this.pouLogement.Text = "0";
             this.pouLogement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -285,10 +281,9 @@
             // 
             this.totLogement.BackColor = System.Drawing.Color.Transparent;
             this.totLogement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totLogement.Location = new System.Drawing.Point(2, 79);
-            this.totLogement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.totLogement.Location = new System.Drawing.Point(3, 97);
             this.totLogement.Name = "totLogement";
-            this.totLogement.Size = new System.Drawing.Size(158, 33);
+            this.totLogement.Size = new System.Drawing.Size(211, 41);
             this.totLogement.TabIndex = 11;
             this.totLogement.Text = "0";
             this.totLogement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -302,10 +297,10 @@
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconButton5.IconColor = System.Drawing.Color.Red;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(30, 15);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton5.Location = new System.Drawing.Point(40, 18);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(66, 51);
+            this.iconButton5.Size = new System.Drawing.Size(88, 63);
             this.iconButton5.TabIndex = 10;
             this.iconButton5.UseVisualStyleBackColor = false;
             // 
@@ -315,13 +310,13 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(586, 6);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(757, 8);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(520, 136);
+            this.dataGridView1.Size = new System.Drawing.Size(693, 167);
             this.dataGridView1.TabIndex = 20;
             // 
             // label6
@@ -330,10 +325,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(47, 12);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(39, 16);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 22);
+            this.label6.Size = new System.Drawing.Size(128, 27);
             this.label6.TabIndex = 15;
             this.label6.Text = "Montant";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -344,10 +338,9 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(47, 47);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(39, 59);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 22);
+            this.label7.Size = new System.Drawing.Size(128, 27);
             this.label7.TabIndex = 21;
             this.label7.Text = "Nom";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -358,10 +351,9 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.Control;
-            this.label12.Location = new System.Drawing.Point(47, 81);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(39, 101);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 22);
+            this.label12.Size = new System.Drawing.Size(128, 27);
             this.label12.TabIndex = 22;
             this.label12.Text = "Type";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -372,10 +364,9 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(47, 114);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(39, 141);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 22);
+            this.label13.Size = new System.Drawing.Size(128, 27);
             this.label13.TabIndex = 23;
             this.label13.Text = "Date";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -386,10 +377,9 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(320, 12);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(403, 16);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(144, 22);
+            this.label16.Size = new System.Drawing.Size(192, 27);
             this.label16.TabIndex = 24;
             this.label16.Text = "Description";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -398,10 +388,9 @@
             // 
             this.totTransport.BackColor = System.Drawing.Color.Transparent;
             this.totTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totTransport.Location = new System.Drawing.Point(2, 79);
-            this.totTransport.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.totTransport.Location = new System.Drawing.Point(3, 97);
             this.totTransport.Name = "totTransport";
-            this.totTransport.Size = new System.Drawing.Size(158, 33);
+            this.totTransport.Size = new System.Drawing.Size(211, 41);
             this.totTransport.TabIndex = 15;
             this.totTransport.Text = "0";
             this.totTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -410,10 +399,9 @@
             // 
             this.pouTransport.BackColor = System.Drawing.Color.Transparent;
             this.pouTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pouTransport.Location = new System.Drawing.Point(164, 79);
-            this.pouTransport.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.pouTransport.Location = new System.Drawing.Point(219, 97);
             this.pouTransport.Name = "pouTransport";
-            this.pouTransport.Size = new System.Drawing.Size(158, 33);
+            this.pouTransport.Size = new System.Drawing.Size(211, 41);
             this.pouTransport.TabIndex = 16;
             this.pouTransport.Text = "0";
             this.pouTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -426,10 +414,10 @@
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Car;
             this.iconButton3.IconColor = System.Drawing.Color.Yellow;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(30, 15);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton3.Location = new System.Drawing.Point(40, 18);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(66, 51);
+            this.iconButton3.Size = new System.Drawing.Size(88, 63);
             this.iconButton3.TabIndex = 3;
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
@@ -437,10 +425,9 @@
             // 
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(0, 145);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(0, 178);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(158, 33);
+            this.label11.Size = new System.Drawing.Size(211, 41);
             this.label11.TabIndex = 17;
             this.label11.Text = "MAD";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -451,10 +438,9 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(85, 23);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(113, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 33);
+            this.label3.Size = new System.Drawing.Size(208, 41);
             this.label3.TabIndex = 4;
             this.label3.Text = "Transport";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -463,10 +449,9 @@
             // 
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(164, 145);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(219, 178);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(158, 33);
+            this.label10.Size = new System.Drawing.Size(211, 41);
             this.label10.TabIndex = 18;
             this.label10.Text = "%";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -480,21 +465,20 @@
             this.transportPanel.Controls.Add(this.iconButton3);
             this.transportPanel.Controls.Add(this.pouTransport);
             this.transportPanel.Controls.Add(this.totTransport);
-            this.transportPanel.Location = new System.Drawing.Point(418, 151);
-            this.transportPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.transportPanel.Location = new System.Drawing.Point(533, 187);
+            this.transportPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.transportPanel.Name = "transportPanel";
             this.transportPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.transportPanel.Size = new System.Drawing.Size(323, 212);
+            this.transportPanel.Size = new System.Drawing.Size(431, 261);
             this.transportPanel.TabIndex = 8;
             // 
             // totLoisirs
             // 
             this.totLoisirs.BackColor = System.Drawing.Color.Transparent;
             this.totLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totLoisirs.Location = new System.Drawing.Point(2, 80);
-            this.totLoisirs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.totLoisirs.Location = new System.Drawing.Point(3, 98);
             this.totLoisirs.Name = "totLoisirs";
-            this.totLoisirs.Size = new System.Drawing.Size(158, 33);
+            this.totLoisirs.Size = new System.Drawing.Size(211, 41);
             this.totLoisirs.TabIndex = 27;
             this.totLoisirs.Text = "0";
             this.totLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -503,10 +487,9 @@
             // 
             this.pouLoisirs.BackColor = System.Drawing.Color.Transparent;
             this.pouLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pouLoisirs.Location = new System.Drawing.Point(164, 80);
-            this.pouLoisirs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.pouLoisirs.Location = new System.Drawing.Point(219, 98);
             this.pouLoisirs.Name = "pouLoisirs";
-            this.pouLoisirs.Size = new System.Drawing.Size(158, 33);
+            this.pouLoisirs.Size = new System.Drawing.Size(211, 41);
             this.pouLoisirs.TabIndex = 28;
             this.pouLoisirs.Text = "0";
             this.pouLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -519,10 +502,10 @@
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Gamepad;
             this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(30, 15);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton4.Location = new System.Drawing.Point(40, 18);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(66, 51);
+            this.iconButton4.Size = new System.Drawing.Size(88, 63);
             this.iconButton4.TabIndex = 3;
             this.iconButton4.UseVisualStyleBackColor = false;
             // 
@@ -530,10 +513,9 @@
             // 
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(0, 147);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Location = new System.Drawing.Point(0, 181);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(158, 33);
+            this.label23.Size = new System.Drawing.Size(211, 41);
             this.label23.TabIndex = 29;
             this.label23.Text = "MAD";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -544,10 +526,9 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(85, 23);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(113, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(156, 33);
+            this.label5.Size = new System.Drawing.Size(208, 41);
             this.label5.TabIndex = 6;
             this.label5.Text = "Loisirs";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -556,10 +537,9 @@
             // 
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(164, 147);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(219, 181);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(158, 33);
+            this.label22.Size = new System.Drawing.Size(211, 41);
             this.label22.TabIndex = 30;
             this.label22.Text = "%";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -573,21 +553,20 @@
             this.loisirsPanel.Controls.Add(this.iconButton4);
             this.loisirsPanel.Controls.Add(this.pouLoisirs);
             this.loisirsPanel.Controls.Add(this.totLoisirs);
-            this.loisirsPanel.Location = new System.Drawing.Point(418, 376);
-            this.loisirsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loisirsPanel.Location = new System.Drawing.Point(533, 464);
+            this.loisirsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loisirsPanel.Name = "loisirsPanel";
             this.loisirsPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.loisirsPanel.Size = new System.Drawing.Size(323, 212);
+            this.loisirsPanel.Size = new System.Drawing.Size(431, 261);
             this.loisirsPanel.TabIndex = 10;
             // 
             // totNourriture
             // 
             this.totNourriture.BackColor = System.Drawing.Color.Transparent;
             this.totNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totNourriture.Location = new System.Drawing.Point(-2, 80);
-            this.totNourriture.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.totNourriture.Location = new System.Drawing.Point(-3, 98);
             this.totNourriture.Name = "totNourriture";
-            this.totNourriture.Size = new System.Drawing.Size(158, 33);
+            this.totNourriture.Size = new System.Drawing.Size(211, 41);
             this.totNourriture.TabIndex = 23;
             this.totNourriture.Text = "0";
             this.totNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -596,10 +575,9 @@
             // 
             this.pouNourriture.BackColor = System.Drawing.Color.Transparent;
             this.pouNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pouNourriture.Location = new System.Drawing.Point(160, 80);
-            this.pouNourriture.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.pouNourriture.Location = new System.Drawing.Point(213, 98);
             this.pouNourriture.Name = "pouNourriture";
-            this.pouNourriture.Size = new System.Drawing.Size(158, 33);
+            this.pouNourriture.Size = new System.Drawing.Size(211, 41);
             this.pouNourriture.TabIndex = 24;
             this.pouNourriture.Text = "0";
             this.pouNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -613,10 +591,10 @@
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.BowlRice;
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(30, 15);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton1.Location = new System.Drawing.Point(40, 18);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(66, 51);
+            this.iconButton1.Size = new System.Drawing.Size(88, 63);
             this.iconButton1.TabIndex = 1;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
@@ -624,10 +602,9 @@
             // 
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(-4, 147);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(-5, 181);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(158, 33);
+            this.label19.Size = new System.Drawing.Size(211, 41);
             this.label19.TabIndex = 25;
             this.label19.Text = "MAD";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -639,10 +616,9 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(85, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(113, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 33);
+            this.label2.Size = new System.Drawing.Size(208, 41);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nourriture";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -651,10 +627,9 @@
             // 
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(160, 147);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(213, 181);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(158, 33);
+            this.label18.Size = new System.Drawing.Size(211, 41);
             this.label18.TabIndex = 26;
             this.label18.Text = "%";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -668,21 +643,20 @@
             this.nourrituresPanel.Controls.Add(this.iconButton1);
             this.nourrituresPanel.Controls.Add(this.pouNourriture);
             this.nourrituresPanel.Controls.Add(this.totNourriture);
-            this.nourrituresPanel.Location = new System.Drawing.Point(47, 376);
-            this.nourrituresPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nourrituresPanel.Location = new System.Drawing.Point(39, 464);
+            this.nourrituresPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nourrituresPanel.Name = "nourrituresPanel";
             this.nourrituresPanel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.nourrituresPanel.Size = new System.Drawing.Size(323, 212);
+            this.nourrituresPanel.Size = new System.Drawing.Size(431, 261);
             this.nourrituresPanel.TabIndex = 7;
             // 
             // label25
             // 
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(4, 63);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Location = new System.Drawing.Point(5, 78);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(158, 33);
+            this.label25.Size = new System.Drawing.Size(211, 41);
             this.label25.TabIndex = 19;
             this.label25.Text = "Situation";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -692,10 +666,9 @@
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Lime;
-            this.label24.Location = new System.Drawing.Point(164, 63);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Location = new System.Drawing.Point(219, 78);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(158, 33);
+            this.label24.Size = new System.Drawing.Size(211, 41);
             this.label24.TabIndex = 20;
             this.label24.Text = "Good";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -708,10 +681,10 @@
             this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.ScaleUnbalanced;
             this.iconButton6.IconColor = System.Drawing.Color.Black;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.Location = new System.Drawing.Point(30, 15);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton6.Location = new System.Drawing.Point(40, 18);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(66, 51);
+            this.iconButton6.Size = new System.Drawing.Size(88, 63);
             this.iconButton6.TabIndex = 2;
             this.iconButton6.UseVisualStyleBackColor = false;
             // 
@@ -719,10 +692,9 @@
             // 
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(2, 98);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Location = new System.Drawing.Point(3, 121);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(158, 20);
+            this.label21.Size = new System.Drawing.Size(211, 25);
             this.label21.TabIndex = 21;
             this.label21.Text = "Logement";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -733,10 +705,9 @@
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(85, 23);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Location = new System.Drawing.Point(113, 28);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(156, 33);
+            this.label20.Size = new System.Drawing.Size(208, 41);
             this.label20.TabIndex = 5;
             this.label20.Text = "Bilan";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -745,10 +716,9 @@
             // 
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(2, 119);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(3, 146);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(158, 20);
+            this.label17.Size = new System.Drawing.Size(211, 25);
             this.label17.TabIndex = 22;
             this.label17.Text = "Transport";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -757,10 +727,9 @@
             // 
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(2, 139);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Location = new System.Drawing.Point(3, 171);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(158, 20);
+            this.label26.Size = new System.Drawing.Size(211, 25);
             this.label26.TabIndex = 23;
             this.label26.Text = "Abonement";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -769,10 +738,9 @@
             // 
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(3, 159);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Location = new System.Drawing.Point(4, 196);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(158, 20);
+            this.label27.Size = new System.Drawing.Size(211, 25);
             this.label27.TabIndex = 24;
             this.label27.Text = "Nourriture";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -781,10 +749,9 @@
             // 
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(3, 180);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label28.Location = new System.Drawing.Point(4, 222);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(158, 20);
+            this.label28.Size = new System.Drawing.Size(211, 25);
             this.label28.TabIndex = 25;
             this.label28.Text = "Loisirs";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -794,10 +761,9 @@
             this.bilLogement.BackColor = System.Drawing.Color.Transparent;
             this.bilLogement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bilLogement.ForeColor = System.Drawing.Color.Lime;
-            this.bilLogement.Location = new System.Drawing.Point(188, 98);
-            this.bilLogement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bilLogement.Location = new System.Drawing.Point(251, 121);
             this.bilLogement.Name = "bilLogement";
-            this.bilLogement.Size = new System.Drawing.Size(108, 20);
+            this.bilLogement.Size = new System.Drawing.Size(144, 25);
             this.bilLogement.TabIndex = 26;
             this.bilLogement.Text = "<50%";
             this.bilLogement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -807,10 +773,9 @@
             this.bilNourriture.BackColor = System.Drawing.Color.Transparent;
             this.bilNourriture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bilNourriture.ForeColor = System.Drawing.Color.Lime;
-            this.bilNourriture.Location = new System.Drawing.Point(188, 160);
-            this.bilNourriture.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bilNourriture.Location = new System.Drawing.Point(251, 197);
             this.bilNourriture.Name = "bilNourriture";
-            this.bilNourriture.Size = new System.Drawing.Size(108, 20);
+            this.bilNourriture.Size = new System.Drawing.Size(144, 25);
             this.bilNourriture.TabIndex = 27;
             this.bilNourriture.Text = "<15%";
             this.bilNourriture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -820,10 +785,9 @@
             this.bilTransport.BackColor = System.Drawing.Color.Transparent;
             this.bilTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bilTransport.ForeColor = System.Drawing.Color.Lime;
-            this.bilTransport.Location = new System.Drawing.Point(188, 119);
-            this.bilTransport.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bilTransport.Location = new System.Drawing.Point(251, 146);
             this.bilTransport.Name = "bilTransport";
-            this.bilTransport.Size = new System.Drawing.Size(108, 20);
+            this.bilTransport.Size = new System.Drawing.Size(144, 25);
             this.bilTransport.TabIndex = 27;
             this.bilTransport.Text = "<10%";
             this.bilTransport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -833,10 +797,9 @@
             this.bilAbonement.BackColor = System.Drawing.Color.Transparent;
             this.bilAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bilAbonement.ForeColor = System.Drawing.Color.Lime;
-            this.bilAbonement.Location = new System.Drawing.Point(188, 139);
-            this.bilAbonement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bilAbonement.Location = new System.Drawing.Point(251, 171);
             this.bilAbonement.Name = "bilAbonement";
-            this.bilAbonement.Size = new System.Drawing.Size(108, 20);
+            this.bilAbonement.Size = new System.Drawing.Size(144, 25);
             this.bilAbonement.TabIndex = 28;
             this.bilAbonement.Text = "<10%";
             this.bilAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -846,10 +809,9 @@
             this.bilLoisirs.BackColor = System.Drawing.Color.Transparent;
             this.bilLoisirs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bilLoisirs.ForeColor = System.Drawing.Color.Lime;
-            this.bilLoisirs.Location = new System.Drawing.Point(188, 180);
-            this.bilLoisirs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bilLoisirs.Location = new System.Drawing.Point(251, 222);
             this.bilLoisirs.Name = "bilLoisirs";
-            this.bilLoisirs.Size = new System.Drawing.Size(108, 20);
+            this.bilLoisirs.Size = new System.Drawing.Size(144, 25);
             this.bilLoisirs.TabIndex = 29;
             this.bilLoisirs.Text = "<5%";
             this.bilLoisirs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -871,21 +833,20 @@
             this.kryptonPanel1.Controls.Add(this.iconButton6);
             this.kryptonPanel1.Controls.Add(this.label24);
             this.kryptonPanel1.Controls.Add(this.label25);
-            this.kryptonPanel1.Location = new System.Drawing.Point(783, 376);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanel1.Location = new System.Drawing.Point(1020, 464);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.kryptonPanel1.Size = new System.Drawing.Size(323, 212);
+            this.kryptonPanel1.Size = new System.Drawing.Size(431, 261);
             this.kryptonPanel1.TabIndex = 23;
             // 
             // totAbonement
             // 
             this.totAbonement.BackColor = System.Drawing.Color.Transparent;
             this.totAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totAbonement.Location = new System.Drawing.Point(4, 79);
-            this.totAbonement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.totAbonement.Location = new System.Drawing.Point(5, 97);
             this.totAbonement.Name = "totAbonement";
-            this.totAbonement.Size = new System.Drawing.Size(158, 33);
+            this.totAbonement.Size = new System.Drawing.Size(211, 41);
             this.totAbonement.TabIndex = 19;
             this.totAbonement.Text = "0";
             this.totAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -894,10 +855,9 @@
             // 
             this.pouAbonement.BackColor = System.Drawing.Color.Transparent;
             this.pouAbonement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pouAbonement.Location = new System.Drawing.Point(166, 79);
-            this.pouAbonement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.pouAbonement.Location = new System.Drawing.Point(221, 97);
             this.pouAbonement.Name = "pouAbonement";
-            this.pouAbonement.Size = new System.Drawing.Size(158, 33);
+            this.pouAbonement.Size = new System.Drawing.Size(211, 41);
             this.pouAbonement.TabIndex = 20;
             this.pouAbonement.Text = "0";
             this.pouAbonement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -910,10 +870,10 @@
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CreditCardAlt;
             this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(30, 15);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton2.Location = new System.Drawing.Point(40, 18);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(66, 51);
+            this.iconButton2.Size = new System.Drawing.Size(88, 63);
             this.iconButton2.TabIndex = 2;
             this.iconButton2.UseVisualStyleBackColor = false;
             // 
@@ -921,10 +881,9 @@
             // 
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(2, 145);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(3, 178);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(158, 33);
+            this.label15.Size = new System.Drawing.Size(211, 41);
             this.label15.TabIndex = 21;
             this.label15.Text = "MAD";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -935,10 +894,9 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(85, 23);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(113, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 33);
+            this.label4.Size = new System.Drawing.Size(208, 41);
             this.label4.TabIndex = 5;
             this.label4.Text = "Abonement";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -947,10 +905,9 @@
             // 
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(166, 145);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(221, 178);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(158, 33);
+            this.label14.Size = new System.Drawing.Size(211, 41);
             this.label14.TabIndex = 22;
             this.label14.Text = "%";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -964,11 +921,11 @@
             this.panelwsf.Controls.Add(this.iconButton2);
             this.panelwsf.Controls.Add(this.pouAbonement);
             this.panelwsf.Controls.Add(this.totAbonement);
-            this.panelwsf.Location = new System.Drawing.Point(783, 151);
-            this.panelwsf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelwsf.Location = new System.Drawing.Point(1020, 187);
+            this.panelwsf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelwsf.Name = "panelwsf";
             this.panelwsf.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ContextMenuOuter;
-            this.panelwsf.Size = new System.Drawing.Size(323, 212);
+            this.panelwsf.Size = new System.Drawing.Size(431, 261);
             this.panelwsf.TabIndex = 9;
             // 
             // download
@@ -978,21 +935,21 @@
             this.download.IconChar = FontAwesome.Sharp.IconChar.Download;
             this.download.IconColor = System.Drawing.Color.Black;
             this.download.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.download.Location = new System.Drawing.Point(542, 101);
-            this.download.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.download.Location = new System.Drawing.Point(699, 125);
+            this.download.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.download.Name = "download";
-            this.download.Size = new System.Drawing.Size(37, 35);
+            this.download.Size = new System.Drawing.Size(49, 43);
             this.download.TabIndex = 25;
             this.download.UseVisualStyleBackColor = false;
             this.download.Click += new System.EventHandler(this.download_Click);
             // 
             // Expense
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1028, 598);
+            this.ClientSize = new System.Drawing.Size(1503, 736);
             this.ControlBox = false;
             this.Controls.Add(this.download);
             this.Controls.Add(this.kryptonPanel1);
@@ -1013,7 +970,7 @@
             this.Controls.Add(this.nourrituresPanel);
             this.Controls.Add(this.logementPanel);
             this.Controls.Add(this.expName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Expense";
             this.Load += new System.EventHandler(this.Expense_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
