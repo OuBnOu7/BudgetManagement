@@ -186,13 +186,7 @@ using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                         DataTable dataTable = new DataTable();
                         sqlDataAdapter.Fill(dataTable);
 
-                        // Show message box with query result
-                        string message = "";
-                        foreach (DataRow row in dataTable.Rows)
-                        {
-                            message += row["Date"].ToString() + " - " + row["TotalAmount"].ToString() + "\n";
-                        }
-                        MessageBox.Show(message);
+
 
                         // Plot chart
                         IncomeLine.Series.Clear();
