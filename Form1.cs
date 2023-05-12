@@ -23,6 +23,7 @@ namespace BudgetManagement
         public Form1()
         {
             InitializeComponent();
+     
             incType.SelectedIndex = 1;
             getAll();
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -214,6 +215,11 @@ namespace BudgetManagement
 
             dashBtn.PerformClick();
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dashBtn.PerformClick();
         }
     }
 }

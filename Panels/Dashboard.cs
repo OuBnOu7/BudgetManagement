@@ -18,7 +18,7 @@ namespace BudgetManagement.Panels
         {
             InitializeComponent();
 
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security=True";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security=True";
             SqlConnection connection = new SqlConnection(connectionString);
 
             try
@@ -192,7 +192,7 @@ using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                         {
                             message += row["Date"].ToString() + " - " + row["TotalAmount"].ToString() + "\n";
                         }
-                        MessageBox.Show(message);
+                        //MessageBox.Show(message);
 
                         // Plot chart
                         IncomeLine.Series.Clear();
