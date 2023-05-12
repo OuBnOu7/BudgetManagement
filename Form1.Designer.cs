@@ -440,7 +440,7 @@
             "Hebdomadaire",
             "Mensuel",
             "Annuel"});
-            this.incType.Location = new System.Drawing.Point(755, 35);
+            this.incType.Location = new System.Drawing.Point(755, 38);
             this.incType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.incType.Name = "incType";
             this.incType.Size = new System.Drawing.Size(219, 27);

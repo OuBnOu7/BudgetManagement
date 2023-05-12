@@ -150,24 +150,28 @@ namespace BudgetManagement
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Dashboard());
+            getAll();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new Wallet());
+            getAll();
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new Income());
+            getAll();
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new Expense());
+            getAll();
         }
 
 
@@ -197,7 +201,7 @@ namespace BudgetManagement
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new Alarm());
         }
-        private void getAll()
+        public void getAll()
         {
             Login.getIncomeM();
             Income_Total.Text = Login.IncomeM.ToString();

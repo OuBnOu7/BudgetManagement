@@ -55,13 +55,12 @@
             // chartExpense
             // 
             this.chartExpense.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.chartExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             chartArea1.Area3DStyle.Enable3D = true;
             chartArea1.Name = "ChartArea1";
             this.chartExpense.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartExpense.Legends.Add(legend1);
-            this.chartExpense.Location = new System.Drawing.Point(16, 15);
+            this.chartExpense.Location = new System.Drawing.Point(80, 15);
             this.chartExpense.Margin = new System.Windows.Forms.Padding(4);
             this.chartExpense.Name = "chartExpense";
             series1.ChartArea = "ChartArea1";
@@ -69,7 +68,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Expenses";
             this.chartExpense.Series.Add(series1);
-            this.chartExpense.Size = new System.Drawing.Size(359, 369);
+            this.chartExpense.Size = new System.Drawing.Size(359, 339);
             this.chartExpense.TabIndex = 0;
             this.chartExpense.Text = "chart1";
             title1.Name = "Title1";
@@ -79,32 +78,30 @@
             // chartIncome
             // 
             this.chartIncome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.chartIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             chartArea2.Name = "ChartArea1";
             this.chartIncome.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chartIncome.Legends.Add(legend2);
-            this.chartIncome.Location = new System.Drawing.Point(16, 391);
+            this.chartIncome.Location = new System.Drawing.Point(80, 494);
             this.chartIncome.Margin = new System.Windows.Forms.Padding(4);
             this.chartIncome.Name = "chartIncome";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chartIncome.Series.Add(series2);
-            this.chartIncome.Size = new System.Drawing.Size(1339, 369);
+            this.chartIncome.Size = new System.Drawing.Size(1339, 392);
             this.chartIncome.TabIndex = 1;
             this.chartIncome.Text = "chart1";
             // 
             // chartIncome_category
             // 
             this.chartIncome_category.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.chartIncome_category.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             chartArea3.Area3DStyle.Enable3D = true;
             chartArea3.Name = "ChartArea1";
             this.chartIncome_category.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chartIncome_category.Legends.Add(legend3);
-            this.chartIncome_category.Location = new System.Drawing.Point(403, 15);
+            this.chartIncome_category.Location = new System.Drawing.Point(467, 15);
             this.chartIncome_category.Margin = new System.Windows.Forms.Padding(4);
             this.chartIncome_category.Name = "chartIncome_category";
             series3.ChartArea = "ChartArea1";
@@ -112,7 +109,7 @@
             series3.Legend = "Legend1";
             series3.Name = "Expenses";
             this.chartIncome_category.Series.Add(series3);
-            this.chartIncome_category.Size = new System.Drawing.Size(367, 369);
+            this.chartIncome_category.Size = new System.Drawing.Size(367, 339);
             this.chartIncome_category.TabIndex = 2;
             this.chartIncome_category.Text = "chart1";
             title2.Name = "Title1";
@@ -122,12 +119,11 @@
             // IncomeLine
             // 
             this.IncomeLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.IncomeLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             chartArea4.Name = "ChartArea1";
             this.IncomeLine.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.IncomeLine.Legends.Add(legend4);
-            this.IncomeLine.Location = new System.Drawing.Point(791, 15);
+            this.IncomeLine.Location = new System.Drawing.Point(855, 15);
             this.IncomeLine.Margin = new System.Windows.Forms.Padding(4);
             this.IncomeLine.Name = "IncomeLine";
             series4.ChartArea = "ChartArea1";
@@ -135,7 +131,7 @@
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             this.IncomeLine.Series.Add(series4);
-            this.IncomeLine.Size = new System.Drawing.Size(564, 369);
+            this.IncomeLine.Size = new System.Drawing.Size(564, 339);
             this.IncomeLine.TabIndex = 3;
             this.IncomeLine.Text = "chart1";
             // 
@@ -144,7 +140,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1371, 772);
+            this.ClientSize = new System.Drawing.Size(1498, 898);
             this.ControlBox = false;
             this.Controls.Add(this.IncomeLine);
             this.Controls.Add(this.chartIncome_category);
