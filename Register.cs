@@ -16,7 +16,7 @@ namespace BudgetManagement
     {
 
 
-        private readonly FontAwesome.Sharp.IconPictureBox iconBack = new FontAwesome.Sharp.IconPictureBox(); SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Omar Bnh\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
+        private readonly FontAwesome.Sharp.IconPictureBox iconBack = new FontAwesome.Sharp.IconPictureBox(); SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\HP\source\repos\BudgetManagement\Database1.mdf;Integrated Security = True");
         public Register()
         {
             InitializeComponent();
