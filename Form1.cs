@@ -222,5 +222,12 @@ namespace BudgetManagement
             //Opens directly the dashboard
             dashBtn.PerformClick();
         }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+
+            this.Close();
+
+        }
     }
 }

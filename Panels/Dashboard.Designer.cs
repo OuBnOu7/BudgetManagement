@@ -54,6 +54,7 @@
             // 
             // chartExpense
             // 
+            this.chartExpense.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.chartExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             chartArea1.Area3DStyle.Enable3D = true;
             chartArea1.Name = "ChartArea1";
@@ -61,7 +62,7 @@
             legend1.Name = "Legend1";
             this.chartExpense.Legends.Add(legend1);
             this.chartExpense.Location = new System.Drawing.Point(16, 15);
-            this.chartExpense.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartExpense.Margin = new System.Windows.Forms.Padding(4);
             this.chartExpense.Name = "chartExpense";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
@@ -77,13 +78,14 @@
             // 
             // chartIncome
             // 
+            this.chartIncome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.chartIncome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             chartArea2.Name = "ChartArea1";
             this.chartIncome.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chartIncome.Legends.Add(legend2);
             this.chartIncome.Location = new System.Drawing.Point(16, 391);
-            this.chartIncome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartIncome.Margin = new System.Windows.Forms.Padding(4);
             this.chartIncome.Name = "chartIncome";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
@@ -95,6 +97,7 @@
             // 
             // chartIncome_category
             // 
+            this.chartIncome_category.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.chartIncome_category.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             chartArea3.Area3DStyle.Enable3D = true;
             chartArea3.Name = "ChartArea1";
@@ -102,7 +105,7 @@
             legend3.Name = "Legend1";
             this.chartIncome_category.Legends.Add(legend3);
             this.chartIncome_category.Location = new System.Drawing.Point(403, 15);
-            this.chartIncome_category.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartIncome_category.Margin = new System.Windows.Forms.Padding(4);
             this.chartIncome_category.Name = "chartIncome_category";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
@@ -118,13 +121,14 @@
             // 
             // IncomeLine
             // 
+            this.IncomeLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.IncomeLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             chartArea4.Name = "ChartArea1";
             this.IncomeLine.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.IncomeLine.Legends.Add(legend4);
             this.IncomeLine.Location = new System.Drawing.Point(791, 15);
-            this.IncomeLine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IncomeLine.Margin = new System.Windows.Forms.Padding(4);
             this.IncomeLine.Name = "IncomeLine";
             series4.ChartArea = "ChartArea1";
             series4.LabelForeColor = System.Drawing.Color.BlanchedAlmond;
