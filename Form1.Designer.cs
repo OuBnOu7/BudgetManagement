@@ -43,7 +43,6 @@
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.incType = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Balance = new System.Windows.Forms.Label();
@@ -56,6 +55,7 @@
             this.total_Income = new System.Windows.Forms.Label();
             this.Income_Total = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.incType = new System.Windows.Forms.ComboBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
@@ -301,22 +301,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(988, 82);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // incType
-            // 
-            this.incType.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.incType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.incType.FormattingEnabled = true;
-            this.incType.Items.AddRange(new object[] {
-            "Hebdomadaire",
-            "Mensuel",
-            "Annuel"});
-            this.incType.Location = new System.Drawing.Point(755, 35);
-            this.incType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
-            this.incType.Name = "incType";
-            this.incType.Size = new System.Drawing.Size(219, 27);
-            this.incType.TabIndex = 37;
-            this.incType.SelectedIndexChanged += new System.EventHandler(this.incType_SelectedIndexChanged);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.pictureBox4);
@@ -446,6 +430,22 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // incType
+            // 
+            this.incType.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.incType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.incType.FormattingEnabled = true;
+            this.incType.Items.AddRange(new object[] {
+            "Hebdomadaire",
+            "Mensuel",
+            "Annuel"});
+            this.incType.Location = new System.Drawing.Point(755, 38);
+            this.incType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
+            this.incType.Name = "incType";
+            this.incType.Size = new System.Drawing.Size(219, 27);
+            this.incType.TabIndex = 37;
+            this.incType.SelectedIndexChanged += new System.EventHandler(this.incType_SelectedIndexChanged);
+            // 
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
@@ -485,6 +485,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.ShowInTaskbar = false;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
