@@ -219,6 +219,7 @@ namespace BudgetManagement
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Opens directly the dashboard
             dashBtn.PerformClick();
         }
     }
