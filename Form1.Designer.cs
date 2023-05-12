@@ -87,7 +87,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(205, 772);
+            this.panelMenu.Size = new System.Drawing.Size(205, 902);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -231,6 +231,7 @@
             this.logoutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.logoutBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.logoutBtn.UseVisualStyleBackColor = true;
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // panelDesktop
             // 
@@ -240,7 +241,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(205, 88);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1165, 684);
+            this.panelDesktop.Size = new System.Drawing.Size(1165, 814);
             this.panelDesktop.TabIndex = 3;
             // 
             // desktopPanel
@@ -250,7 +251,7 @@
             this.desktopPanel.Location = new System.Drawing.Point(0, 10);
             this.desktopPanel.Margin = new System.Windows.Forms.Padding(0);
             this.desktopPanel.Name = "desktopPanel";
-            this.desktopPanel.Size = new System.Drawing.Size(1165, 674);
+            this.desktopPanel.Size = new System.Drawing.Size(1165, 804);
             this.desktopPanel.TabIndex = 1;
             // 
             // shadowPanel
@@ -439,7 +440,7 @@
             "Hebdomadaire",
             "Mensuel",
             "Annuel"});
-            this.incType.Location = new System.Drawing.Point(755, 38);
+            this.incType.Location = new System.Drawing.Point(755, 35);
             this.incType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.incType.Name = "incType";
             this.incType.Size = new System.Drawing.Size(219, 27);
@@ -476,7 +477,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 772);
+            this.ClientSize = new System.Drawing.Size(1370, 902);
             this.ControlBox = false;
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
